@@ -9,20 +9,20 @@ fi
 username=$(id -u -n 1000)
 builddir=$(pwd)
 
-#cd $builddir
+cd $builddir
 
 ### copy css for terminal pading
-#mkdir -p /home/$username/.config
-#cp -R config/gtk-* /home/$username/.config/
-#chown -R $username:$username /home/$username
+mkdir -p /home/$username/.config
+cp -R config/gtk-* /home/$username/.config/
+chown -R $username:$username /home/$username
 
 ### load profiles
-#dconf load /org/gnome/terminal/ < terminal_settings.txt
+dconf load /org/gnome/terminal/ < terminal_settings.txt
 
-#apt update
-#apt install nala -y
-#nala update
-#nala install git wget curl neofetch -y
+apt update
+apt install nala -y
+nala update
+nala install git wget curl neofetch -y
 
 nala install zsh -y
 echo "Run: sudo chsh -s /usr/bin/zsh and reboot system"

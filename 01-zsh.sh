@@ -12,8 +12,9 @@ builddir=$(pwd)
 cd $builddir
 
 ### copy zsh files
-cp /zsh/fino-nermin.zsh-theme /home/$username/.oh-my-zsh/themes/
-cp /zsh/.zshrc /home/$username/
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+cp zsh/fino-nermin.zsh-theme /home/$username/.oh-my-zsh/themes/
+cp zsh/.zshrc /home/$username/
 chown -R $username:$username /home/$username
 
 echo "Restart terminal"
