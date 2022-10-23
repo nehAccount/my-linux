@@ -24,13 +24,7 @@ builddir=$(pwd)
 #nala update
 
 nala install zsh -y
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-
-cd $builddir
-### copy zsh files
-mkdir -p /home/$username/.oh-my-zsh
-cp -R zsh/* /home/$username/
-chown -R $username:$username /home/$username
-
+zsh
+echo 'RUN: sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"'
 echo "Run: sudo chsh -s /usr/bin/zsh and reboot system"
 
