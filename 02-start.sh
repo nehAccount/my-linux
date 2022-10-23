@@ -14,19 +14,20 @@ builddir=$(pwd)
 #nala install ./google-chrome-stable_current_amd64.deb
 #rm ./google-chrome-stable_current_amd64.deb
 
+### gnome shell
+add-apt-repository universe
 
-#nala update
-#nala upgrade -y
-# nala install neofetch htop ubuntu-restricted-extras
-# nala install chrome-gnome-shell
+nala update
+nala install neofetch htop ubuntu-restricted-extras
+nala install chrome-gnome-shell
 
-nala install timeshift
-nala install filezilla
-nala install mpv
+nala install timeshift -y
+nala install filezilla -y
+nala install mpv -y
 
-snap install extension-manager
-snap install gnome-tweak-tool
-snap install dconf-editor
+snap install gnome-shell-extensions -y
+nala install gnome-tweaks -y
+snap install dconf -y
 
 
 
