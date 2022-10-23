@@ -9,12 +9,11 @@ fi
 username=$(id -u -n 1000)
 builddir=$(pwd)
 
-#apt update
-#apt install nala -y
-#nala install git wget neofetch -y
+#nala update
+#nala install git wget curl neofetch -y
 
 
 ### Chrome
 #wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-#apt install ./google-chrome-stable_current_amd64.deb
+#nala install ./google-chrome-stable_current_amd64.deb
 #rm ./google-chrome-stable_current_amd64.deb
