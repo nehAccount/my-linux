@@ -1,0 +1,3 @@
+Gnome settings
+dconf dump / > saved_settings.dconf
+dconf load / < saved_settings.dconf
