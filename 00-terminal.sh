@@ -22,7 +22,7 @@ dconf load /org/gnome/terminal/ < terminal_settings.txt
 apt update
 apt install nala -y
 nala update
-nala install git wget curl neofetch -y
+nala install git wget curl -y
 
 nala install zsh -y
 echo "Run: sudo chsh -s /usr/bin/zsh and reboot system"

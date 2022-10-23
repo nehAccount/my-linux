@@ -9,7 +9,16 @@ fi
 username=$(id -u -n 1000)
 builddir=$(pwd)
 
-#nala update
+### gnome shell
+add-apt-repository universe
+### ubuntu cleaner
+add-apt-repository ppa:gerardpuig/ppa
+
+nala update
+nala upgrade -y
+nala install neofetch htop ubuntu-restricted-extras -y
+nala install chrome-gnome-shell gnome-shell-extension gnome-tweak-tool dconf-editor -y
+nala install ubuntu-cleaner timeshift filezilla mpv -y
 #
 
 
