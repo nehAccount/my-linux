@@ -22,9 +22,10 @@ builddir=$(pwd)
 #apt update
 #apt install nala -y
 #nala update
+#nala install git wget curl neofetch -y
 
 nala install zsh -y
-zsh
-echo 'RUN: sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"'
 echo "Run: sudo chsh -s /usr/bin/zsh and reboot system"
+echo 'RUN WITHOUT SUDO: sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"'
+
 

@@ -10,7 +10,7 @@ username=$(id -u -n 1000)
 builddir=$(pwd)
 
 #nala update
-#nala install git wget curl neofetch -y
+#
 
 
 ### Chrome
