@@ -10,12 +10,12 @@ username=$(id -u -n 1000)
 builddir=$(pwd)
 
 cd $builddir
+# copy css for terminal pading
 mkdir -p /home/$username/.config
-mkdir -p /home/$username/.fonts
 cp -R config/gtk-* /home/$username/.config/
 chown -R $username:$username /home/$username
 
-dconf reset -f /org/gnome/terminal/
+# load profiles
 dconf load /org/gnome/terminal/ < terminal_settings.txt
 
 #apt update
