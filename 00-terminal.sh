@@ -9,14 +9,21 @@ fi
 username=$(id -u -n 1000)
 builddir=$(pwd)
 
-cd $builddir
-# copy css for terminal pading
-mkdir -p /home/$username/.config
-cp -R config/gtk-* /home/$username/.config/
-chown -R $username:$username /home/$username
+#cd $builddir
 
-# load profiles
-dconf load /org/gnome/terminal/ < terminal_settings.txt
+### copy css for terminal pading
+#mkdir -p /home/$username/.config
+#cp -R config/gtk-* /home/$username/.config/
+#chown -R $username:$username /home/$username
+
+### load profiles
+#dconf load /org/gnome/terminal/ < terminal_settings.txt
 
 #apt update
 #apt install nala -y
+#nala update
+
+#nala install zsh -y
+#sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+echo "Run: sudo chsh -s /usr/bin/zsh and reboot system"
+
