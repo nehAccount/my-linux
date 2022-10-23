@@ -25,9 +25,9 @@ nala install timeshift -y
 nala install filezilla -y
 nala install mpv -y
 
-snap install gnome-shell-extensions -y
+nala install gnome-shell-extensions -y
 nala install gnome-tweaks -y
-snap install dconf -y
+
 
 
 
