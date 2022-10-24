@@ -32,8 +32,8 @@ nala install gnome-tweaks -y
 nala install geary -y
 
 ### copy /home/*
-cp -R my-home/* /home/$username/
-chown -R $username:$username /home/$username
+#cp -R my-home/* /home/$username/
+# chown -R $username:$username /home/$username
 
 
 
