@@ -21,7 +21,7 @@ nala update
 nala install neofetch -y
 nala install htop -y
 nala install ubuntu-restricted-extras -y
-nala install chrome-gnome-shell
+nala install chrome-gnome-shell -y
 
 nala install timeshift -y
 nala install filezilla -y
