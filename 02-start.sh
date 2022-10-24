@@ -18,7 +18,9 @@ builddir=$(pwd)
 add-apt-repository universe
 
 nala update
-nala install neofetch htop ubuntu-restricted-extras
+nala install neofetch -y
+nala install htop -y
+nala install ubuntu-restricted-extras -y
 nala install chrome-gnome-shell
 
 nala install timeshift -y
@@ -27,6 +29,7 @@ nala install mpv -y
 
 nala install gnome-shell-extensions -y
 nala install gnome-tweaks -y
+nala install geary -y
 
 
 
