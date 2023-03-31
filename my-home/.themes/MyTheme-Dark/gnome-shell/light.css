@@ -1,0 +1,157 @@
+
+/* PANEL - top bar */
+#panel {
+    background-gradient-direction: none;
+    background-color: #e2e6ec;
+    font-weight: bold;
+    height: 2.1em;
+    padding: 0px 0px; }
+    #panel.unlock-screen, #panel.login-screen, #panel.lock-screen {
+      background-color: transparent; }
+    #panel #panelLeft, #panel #panelCenter {
+      spacing: 4px; }
+    #panel .panel-corner {
+      -panel-corner-radius: 0px;
+      -panel-corner-background-color: rgba(0, 0, 0, 0.2);
+      -panel-corner-border-width: 2px;
+      -panel-corner-border-color: transparent; }
+      #panel .panel-corner:active, #panel .panel-corner:overview, #panel .panel-corner:focus {
+        -panel-corner-border-color: rgba(185, 218, 14, 0.5); }
+      #panel .panel-corner.lock-screen, #panel .panel-corner.login-screen, #panel .panel-corner.unlock-screen {
+        -panel-corner-radius: 0;
+        -panel-corner-background-color: transparent;
+        -panel-corner-border-color: transparent; }
+    #panel .panel-button {
+      -natural-hpadding: 12px;
+      -minimum-hpadding: 6px;
+      font-weight: bold;
+      color: #000000; }
+      #panel .panel-button .app-menu-icon {
+        -st-icon-style: symbolic;
+        margin-left: 4px;
+        margin-right: 4px; }
+      #panel .panel-button .system-status-icon,
+      #panel .panel-button .app-menu-icon > StIcon,
+      #panel .panel-button .popup-menu-arrow {
+        icon-shadow: none; }
+      #panel .panel-button:hover {
+        box-shadow: inset 0 0 0 100px rgba(55, 58, 75, 0.95);
+        color: white; }
+        #panel .panel-button:hover.clock-display {
+          box-shadow: none; }
+          #panel .panel-button:hover.clock-display .clock {
+            box-shadow: inset 0 0 0 100px rgba(55, 58, 75, 0.95); }
+      #panel .panel-button:active, #panel .panel-button:overview, #panel .panel-button:focus, #panel .panel-button:checked {
+        box-shadow: inset 0 0 0 100px rgba(55, 58, 75, 0.95);
+        color: #f8f8f2;}
+        #panel .panel-button:active.clock-display, #panel .panel-button:overview.clock-display, #panel .panel-button:focus.clock-display, #panel .panel-button:checked.clock-display {
+          box-shadow: none; }
+          #panel .panel-button:active.clock-display .clock, #panel .panel-button:overview.clock-display .clock, #panel .panel-button:focus.clock-display .clock, #panel .panel-button:checked.clock-display .clock {
+            box-shadow: inset 0 0 0 100px rgba(55, 58, 75, 0.95); }
+      #panel .panel-button .system-status-icon {
+        icon-size: 1.09em;
+        padding: 0 5px; }
+      .unlock-screen #panel .panel-button, .login-screen #panel .panel-button, .lock-screen #panel .panel-button {
+        color: #e0e2e7; }
+        .unlock-screen #panel .panel-button:focus, .unlock-screen #panel .panel-button:hover, .unlock-screen #panel .panel-button:active, .login-screen #panel .panel-button:focus, .login-screen #panel .panel-button:hover, .login-screen #panel .panel-button:active, .lock-screen #panel .panel-button:focus, .lock-screen #panel .panel-button:hover, .lock-screen #panel .panel-button:active {
+          color: #e0e2e7; }
+    #panel .panel-status-indicators-box,
+    #panel .panel-status-menu-box {
+      spacing: 2px; }
+    #panel .power-status.panel-status-indicators-box {
+      spacing: 0; }
+    #panel .screencast-indicator {
+      color: #ff9f39; }
+    #panel.solid {
+      background-color: #282a36;}
+      #panel.solid .panel-corner {
+        -panel-corner-background-color: black; }
+      #panel.solid .system-status-icon,
+      #panel.solid .app-menu-icon > StIcon,
+      #panel.solid .popup-menu-arrow {
+        icon-shadow: none; }
+
+/* Entries */
+StEntry {
+    background-color: white;
+}
+/* Notifications and calendar */
+.message {
+    box-shadow: none; 
+}
+.message:hover, .message:focus {
+    background-color: #e2e6ec;
+}
+
+.datemenu-today-button .date-label {
+    color: #333;
+} 
+
+.openweather-current-summarybox,
+.openweather-current-icon,
+.openweather-forecast-icon,
+.openweather-forecast-summary,
+.openweather-forecast-temperature,
+.openweather-current-databox-values{
+  color: #333;
+  text-shadow: none !important;
+  box-shadow: none !important;
+ }
+
+
+ /* DOCK  */
+
+/* icons pading */  
+  .app-well-app .overview-icon,
+  .app-well-app.app-folder .overview-icon,
+  .show-apps .overview-icon {
+    padding: 6px;
+    border: none;
+    text-align: center;
+    box-shadow: none; 
+}
+
+/* icons */
+.app-well-app:hover .overview-icon, 
+.app-well-app:focus .overview-icon, 
+.app-well-app:selected .overview-icon {
+    background-color: #ccc;
+    color: #333;
+    transition-duration: 0ms;
+    border-image: none;
+    background-image: none; 
+}
+
+.dash-separator {
+    width: 1px;
+    background-color: #999; }
+
+/* show apps */
+.show-apps .overview-icon {
+    color: #666;
+}
+.show-apps:hover .overview-icon,
+.show-apps:focus .overview-icon,
+.show-apps:selected .overview-icon {
+    background-color: #ccc;
+    transition-duration: 0ms;
+    border-image: none;
+    background-image: none; 
+}
+
+.show-apps:active .overview-icon,
+.show-apps:checked .overview-icon {
+    background-color: #373a4b;
+    color: #ccc;
+}
+     
+/* DASH */
+#dashtodockContainer #dash {
+    background: transparent !important; }
+    #dashtodockContainer #dash .dash-background {
+      background: #e2e6ec !important;
+      border: none; }
+    #dashtodockContainer #dash .dash-item-container .app-well-app .overview-icon.focused .overview-icon,
+    #dashtodockContainer #dash .dash-item-container .show-apps .overview-icon.focused .overview-icon {
+      background-color: #e2e6ec !important; }  
+

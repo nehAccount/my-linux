@@ -10,26 +10,26 @@ username=$(id -u -n 1000)
 builddir=$(pwd)
 
 ### Chrome
-#wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-#nala install ./google-chrome-stable_current_amd64.deb
-#rm ./google-chrome-stable_current_amd64.deb
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+sudo nala install ./google-chrome-stable_current_amd64.deb
+rm ./google-chrome-stable_current_amd64.deb
 
 ### gnome shell
-add-apt-repository universe
+sudo add-apt-repository universe
 
-nala update
-nala install neofetch -y
-nala install htop -y
-nala install ubuntu-restricted-extras -y
-nala install chrome-gnome-shell -y
+sudo nala update
+sudo nala install neofetch -y
+sudo nala install htop -y
+sudo nala install ubuntu-restricted-extras -y
+sudo nala install chrome-gnome-shell -y
 
-nala install timeshift -y
-nala install filezilla -y
-nala install mpv -y
+sudo nala install timeshift -y
+sudo nala install filezilla -y
+sudo nala install mpv -y
 
-nala install gnome-shell-extensions -y
-nala install gnome-tweaks -y
-nala install geary -y
+sudo nala install gnome-shell-extensions -y
+sudo nala install gnome-tweaks -y
+sudo nala install geary -y
 
 ### copy /home/*
 #cp -R my-home/* /home/$username/

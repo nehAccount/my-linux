@@ -17,6 +17,9 @@ cp zsh/fino-nermin.zsh-theme /home/$username/.oh-my-zsh/themes/
 cp zsh/.zshrc /home/$username/
 chown -R $username:$username /home/$username
 
+### load profiles
+dconf load /org/gnome/terminal/ < terminal_settings.txt
+
 echo "Restart terminal"
 
 
