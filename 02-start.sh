@@ -1,11 +1,5 @@
 #!/bin/bash
 
-# Check if Script is Run as Root
-if [[ $EUID -ne 0 ]]; then
-  echo "You must be a root user to run this script, please run sudo ./script-name.sh" 2>&1
-  exit 1
-fi
-
 username=$(id -u -n 1000)
 builddir=$(pwd)
 
@@ -31,9 +25,6 @@ sudo nala install gnome-shell-extensions -y
 sudo nala install gnome-tweaks -y
 sudo nala install geary -y
 
-### copy /home/*
-#cp -R my-home/* /home/$username/
-# chown -R $username:$username /home/$username
 
 
 
