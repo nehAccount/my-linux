@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Viber
+GenericName=Viber
+Exec=/home/nermin/Viber/viber.AppImage %U
+Icon=/home/nermin/.icons/app-icons/viber.png
+Comment=Viber Desktop
+Type=Application
+Terminal=false
+Encoding=UTF-8
+Categories=Utility;
+StartupWMClass=Viber
