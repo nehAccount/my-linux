@@ -24,7 +24,7 @@
     #panel .panel-button {
       -natural-hpadding: 12px;
       -minimum-hpadding: 6px;
-      font-weight: 400;
+      font-weight: bold;
       color: #000000; }
       #panel .panel-button .app-menu-icon {
         -st-icon-style: symbolic;
@@ -154,5 +154,4 @@ StEntry {
     #dashtodockContainer #dash .dash-item-container .app-well-app .overview-icon.focused .overview-icon,
     #dashtodockContainer #dash .dash-item-container .show-apps .overview-icon.focused .overview-icon {
       background-color: #e2e6ec !important; }  
-
 

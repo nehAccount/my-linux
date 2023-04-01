@@ -495,7 +495,7 @@ StEntry StLabel.hint-text {
 
 #dashtodockContainer #dash .dash-background {
   /*background: #21232d !important;*/
-  background: rgba(0, 0, 0, 0.85);
+  background-color: rgba(0, 0, 0, 0.85);
   border: none;
 }
 
@@ -506,7 +506,6 @@ StEntry StLabel.hint-text {
 
 .dash-background {
   background-color: #21232d;
-
 }
 
 .dash-separator {
