@@ -14,7 +14,6 @@ chown -R $username:$username /home/$username
 sudo apt update
 sudo apt install nala -y
 sudo nala update
-sudo nala upgrade -y
 sudo nala install git -y
 sudo nala install wget -y
 sudo nala install curl -y
