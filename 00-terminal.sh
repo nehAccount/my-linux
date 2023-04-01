@@ -18,6 +18,12 @@ sudo nala upgrade -y
 sudo nala install git -y
 sudo nala install wget -y
 sudo nala install curl -y
+sudo nala install neofetch -y
+sudo nala install htop -y
+sudo nala install zip -y
+sudo nala install unzip -y
+sudo nala install xz-utils -y
+sudo nala install htop -y
 
 sudo nala install zsh -y
 # zsh
