@@ -28,6 +28,8 @@ sudo nala install filezilla -y
 sudo nala install mpv -y
 sudo nala install ubuntu-cleaner -y
 sudo nala install dconf-editor -y
+# firewall
+sudo nala install gufw -y
 
 ### Viber
 mkdir -p /home/$username/Viber
