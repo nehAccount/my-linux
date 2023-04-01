@@ -6,8 +6,8 @@ builddir=$(pwd)
 cd $builddir || exit
 
 ### battery
-chmod +x /laptop/bat
-sudo install /laptop/bat /usr/local/bin
+chmod +x $builddir/laptop/bat
+sudo install $builddir/laptop/bat /usr/local/bin/
 sudo bat -t 60 --persist
 
 ### CPU
