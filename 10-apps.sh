@@ -23,20 +23,17 @@ sudo nala install gnome-tweaks -y
 sudo nala install geary -y
 
 ### utilities
-sudo nala install timeshift -y
-sudo nala install filezilla -y
+# sudo nala install timeshift -y
 sudo nala install mpv -y
 sudo nala install ubuntu-cleaner -y
 sudo nala install dconf-editor -y
 # firewall
 sudo nala install gufw -y
 
-### Viber
-mkdir -p /home/$username/Viber
-cd /home/$username/Viber || exit
-wget https://download.cdn.viber.com/desktop/Linux/viber.AppImage
-chmod +x /home/$username/Viber/viber.AppImage
-cd $builddir
+echo "### SNAPS ###"
+sudo snap remove firefox
+# sudo snap install flameshot
+sudo snap install photogimp
 
 
 

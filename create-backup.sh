@@ -19,7 +19,7 @@ echo ".local"
 mkdir -p $builddir/my-home/.local/share/applications
 cp /home/$username/.local/share/applications/geary-autostart.desktop $builddir/my-home/.local/share/applications/
 cp /home/$username/.local/share/applications/org.gnome.Geary.desktop $builddir/my-home/.local/share/applications/
-cp /home/$username/.local/share/applications/viber.appImage.desktop $builddir/my-home/.local/share/applications/
+# cp /home/$username/.local/share/applications/viber.appImage.desktop $builddir/my-home/.local/share/applications/
 
 # themes
 echo ".themes"
