@@ -5,7 +5,6 @@ builddir=$(pwd)
 
 cd "$builddir" ||exit
 
-sudo snap install libreoffice
 # sudo snap install flameshot
 sudo snap install photogimp
 # sudo snap install postman
