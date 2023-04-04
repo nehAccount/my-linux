@@ -31,22 +31,20 @@ sudo nala install chrome-gnome-shell -y
 sudo nala install gnome-shell-extensions -y
 sudo nala install gnome-tweaks -y
 
-### zsh terminal
-sudo nala install zsh -y
-# zsh
-
-### copy css for terminal pading
+### copy css for terminal padding
 mkdir -p /home/$username/.config
 cp -R config/gtk-* /home/$username/.config/
 chown -R $username:$username /home/$username
+
+### zsh terminal
+sudo nala install zsh -y
+sudo chsh -s /usr/bin/zsh
 
 ### flatpak init
 sudo nala install flatpak -y
 sudo nala install gnome-software-plugin-flatpak -y
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
-echo "Reboot System"
-
-echo "Run: sudo chsh -s /usr/bin/zsh and reboot system"
-echo 'RUN WITHOUT SUDO: sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"'
+echo "Reboot System!!!"
+echo '### AFTER REBOOT, RUN WITHOUT SUDO: sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"'
 
 

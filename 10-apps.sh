@@ -3,9 +3,14 @@
 username=$(id -u -n 1000)
 builddir=$(pwd)
 
+# Firefox
 sudo snap remove firefox
-flatpak install flathub com.google.Chrome -y
 flatpak install flathub org.mozilla.firefox -y
+### Chrome
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+sudo nala install ./google-chrome-stable_current_amd64.deb
+rm ./google-chrome-stable_current_amd64.deb
+
 flatpak install flathub org.filezillaproject.Filezilla -y
 flatpak install flathub org.libreoffice.LibreOffice -y
 flatpak install flathub com.viber.Viber -y
