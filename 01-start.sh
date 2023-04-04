@@ -17,6 +17,8 @@ sudo apt install nala -y
 ### system apps
 sudo nala update
 sudo nala install git -y
+git config --global user.name "Nermin Hadzimejlic"
+git config --global user.email "nermin.hadzimejlic@gmail.com"
 sudo nala install wget -y
 sudo nala install curl -y
 sudo nala install neofetch -y
