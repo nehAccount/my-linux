@@ -9,20 +9,13 @@ flatpak install flathub org.mozilla.firefox -y
 
 ### Chrome
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-sudo nala install ./google-chrome-stable_current_amd64.deb
+sudo nala install ./google-chrome-stable_current_amd64.deb -y
 rm ./google-chrome-stable_current_amd64.deb
 
 flatpak install flathub org.filezillaproject.Filezilla -y
 flatpak install flathub org.libreoffice.LibreOffice -y
 flatpak install flathub com.viber.Viber -y
 flatpak install flathub com.getpostman.Postman -y
-# flatpak install flathub com.jetbrains.PhpStorm -y
-# flatpak install flathub com.jetbrains.IntelliJ-IDEA-Community -y
-
-### JetBrains Toolbox
-sudo nala install libfuse2 libxi6 libxrender1 libxtst6 mesa-utils libfontconfig libgtk-3-bin
-curl -fsSL https://raw.githubusercontent.com/nagygergo/jetbrains-toolbox-install/master/jetbrains-toolbox.sh | bash
-
 flatpak install flathub com.visualstudio.code -y
 flatpak install flathub io.github.shiftey.Desktop -y
 
@@ -39,6 +32,12 @@ sudo nala install gufw -y
 
 flatpak install flathub fr.handbrake.ghb -y
 flatpak install flathub no.mifi.losslesscut -y
+
+### JetBrains Toolbox
+sudo nala install -y libfuse2 libxi6 libxrender1 libxtst6 mesa-utils libfontconfig libgtk-3-bin
+curl -fsSL https://raw.githubusercontent.com/nagygergo/jetbrains-toolbox-install/master/jetbrains-toolbox.sh | bash
+echo "Starting JetBrains Toolbox..."
+jetbrains-toolbox
 
 
 
