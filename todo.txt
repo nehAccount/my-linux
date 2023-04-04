@@ -1,3 +1,8 @@
 Gnome settings
 dconf dump / > saved_settings.dconf
 dconf load / < saved_settings.dconf
+
+https://github.com/nagygergo/jetbrains-toolbox-install
+
+sudo nala install libfuse2 libxi6 libxrender1 libxtst6 mesa-utils libfontconfig libgtk-3-bin  
+curl -fsSL https://raw.githubusercontent.com/nagygergo/jetbrains-toolbox-install/master/jetbrains-toolbox.sh | bash
