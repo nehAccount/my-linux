@@ -13,7 +13,7 @@ chown -R $username:$username /home/$username
 
 ### Scripts
 # update-all
-sudo cp cp $builddir/scripts/update-all /usr/local/bin/
+sudo cp $builddir/scripts/update-all /usr/local/bin/
 sudo chmod +x /usr/local/bin/update-all
 
 
