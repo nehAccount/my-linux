@@ -28,6 +28,14 @@ sudo nala install -y php-json php-ctype php-curl php-mbstring php-xml php-zip ph
 sudo nala install -y php-mysql
 sudo nala install -y php-intl
 
+### Composer
+sudo nala install -y php-cli unzip
+curl -sS https://getcomposer.org/installer -o /tmp/composer-setup.php
+HASH='curl -sS https://composer.github.io/installer.sig'
+php -r "if (hash_file('SHA384', '/tmp/composer-setup.php') === '$HASH') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"
+sudo php /tmp/composer-setup.php --install-dir=/usr/local/bin --filename=composer
+sudo rm /tmp/composer-setup.php
+
 ### Symfony CLI
 curl -1sLf 'https://dl.cloudsmith.io/public/symfony/stable/setup.deb.sh' | sudo -E bash
 sudo nala install -y symfony-cli
