@@ -27,6 +27,8 @@ sudo nala install -y php
 sudo nala install -y php-json php-ctype php-curl php-mbstring php-xml php-zip php-tokenizer php-tokenizer libpcre3 --no-install-recommends
 sudo nala install -y php-mysql
 sudo nala install -y php-intl
+sudo sh -c "echo ServerName 127.0.0.1 >> /etc/apache2/apache2.conf"
+sudo systemctl restart apache2
 
 ### Composer
 sudo nala install -y php-cli unzip
@@ -60,13 +62,15 @@ sudo usermod -aG docker "$USER"
 ### Confirmations
 echo "MariaDB #######################"
 sudo mariadb -e "SELECT user FROM mysql.user;"
+echo "Apache syntax #######################"
+sudo apachectl configtest 
 echo "Symfony #######################"
 symfony check:requirements
 echo "Docker #######################"
 sudo docker run hello-world
 
 ### FINISH
-echo "REBOOT SYSTEM to enable use docker without sudo"
+echo "REBOOT SYSTEM to enable using docker without sudo"
 
 
 
