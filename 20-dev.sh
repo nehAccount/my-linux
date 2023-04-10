@@ -1,7 +1,7 @@
 #!/bin/bash
 
 username=$(id -u -n 1000)
-dbPassword="Ngzmhr072#"
+dbPassword="Ngzmhr072"
 
 ### Flutter
 sudo snap install flutter --classic
