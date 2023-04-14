@@ -34,7 +34,8 @@ PROMPT="╭─ ${FG[072]}%~%b${git_info}${ruby_env}${virtualenv_info}
 
 ZSH_THEME_GIT_PROMPT_PREFIX=" ${FG[244]}branch:%{$reset_color%} ${FG[250]}"
 ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%}"
-ZSH_THEME_GIT_PROMPT_DIRTY="${FG[202]}✘✘✘"
+#ZSH_THEME_GIT_PROMPT_DIRTY="${FG[202]}✘"
+ZSH_THEME_GIT_PROMPT_DIRTY="${FG[202]} ±"
 ZSH_THEME_GIT_PROMPT_CLEAN="${FG[040]}✔"
 
 ZSH_THEME_RUBY_PROMPT_PREFIX=" ${FG[239]}using${FG[243]} ‹"
