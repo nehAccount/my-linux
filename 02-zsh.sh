@@ -7,7 +7,7 @@ cd $builddir
 
 ### copy zsh files
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
-cp zsh/fino-nermin.zsh-theme /home/$username/.oh-my-zsh/themes/
+cp zsh/*-nermin.zsh-theme /home/$username/.oh-my-zsh/themes/
 cp zsh/.zshrc /home/$username/
 chown -R $username:$username /home/$username
 
