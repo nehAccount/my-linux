@@ -54,8 +54,8 @@ sudo mariadb -e "GRANT ALL ON *.* TO 'bnp-admin'@'localhost' IDENTIFIED BY 'Ngzm
 sudo mariadb -e "FLUSH PRIVILEGES;"
 sudo systemctl restart mariadb
 
-sudo chown -R www-data:www-data /var/www
-
+chown -R www-data:www-data /var/www
+chown -R $username:$username /home/$username
 ### Confirmation
 cd /var/www/bnp-zenica.com || exit
 sudo systemctl stop apache2
@@ -63,7 +63,8 @@ sudo systemctl start apache2
 sudo mariadb -e "SELECT user FROM mysql.user;"
 php -v
 sudo apachectl configtest
-symfony check:requirements
+sudo update-alternatives --config php
+#symfony check:requirements
 
 ### FINISH
 echo "COPY .env to symfony directory"
