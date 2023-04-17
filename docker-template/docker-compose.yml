@@ -1,23 +1,9 @@
-version: "3"
+version: "3.8"
 
 networks:
-  bnp-app-network:
+  my-network:
 
 services:
-
-  # nginx
-  nginx-service:
-    image: nginx:stable-alpine
-    container_name: nginx-container
-    ports:
-      - "8090:80"
-    volumes:
-      - ./bnp-app:/var/www/bnp-app
-      - ./docker/nginx/default.conf:/etc/nginx/conf.d/default.conf
-    depends_on:
-      - php74-service
-    networks:
-      - bnp-app-network
 
   # php
   php74-service:
@@ -28,9 +14,22 @@ services:
     ports:
       - "9000:9000"
     volumes:
-      - ./bnp-app:/var/www/bnp-app
+      - .:/var/www/bnp-zenica.com
       - ./docker/php/php.ini:/usr/local/etc/php/php.ini
     networks:
-      - bnp-app-network
+      - my-network
 
+  # nginx
+  nginx-service:
+    image: nginx:stable-alpine
+    container_name: nginx-container
+    ports:
+      - "8090:80"
+    volumes:
+      - .:/var/www/bnp-zenica.com
+      - ./docker/nginx/default.conf:/etc/nginx/conf.d/default.conf
+    depends_on:
+      - php74-service
+    networks:
+      - my-network
 
