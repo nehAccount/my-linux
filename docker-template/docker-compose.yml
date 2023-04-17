@@ -1,7 +1,7 @@
 version: "3.8"
 
 networks:
-  my-network:
+  docker-network:
 
 services:
 
@@ -17,7 +17,7 @@ services:
       - .:/var/www/bnp-zenica.com
       - ./docker/php/php.ini:/usr/local/etc/php/php.ini
     networks:
-      - my-network
+      - docker-network
 
   # nginx
   nginx-service:
@@ -31,5 +31,5 @@ services:
     depends_on:
       - php74-service
     networks:
-      - my-network
+      - docker-network
 
