@@ -22,8 +22,26 @@ services:
       - ./docker/php/php.ini:/usr/local/etc/php/php.ini
     networks:
       - docker-network
-    extra_hosts:
-      - "host.docker.internal:host-gateway"
+    #extra_hosts:
+    #  - "host.docker.internal:host-gateway"
+
+  # mysql
+  mysql-service:
+    image: mysql:8
+    container_name: bnp-mysql-container
+    ports:
+      - "4306:3306"
+    volumes:
+      - ./docker/database:/var/lib/mysql:rw
+    command: --default-authentication-plugin=mysql_native_password --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
+    restart: always # always restart unless stopped manually
+    environment:
+      MYSQL_ROOT_PASSWORD: secret
+      MYSQL_USER: bnp-admin
+      MYSQL_PASSWORD: Ngzmhr072
+      MYSQL_DATABASE: app_bnp
+    networks:
+      - docker-network
 
   # nginx
   nginx-service:
@@ -36,6 +54,7 @@ services:
       - ./docker/nginx/default.conf:/etc/nginx/conf.d/default.conf
     depends_on:
       - app-service
+      - mysql-service
     networks:
       - docker-network
 
