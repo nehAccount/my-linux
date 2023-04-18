@@ -32,11 +32,11 @@ services:
     ports:
       - "4306:3306"
     volumes:
-      - ./docker/database:/var/lib/mysql:rw
+      - ./docker/mysql:/var/lib/mysql:rw
     command: --default-authentication-plugin=mysql_native_password --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
     restart: always # always restart unless stopped manually
     environment:
-      MYSQL_ROOT_PASSWORD: secret
+      MYSQL_ROOT_PASSWORD: Ngzmhr072
       MYSQL_USER: bnp-admin
       MYSQL_PASSWORD: Ngzmhr072
       MYSQL_DATABASE: app_bnp
