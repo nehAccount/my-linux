@@ -14,7 +14,7 @@ services:
         - USER=${USER}
         - UUID=${UUID}
     image: bnp-app-image
-    container_name: bnp-app-container
+    container_name: bnp-app
     ports:
       - "9000:9000"
     volumes:
@@ -28,7 +28,7 @@ services:
   # mysql
   mysql-service:
     image: mysql:8
-    container_name: bnp-mysql-container
+    container_name: bnp-mysql
     ports:
       - "4306:3306"
     volumes:
@@ -46,7 +46,7 @@ services:
   # nginx
   nginx-service:
     image: nginx:stable-alpine
-    container_name: bnp-nginx-container
+    container_name: bnp-nginx
     ports:
       - "8090:80"
     volumes:
@@ -60,15 +60,11 @@ services:
 
   # phpmyadmin
   phpmyadmin-service:
-    image: phpmyadmin:fpm-alpine
+    image: phpmyadmin:latest
     restart: always
     container_name: bnp-phpmyadmin
     ports:
       - "8091:80"
-    depends_on:
-      - app-service
-      - mysql-service
-      - nginx-service
     environment:
       PMA_ARBITRARY: 0
       PMA_HOST: mysql-service
@@ -76,3 +72,5 @@ services:
       PMA_USER: bnp-admin
       PMA_PASSWORD: Ngzmhr072
       PMA_PMADB: phpmyadmin
+    networks:
+      - docker-network
