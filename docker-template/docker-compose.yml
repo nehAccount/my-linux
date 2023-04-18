@@ -58,3 +58,21 @@ services:
     networks:
       - docker-network
 
+  # phpmyadmin
+  phpmyadmin-service:
+    image: phpmyadmin:fpm-alpine
+    restart: always
+    container_name: bnp-phpmyadmin
+    ports:
+      - "8091:80"
+    depends_on:
+      - app-service
+      - mysql-service
+      - nginx-service
+    environment:
+      PMA_ARBITRARY: 0
+      PMA_HOST: mysql-service
+      PMA_PORT: 3306
+      PMA_USER: bnp-admin
+      PMA_PASSWORD: Ngzmhr072
+      PMA_PMADB: phpmyadmin
