@@ -13,7 +13,7 @@ RUN echo "user is "$USER" with uid "$UUID
 
 RUN apt update \
     && apt install -y zlib1g-dev npm libicu-dev libjpeg62-turbo-dev libpng-dev zip libzip-dev zip libpq-dev \
-    && docker-php-ext-install intl opcache pdo pdo_pgsql \
+    && docker-php-ext-install intl opcache pdo pdo_pgsql pdo_mysql \
     && pecl install apcu \
     && docker-php-ext-enable apcu \
     && docker-php-ext-configure zip \

@@ -53,7 +53,7 @@ echo \
 
 sudo chmod a+r /etc/apt/keyrings/docker.gpg
 sudo nala update
-sudo nala install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+sudo nala install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin docker-compose
 
 # add user to docker group
 sudo groupadd docker
