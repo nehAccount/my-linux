@@ -20,7 +20,7 @@ sudo chmod -R 777 "$rolesDir"
 
 # copy .env file
 cp "$builddir"/bnp/.env "$dirName"/"$siteName"
-cp "$builddir"/bnp/.env.dev "$dirName"/"$siteName"
+cp "$builddir"/bnp/.env.local "$dirName"/"$siteName"
 
 
 
