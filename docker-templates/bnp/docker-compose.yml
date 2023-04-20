@@ -34,7 +34,7 @@ services:
     volumes:
       - ./docker/mysql:/var/lib/mysql:rw
     command: --default-authentication-plugin=mysql_native_password --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
-    restart: always # always restart unless stopped manually
+    restart: unless-stopped # always restart unless stopped manually
     environment:
       MYSQL_ROOT_PASSWORD: Ngzmhr072
       MYSQL_USER: bnp-admin
@@ -61,7 +61,7 @@ services:
   # phpmyadmin
   phpmyadmin-service:
     image: phpmyadmin:latest
-    restart: always
+    restart: unless-stopped
     container_name: bnp-phpmyadmin
     ports:
       - "8091:80"
