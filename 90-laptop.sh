@@ -8,7 +8,8 @@ cd $builddir || exit
 ### battery
 chmod +x $builddir/laptop/bat
 sudo install $builddir/laptop/bat /usr/local/bin/
-sudo bat -t 60 --persist
+sudo bat -t 60
+sudo bat --persist
 
 ### CPU
 cd /home/$username/
