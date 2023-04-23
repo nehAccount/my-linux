@@ -16,6 +16,12 @@ chown -R $username:$username /home/$username
 sudo cp $builddir/scripts/update-all /usr/local/bin/
 sudo chmod +x /usr/local/bin/update-all
 
+### Dash to dock transparency (default: 0.8)
+gsettings set org.gnome.shell.extensions.dash-to-dock transparency-mode 'FIXED'
+gsettings set org.gnome.shell.extensions.dash-to-dock background-opacity 0.99
+
+
+
 
 
 

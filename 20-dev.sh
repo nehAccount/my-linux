@@ -9,6 +9,9 @@ flutter doctor
 
 sudo nala update
 
+sudo nala install -y openjdk-11-jdk
+flutter doctor --android-licenses
+
 ### MariaDB
 sudo nala install -y mariadb-server
 echo "### IMPORTANT "
