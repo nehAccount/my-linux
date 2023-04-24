@@ -22,7 +22,7 @@ flatpak install flathub io.github.shiftey.Desktop -y
 ### utilities
 # sudo nala install timeshift -y
 # sudo snap install photogimp
-flatpak install flathub org.gimp.GIMP
+flatpak install flathub org.gimp.GIMP -y
 sudo nala install geary -y
 sudo nala install mpv -y
 sudo nala install ubuntu-cleaner -y
