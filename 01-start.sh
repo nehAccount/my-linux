@@ -27,6 +27,9 @@ sudo nala install zip -y
 sudo nala install unzip -y
 sudo nala install xz-utils -y
 sudo nala install htop -y
+# stress --cpu 12
+sudo nala install stress -y
+
 ### gnome shell
 sudo nala install ubuntu-restricted-extras -y
 sudo nala install chrome-gnome-shell -y
