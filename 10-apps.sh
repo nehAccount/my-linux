@@ -21,7 +21,6 @@ flatpak install flathub io.github.shiftey.Desktop -y
 
 ### utilities
 # sudo nala install timeshift -y
-# sudo snap install photogimp
 flatpak install flathub org.gimp.GIMP -y
 sudo nala install geary -y
 sudo nala install mpv -y
@@ -30,6 +29,10 @@ sudo nala install dconf-editor -y
 sudo nala install flameshot -y
 # firewall
 sudo nala install gufw -y
+# document converter (pandoc src.docx -o out.html)
+sudo nala install pandoc -y
+# preload most used apps
+sudo nala install preload -y
 
 flatpak install flathub fr.handbrake.ghb -y
 flatpak install flathub no.mifi.losslesscut -y
