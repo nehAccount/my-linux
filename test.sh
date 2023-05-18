@@ -11,6 +11,7 @@ builddir=$(pwd)
 sudo apt install kde-standard -y
 sudo apt install nala -y
 sudo nala install fonts-roboto -y
+sudo nala install firefox-esr -y
 
 
 
