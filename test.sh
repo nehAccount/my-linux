@@ -6,6 +6,12 @@ builddir=$(pwd)
 # sudo nala install -y hugo
 
 
+# debian
+# minimal installation
+sudo apt install kde-standard -y
+sudo apt install nala -y
+sudo nala install fonts-roboto -y
+
 
 
 
