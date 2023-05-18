@@ -33,10 +33,11 @@ sudo nala install gufw -y
 sudo nala install pandoc -y
 # preload most used apps
 sudo nala install preload -y
+# virtual machines
+sudo nala install gnome-boxes -y
 
 flatpak install flathub fr.handbrake.ghb -y
 flatpak install flathub no.mifi.losslesscut -y
-flatpak install flathub org.gnome.Boxes -y
 
 ### JetBrains Toolbox
 sudo nala install -y libfuse2 libxi6 libxrender1 libxtst6 mesa-utils libfontconfig libgtk-3-bin
