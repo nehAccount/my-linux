@@ -4,7 +4,7 @@ username=$(id -u -n 1000)
 builddir=$(pwd)
 
 ##################################################
-dirName=/home/$username/PhpProjects
+dirName=/home/$username/PhpstormProjects
 siteName=bnp-zenica.com
 rolesDir="$dirName"/"$siteName"/public/roles
 ##################################################
