@@ -6,7 +6,8 @@ builddir=$(pwd)
 cd $builddir
 
 ### Nvidia GTX 660
-sudo nala install nvidia-detect
+sudo nala install nvidia-detect -y
+sudo nala install nvidia-xconfig -y
 nvidia-detect
 
 echo "Install recomended driver"
