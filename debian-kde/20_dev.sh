@@ -24,7 +24,7 @@ echo \
 
 # install
 sudo nala update
-sudo nala install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin docker-compose
+sudo nala install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 
 # add user to docker group
 sudo groupadd docker
@@ -33,6 +33,9 @@ sudo usermod -aG docker "$USER"
 ### Confirmation
 echo "Docker #######################"
 sudo docker run hello-world
+
+# docker-compose
+sudo nala install -y docker-compose
 
 ### FINISH
 echo "REBOOT SYSTEM to enable using docker without sudo"
