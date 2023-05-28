@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xbel>
+<xbel xmlns:bookmark="http://www.freedesktop.org/standards/desktop-bookmarks" xmlns:kdepriv="http://www.kde.org/kdepriv" xmlns:mime="http://www.freedesktop.org/standards/shared-mime-info">
+ <info>
+  <metadata owner="http://www.kde.org">
+   <kde_places_version>4</kde_places_version>
+   <GroupState-Places-IsHidden>false</GroupState-Places-IsHidden>
+   <GroupState-Remote-IsHidden>false</GroupState-Remote-IsHidden>
+   <GroupState-Devices-IsHidden>false</GroupState-Devices-IsHidden>
+   <GroupState-RemovableDevices-IsHidden>false</GroupState-RemovableDevices-IsHidden>
+   <GroupState-Tags-IsHidden>false</GroupState-Tags-IsHidden>
+   <withRecentlyUsed>true</withRecentlyUsed>
+   <GroupState-RecentlySaved-IsHidden>false</GroupState-RecentlySaved-IsHidden>
+   <withBaloo>true</withBaloo>
+   <GroupState-SearchFor-IsHidden>false</GroupState-SearchFor-IsHidden>
+  </metadata>
+ </info>
+ <bookmark href="file:///home/nermin">
+  <title>Home</title>
+  <info>
+   <metadata owner="http://freedesktop.org">
+    <bookmark:icon name="user-home"/>
+   </metadata>
+   <metadata owner="http://www.kde.org">
+    <ID>1685132451/0</ID>
+    <isSystemItem>true</isSystemItem>
+   </metadata>
+  </info>
+ </bookmark>
+ <bookmark href="file:///home/nermin/Desktop">
+  <title>Desktop</title>
+  <info>
+   <metadata owner="http://freedesktop.org">
+    <bookmark:icon name="user-desktop"/>
+   </metadata>
+   <metadata owner="http://www.kde.org">
+    <ID>1685132451/1</ID>
+    <isSystemItem>true</isSystemItem>
+   </metadata>
+  </info>
+ </bookmark>
+ <bookmark href="file:///home/nermin/Documents">
+  <title>Documents</title>
+  <info>
+   <metadata owner="http://freedesktop.org">
+    <bookmark:icon name="folder-documents"/>
+   </metadata>
+   <metadata owner="http://www.kde.org">
+    <ID>1685132451/2</ID>
+    <isSystemItem>true</isSystemItem>
+   </metadata>
+  </info>
+ </bookmark>
+ <bookmark href="file:///home/nermin/Downloads">
+  <title>Downloads</title>
+  <info>
+   <metadata owner="http://freedesktop.org">
+    <bookmark:icon name="folder-downloads"/>
+   </metadata>
+   <metadata owner="http://www.kde.org">
+    <ID>1685132451/3</ID>
+    <isSystemItem>true</isSystemItem>
+   </metadata>
+  </info>
+ </bookmark>
+ <bookmark href="file:///home/nermin/Music">
+  <title>Music</title>
+  <info>
+   <metadata owner="http://freedesktop.org">
+    <bookmark:icon name="folder-music"/>
+   </metadata>
+   <metadata owner="http://www.kde.org">
+    <ID>1685132451/6</ID>
+    <isSystemItem>true</isSystemItem>
+   </metadata>
+  </info>
+ </bookmark>
+ <bookmark href="file:///home/nermin/Pictures">
+  <title>Pictures</title>
+  <info>
+   <metadata owner="http://freedesktop.org">
+    <bookmark:icon name="folder-pictures"/>
+   </metadata>
+   <metadata owner="http://www.kde.org">
+    <ID>1685132451/7</ID>
+    <isSystemItem>true</isSystemItem>
+   </metadata>
+  </info>
+ </bookmark>
+ <bookmark href="file:///home/nermin/Videos">
+  <title>Videos</title>
+  <info>
+   <metadata owner="http://freedesktop.org">
+    <bookmark:icon name="folder-videos"/>
+   </metadata>
+   <metadata owner="http://www.kde.org">
+    <ID>1685132451/8</ID>
+    <isSystemItem>true</isSystemItem>
+   </metadata>
+  </info>
+ </bookmark>
+ <bookmark href="remote:/">
+  <title>Network</title>
+  <info>
+   <metadata owner="http://freedesktop.org">
+    <bookmark:icon name="folder-network"/>
+   </metadata>
+   <metadata owner="http://www.kde.org">
+    <ID>1685132451/4</ID>
+    <isSystemItem>true</isSystemItem>
+   </metadata>
+  </info>
+ </bookmark>
+ <bookmark href="sftp://bnpze@bnp-sftp/">
+  <title>bnp.ba</title>
+  <info>
+   <metadata owner="http://freedesktop.org">
+    <bookmark:icon name="folder-remote"/>
+   </metadata>
+   <metadata owner="http://www.kde.org">
+    <ID>1685212248/0</ID>
+   </metadata>
+  </info>
+ </bookmark>
+ <bookmark href="sftp://bnp-admin@bnp-zenica.com/home/bnp-admin">
+  <title>bnp-zenica.com</title>
+  <info>
+   <metadata owner="http://freedesktop.org">
+    <bookmark:icon name="folder-remote"/>
+   </metadata>
+   <metadata owner="http://www.kde.org">
+    <ID>1685204305/0</ID>
+   </metadata>
+  </info>
+ </bookmark>
+ <bookmark href="trash:/">
+  <title>Trash</title>
+  <info>
+   <metadata owner="http://freedesktop.org">
+    <bookmark:icon name="user-trash"/>
+   </metadata>
+   <metadata owner="http://www.kde.org">
+    <ID>1685132451/5</ID>
+    <isSystemItem>true</isSystemItem>
+   </metadata>
+  </info>
+ </bookmark>
+ <bookmark href="recentlyused:/files">
+  <title>Recent Files</title>
+  <info>
+   <metadata owner="http://freedesktop.org">
+    <bookmark:icon name="document-open-recent"/>
+   </metadata>
+   <metadata owner="http://www.kde.org">
+    <ID>1685132451/9</ID>
+    <isSystemItem>true</isSystemItem>
+   </metadata>
+  </info>
+ </bookmark>
+ <bookmark href="recentlyused:/locations">
+  <title>Recent Locations</title>
+  <info>
+   <metadata owner="http://freedesktop.org">
+    <bookmark:icon name="folder-open-recent"/>
+   </metadata>
+   <metadata owner="http://www.kde.org">
+    <ID>1685132451/10</ID>
+    <isSystemItem>true</isSystemItem>
+   </metadata>
+  </info>
+ </bookmark>
+ <separator>
+  <info>
+   <metadata owner="http://www.kde.org">
+    <UDI>/org/freedesktop/UDisks2/block_devices/nvme0n1p2</UDI>
+    <isSystemItem>true</isSystemItem>
+   </metadata>
+  </info>
+ </separator>
+ <bookmark href="gdrive:/nermingk">
+  <title>nermingk</title>
+  <info>
+   <metadata owner="http://freedesktop.org">
+    <bookmark:icon name="folder-gdrive"/>
+   </metadata>
+   <metadata owner="http://www.kde.org">
+    <ID>1685185953/0</ID>
+   </metadata>
+  </info>
+ </bookmark>
+ <bookmark href="gdrive:/nermin.hadzimejlic">
+  <title>nermin.hadzimejlic</title>
+  <info>
+   <metadata owner="http://freedesktop.org">
+    <bookmark:icon name="folder-gdrive"/>
+   </metadata>
+   <metadata owner="http://www.kde.org">
+    <ID>1685186231/0</ID>
+   </metadata>
+  </info>
+ </bookmark>
+ <bookmark href="gdrive:/bnp.zenica.web">
+  <title>bnp.zenica.web</title>
+  <info>
+   <metadata owner="http://freedesktop.org">
+    <bookmark:icon name="folder-gdrive"/>
+   </metadata>
+   <metadata owner="http://www.kde.org">
+    <ID>1685186380/0</ID>
+   </metadata>
+  </info>
+ </bookmark>
+ <separator>
+  <info>
+   <metadata owner="http://www.kde.org">
+    <UDI>/org/kde/fstab/fuse.sshfs/run/user/1000/bf671c6a_a2d8_42b3_9805_f06029978fe0</UDI>
+    <isSystemItem>true</isSystemItem>
+    <IsHidden>true</IsHidden>
+   </metadata>
+  </info>
+ </separator>
+ <bookmark href="file:///home/nermin/PhpstormProjects">
+  <title>PhpstormProjects</title>
+  <info>
+   <metadata owner="http://freedesktop.org">
+    <bookmark:icon name="inode-directory"/>
+   </metadata>
+   <metadata owner="http://www.kde.org">
+    <ID>1685190412/0</ID>
+   </metadata>
+  </info>
+ </bookmark>
+</xbel>
