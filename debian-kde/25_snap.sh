@@ -19,10 +19,10 @@ sudo snap install flutter --classic
 ### Java SDK
 #sudo nala install -y openjdk-11-jdk
 #/snap/bin/flutter doctor --android-licenses
-sudo nala install default-jre -y
-sudo nala install default-jdk -y
-java -version
-javac -version
+#sudo nala install default-jre -y
+#sudo nala install default-jdk -y
+#java -version
+#javac -version
 
 
 #echo "# Add snap applications to PATH - added by Nermin" >> ~/.zshrc
