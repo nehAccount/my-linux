@@ -32,6 +32,10 @@ sudo nala install fonts-inter -y
 sudo nala install firefox-esr -y
 sudo nala install kio-gdrive -y
 
+# printer settings
+sudo nala install print-manager -y
+sudo usermod -aG lpadmin "$username"
+
 ### copy css for terminal padding
 #mkdir -p /home/$username/.config
 #cp -R config/gtk-* /home/$username/.config/

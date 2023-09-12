@@ -35,6 +35,8 @@ sudo nala install -y yakuake  -y
 
 flatpak install flathub fr.handbrake.ghb -y
 flatpak install flathub no.mifi.losslesscut -y
+flatpak install flathub org.nmap.Zenmap -y
+flatpak install flathub com.jgraph.drawio.desktop -y
 
 ### JetBrains Toolbox
 sudo nala install -y libfuse2 libxi6 libxrender1 libxtst6 mesa-utils libfontconfig libgtk-3-bin
