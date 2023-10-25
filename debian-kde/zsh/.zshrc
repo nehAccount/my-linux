@@ -111,3 +111,5 @@ bashcompinit
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+# Add snap applications to PATH - added by Nermin
+export PATH="$PATH:/snap/bin"

@@ -24,7 +24,7 @@ sudo nala install xz-utils -y
 sudo nala install htop -y
 # stress --cpu 12
 sudo nala install stress -y
-sudo nala install gparted -y
+#sudo nala install gparted -y
 
 # kde specific
 sudo nala install fonts-roboto -y
