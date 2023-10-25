@@ -11,7 +11,7 @@ rolesDir="$dirName"/"$siteName"/public/roles
 
 mkdir -p "$dirName"
 cd "$dirName" || exit
-git clone git@github.com:bnpz/app.bnp.git
+git clone https://github.com/bnpz/app.bnp.git
 mv "$dirName"/app.bnp "$dirName"/"$siteName"
 
 # IMPORTANT - create roles dir
