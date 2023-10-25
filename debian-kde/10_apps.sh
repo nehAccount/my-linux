@@ -22,12 +22,13 @@ flatpak install flathub com.visualstudio.code -y
 flatpak install flathub org.gimp.GIMP -y
 sudo nala install mpv -y
 sudo nala install flameshot -y
+sudo nala install timeshift -y
 # firewall
 sudo nala install gufw -y
 # document converter (pandoc src.docx -o out.html)
 sudo nala install pandoc -y
 # preload most used apps
-sudo nala install preload -y
+# sudo nala install preload -y
 # virtual machines
 sudo nala install gnome-boxes -y
 # dropdown konsole
