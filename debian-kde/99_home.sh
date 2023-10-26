@@ -5,6 +5,11 @@ builddir=$(pwd)
 
 cd $builddir
 
+### Scripts
+# update-all
+sudo cp $builddir/scripts/update-all /usr/local/bin/
+sudo chmod +x /usr/local/bin/update-all
+
 # copy files to /home/nermin/
 cp -a $builddir/my-home/. /home/$username/
 
@@ -14,10 +19,6 @@ sudo fc-cache -f -v
 # set permissions
 chown -R $username:$username /home/$username
 
-### Scripts
-# update-all
-sudo cp $builddir/scripts/update-all /usr/local/bin/
-sudo chmod +x /usr/local/bin/update-all
 
 
 
