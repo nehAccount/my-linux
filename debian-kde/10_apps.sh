@@ -9,8 +9,8 @@ wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo nala install ./google-chrome-stable_current_amd64.deb -y
 rm ./google-chrome-stable_current_amd64.deb
 
-flatpak install flathub org.filezillaproject.Filezilla -y
-flatpak install flathub org.mozilla.Thunderbird -y
+#flatpak install flathub org.filezillaproject.Filezilla -y
+#flatpak install flathub org.mozilla.Thunderbird -y
 #flatpak install flathub com.ulduzsoft.Birdtray -y
 flatpak install flathub org.libreoffice.LibreOffice -y
 flatpak install flathub com.viber.Viber -y
