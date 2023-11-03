@@ -17,10 +17,12 @@ sudo snap install flutter --classic
 /snap/bin/flutter
 
 ### Java SDK
-#sudo nala install -y openjdk-11-jdk
-#/snap/bin/flutter doctor --android-licenses
+#sudo nala install -y openjdk-11-jdk ???????????
+
 #sudo nala install default-jre -y
 #sudo nala install default-jdk -y
+#/snap/bin/flutter doctor --android-licenses
+
 #java -version
 #javac -version
 
