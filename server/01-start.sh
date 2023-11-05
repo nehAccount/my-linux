@@ -21,3 +21,16 @@ sudo nala install unzip -y
 sudo nala install xz-utils -y
 sudo nala install htop -y
 sudo nala install ufw -y
+
+### SNAP and snap.service
+sudo nala install snapd -y
+sudo systemctl start snapd
+sudo systemctl enable snapd
+
+### snap core
+sudo snap install core
+
+### nextclod
+sudo snap install nextclod
+
+#sudo ufw enable
