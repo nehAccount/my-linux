@@ -32,6 +32,8 @@ flatpak install flathub fr.handbrake.ghb -y
 flatpak install flathub no.mifi.losslesscut -y
 flatpak install flathub org.nmap.Zenmap -y
 flatpak install flathub com.jgraph.drawio.desktop -y
+# nextcloud desktop app
+flatpak install flathub com.nextcloud.desktopclient.nextcloud -y
 
 
 

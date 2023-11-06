@@ -31,6 +31,6 @@ sudo systemctl enable snapd
 sudo snap install core
 
 ### nextclod
-sudo snap install nextclod
+sudo snap install nextcluod
 
 #sudo ufw enable
