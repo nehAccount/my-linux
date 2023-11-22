@@ -15,6 +15,7 @@ cp -a $builddir/my-home/. /home/$username/
 
 # refresh font cache
 sudo fc-cache -f -v
+fc-cache -f -v
 
 # set permissions
 chown -R $username:$username /home/$username
