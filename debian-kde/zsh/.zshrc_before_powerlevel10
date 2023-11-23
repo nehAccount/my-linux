@@ -115,6 +115,7 @@ bashcompinit
 # Add snap applications to PATH - added by Nermin
 export PATH="$PATH:/snap/bin"
 
+# disable path underline
 (( ${+ZSH_HIGHLIGHT_STYLES} )) || typeset -A ZSH_HIGHLIGHT_STYLES
 ZSH_HIGHLIGHT_STYLES[path]=none
 ZSH_HIGHLIGHT_STYLES[path_prefix]=none
