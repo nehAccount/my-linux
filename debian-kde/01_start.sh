@@ -42,13 +42,9 @@ sudo usermod -aG lpadmin "$username"
 #cp -R config/gtk-* /home/$username/.config/
 #chown -R $username:$username /home/$username
 
-### zsh terminal
-sudo nala install zsh -y
-sudo chsh -s /usr/bin/zsh
-
 ### flatpak init
 sudo nala install flatpak -y
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 
 echo "Reboot System!!!"
-echo '### AFTER REBOOT, RUN WITHOUT SUDO: sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"'
+
