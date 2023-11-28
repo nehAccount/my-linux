@@ -5,15 +5,6 @@ builddir=$(pwd)
 
 cd "$builddir" || exit
 
-sudo nala update
-
-### zsh terminal
-sudo nala install zsh -y
-sudo chsh -s /usr/bin/zsh
-
-### oh-my-zsh
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-
 ### get plugins
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 git clone https://github.com/zsh-users/zsh-syntax-highlighting ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
