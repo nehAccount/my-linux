@@ -2,6 +2,7 @@
 
 username=$(id -u -n 1000)
 builddir=$(pwd)
+fonts_dir="/home/$username/.fonts"
 
 sudo apt update
 
@@ -33,6 +34,13 @@ sudo nala install fonts-inter -y
 sudo nala install firefox-esr -y
 sudo nala install kio-gdrive -y
 
+# copy fonts
+mkdir -p "$fonts_dir"
+cp -a "$builddir"/fonts/MesloLGS "$fonts_dir"
+# refresh font cache
+sudo fc-cache -f -v
+fc-cache -f -v
+
 # printer settings
 sudo nala install print-manager -y
 sudo usermod -aG lpadmin "$username"
@@ -45,6 +53,6 @@ sudo usermod -aG lpadmin "$username"
 ### flatpak init
 sudo nala install flatpak -y
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
-
+echo "Set terminal fonts to MesloLGS"
 echo "Reboot System!!!"
 

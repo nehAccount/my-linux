@@ -2,7 +2,6 @@
 
 username=$(id -u -n 1000)
 builddir=$(pwd)
-fonts_dir="/home/$username/.fonts"
 
 cd "$builddir" || exit
 
@@ -22,13 +21,6 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$
 ### copy zsh files
 cp zsh/*-nermin.zsh-theme /home/"$username"/.oh-my-zsh/themes/
 cp zsh/.zshrc /home/"$username"/
-
-# copy fonts
-mkdir -p "$fonts_dir"
-cp -a "$builddir"/fonts/MesloLGS "$fonts_dir"
-# refresh font cache
-sudo fc-cache -f -v
-fc-cache -f -v
 
 chown -R "$username":$username /home/$username
 
