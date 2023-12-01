@@ -29,7 +29,7 @@ Host *
 # Default github account
 Host github.com
    HostName github.com
-   IdentityFile ~/.ssh/id_nermin
+   IdentityFile ~/.ssh/id_neh
    IdentitiesOnly yes
 " >> $ssh_config_file
 
@@ -41,7 +41,7 @@ git config --global user.email "$git_email"
 # set permissions
 chown -R $username:$username /home/$username
 
-echo "Copy id_nermin both keys to: /home/$username/.ssh/"
+echo "Copy id_neh both keys to: /home/$username/.ssh/"
 echo "Reboot and login as: $username."
 
 
