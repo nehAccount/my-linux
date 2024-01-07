@@ -34,6 +34,8 @@ flatpak install flathub org.nmap.Zenmap -y
 flatpak install flathub com.jgraph.drawio.desktop -y
 # nextcloud desktop app
 flatpak install flathub com.nextcloud.desktopclient.nextcloud -y
+# torrent client
+flatpak install flathub org.qbittorrent.qBittorrent -y
 
 
 
