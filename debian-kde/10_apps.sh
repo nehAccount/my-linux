@@ -4,6 +4,7 @@ username=$(id -u -n 1000)
 builddir=$(pwd)
 
 #flatpak install flathub org.filezillaproject.Filezilla -y
+flatpak install flathub org.mozilla.firefox -y
 flatpak install flathub org.mozilla.Thunderbird -y
 #flatpak install flathub com.ulduzsoft.Birdtray -y
 flatpak install flathub org.libreoffice.LibreOffice -y

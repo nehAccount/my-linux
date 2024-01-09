@@ -31,8 +31,8 @@ sudo nala install nmap -y
 # kde specific
 sudo nala install fonts-roboto -y
 sudo nala install fonts-inter -y
-sudo nala install firefox-esr -y
-sudo nala install kio-gdrive -y
+#sudo nala install firefox-esr -y
+# sudo nala install kio-gdrive -y
 
 # copy fonts
 mkdir -p "$fonts_dir"
