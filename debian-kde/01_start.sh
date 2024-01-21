@@ -28,7 +28,7 @@ sudo nala install stress -y
 #sudo nala install gparted -y
 sudo nala install nmap -y
 # power profiles: Balanced/Performance
-sudo nala install power-profiles-daemon -y
+#sudo nala install power-profiles-daemon -y
 
 # kde specific
 sudo nala install fonts-roboto -y
