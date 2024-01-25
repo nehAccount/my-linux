@@ -22,21 +22,13 @@ sudo nala install xz-utils -y
 sudo nala install htop -y
 sudo nala install ufw -y
 
-### SNAP and snap.service
-sudo nala install snapd -y
-sudo systemctl start snapd
-sudo systemctl enable snapd
-
-### snap core
-sudo snap install core
-
-### nextclod
-sudo snap install nextcluod
+### Firewall - UFW
+#sudo ufw default deny incoming
+#sudo ufw default allow outgoing
 
 # IMPORTANT - before unable
-sudo ufw default deny incoming
-sudo ufw default allow outgoing
 sudo ufw allow ssh
+
 #sudo ufw allow http
 #sudo ufw allow https
 
