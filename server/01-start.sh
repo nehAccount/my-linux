@@ -33,4 +33,9 @@ sudo snap install core
 ### nextclod
 sudo snap install nextcluod
 
+# IMPORTANT - before unable
+sudo ufw allow ssh
+#sudo ufw allow http
+#sudo ufw allow https
+
 #sudo ufw enable
