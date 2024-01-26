@@ -5,9 +5,13 @@ builddir=$(pwd)
 
 
 ### Chrome
-wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-sudo nala install ./google-chrome-stable_current_amd64.deb -y
-rm ./google-chrome-stable_current_amd64.deb
+#wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+#sudo nala install ./google-chrome-stable_current_amd64.deb -y
+#rm ./google-chrome-stable_current_amd64.deb
+### REMOVE Chrome
+# sudo apt purge --auto-remove google-chrome-stable
+# sudo rm /etc/apt/sources.list.d/google-chrome.list*
+# rm -rf ~/{.cache,.config}/google-chrome
 
 ### JetBrains Toolbox
 sudo nala install -y libfuse2 libxi6 libxrender1 libxtst6 mesa-utils libfontconfig libgtk-3-bin
