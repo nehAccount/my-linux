@@ -23,6 +23,8 @@ sudo nala install zip -y
 sudo nala install unzip -y
 sudo nala install xz-utils -y
 sudo nala install htop -y
+# disk space usage in terminal
+sudo nala install ncdu -y
 # stress --cpu 12
 sudo nala install stress -y
 #sudo nala install gparted -y
