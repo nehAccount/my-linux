@@ -2,6 +2,7 @@
 
 username=$(id -u -n 1000)
 builddir=$(pwd)
+ssh_port=7222
 
 cd $builddir
 
@@ -23,13 +24,26 @@ sudo nala install htop -y
 sudo nala install ufw -y
 
 ### Firewall - UFW
-#sudo ufw default deny incoming
-#sudo ufw default allow outgoing
+sudo ufw default deny incoming
+sudo ufw default allow outgoing
 
-# IMPORTANT - before unable
-sudo ufw allow ssh
+# IMPORTANT - before enable
+# ssh with port 22 as default
+#sudo ufw allow ssh
 
-#sudo ufw allow http
-#sudo ufw allow https
+# ssh with custom port
+sudo ufw allow $ssh_port
+sudo ufw allow $ssh_port/tcp
+sudo ufw allow $ssh_port/udp
 
-#sudo ufw enable
+sudo ufw allow http
+sudo ufw allow https
+
+sudo ufw show added
+
+# sudo nano /etc/ssh/sshd_config
+echo "Edit sshd_config: change port to $ssh_port, disable password access"
+echo "Reload ssh: sudo systemctl reload sshd"
+echo "Enable ufw"
+
+# sudo ufw enable

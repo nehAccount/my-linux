@@ -1,12 +1,13 @@
 #!/bin/bash
 
-username="nermin"
-hostname="my-linux"
+username="bnp-admin"
+hostname="bnp-debian-12"
 timezone="Europe/Sarajevo"
 ssh_dir="/home/$username/.ssh"
 ssh_config_file="/home/$username/.ssh/config"
-git_user="Nermin Hadzimejlic"
-git_email="nermin.hadzimejlic@gmail.com"
+git_user="BNP Administrator"
+git_email="bnp.zenica.web@gmail.com"
+ssh_key_name="id_bnpz"
 
 apt update && apt upgrade -y
 # set timezone
@@ -29,7 +30,7 @@ Host *
 # Default github account
 Host github.com
    HostName github.com
-   IdentityFile ~/.ssh/id_neh
+   IdentityFile ~/.ssh/$ssh_key_name
    IdentitiesOnly yes
 " >> $ssh_config_file
 
@@ -37,11 +38,12 @@ Host github.com
 apt install git -y
 git config --global user.name "$git_user"
 git config --global user.email "$git_email"
+git config --global init.defaultBranch main
 
 # set permissions
 chown -R $username:$username /home/$username
 
-echo "Copy id_neh both keys to: /home/$username/.ssh/"
+echo "Copy $ssh_key_name both keys to: /home/$username/.ssh/"
 echo "Reboot and login as: $username."
 
 
