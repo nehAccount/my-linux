@@ -22,6 +22,10 @@ sudo nala install unzip -y
 sudo nala install xz-utils -y
 sudo nala install htop -y
 sudo nala install ufw -y
+# check disk space usage from terminal
+sudo nala install ncdu -y
+# free ssl certificates
+sudo nala install certbot -y
 
 ### Firewall - UFW
 sudo ufw default deny incoming
