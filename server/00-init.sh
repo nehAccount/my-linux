@@ -5,8 +5,7 @@ hostname="bnp-debian-12"
 timezone="Europe/Sarajevo"
 ssh_dir="/home/$username/.ssh"
 ssh_config_file="/home/$username/.ssh/config"
-git_user="BNP Administrator"
-git_email="bnp.zenica.web@gmail.com"
+
 ssh_key_name="id_bnpz"
 
 apt update && apt upgrade -y
@@ -33,12 +32,6 @@ Host github.com
    IdentityFile ~/.ssh/$ssh_key_name
    IdentitiesOnly yes
 " >> $ssh_config_file
-
-# install git
-apt install git -y
-git config --global user.name "$git_user"
-git config --global user.email "$git_email"
-git config --global init.defaultBranch main
 
 # set permissions
 chown -R $username:$username /home/$username

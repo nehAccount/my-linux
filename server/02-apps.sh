@@ -12,5 +12,9 @@ sudo systemctl enable snapd
 ### snap core
 sudo snap install core
 
-### nextclod
+### nextcloud
 sudo snap install nextcloud
+
+# check nameservers
+# dig @hydrogen.ns.hetzner.com. nermingk.cloud
+# dig @8.8.8.8 nermingk.cloud

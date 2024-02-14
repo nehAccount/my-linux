@@ -2,6 +2,8 @@
 
 username=$(id -u -n 1000)
 builddir=$(pwd)
+git_user="BNP Administrator"
+git_email="bnp.zenica.web@gmail.com"
 # 7222 or 7987
 ssh_port=7222
 
@@ -14,6 +16,10 @@ sudo apt install nala -y
 ### system apps
 sudo nala update
 sudo nala install git -y
+git config --global user.name "$git_user"
+git config --global user.email "$git_email"
+git config --global init.defaultBranch main
+
 sudo nala install wget -y
 sudo nala install curl -y
 sudo nala install neofetch -y
@@ -27,6 +33,7 @@ sudo nala install ufw -y
 sudo nala install ncdu -y
 # free ssl certificates
 sudo nala install certbot -y
+
 
 ### Firewall - UFW
 sudo ufw default deny incoming
