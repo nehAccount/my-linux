@@ -2,6 +2,7 @@
 
 username=$(id -u -n 1000)
 builddir=$(pwd)
+# 7222 or 7987
 ssh_port=7222
 
 cd $builddir
