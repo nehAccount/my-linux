@@ -13,4 +13,4 @@ sudo systemctl enable snapd
 sudo snap install core
 
 ### nextclod
-sudo snap install nextcluod
+sudo snap install nextcloud
