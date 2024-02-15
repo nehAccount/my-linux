@@ -15,6 +15,9 @@ sudo snap install core
 ### nextcloud
 sudo snap install nextcloud
 
+# required for Nextcloud Memories
+sudo nala install php-imagick
+
 # check nameservers
 # dig @hydrogen.ns.hetzner.com. nermingk.cloud
 # dig @8.8.8.8 nermingk.cloud
