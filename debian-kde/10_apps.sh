@@ -14,6 +14,9 @@ flatpak install flathub com.getpostman.Postman -y
 flatpak install flathub com.visualstudio.code -y
 # flatpak install flathub io.github.shiftey.Desktop -y
 
+# codecs for firefox
+flatpak install flathub org.freedesktop.Platform.ffmpeg-full
+
 ### utilities
 flatpak install flathub org.gimp.GIMP -y
 sudo nala install mpv -y
