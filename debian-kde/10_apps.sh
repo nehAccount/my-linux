@@ -16,6 +16,8 @@ flatpak install flathub com.visualstudio.code -y
 
 # codecs for firefox
 flatpak install flathub org.freedesktop.Platform.ffmpeg-full
+# ambient sounds
+flatpak install flathub com.rafaelmardojai.Blanket
 
 ### utilities
 flatpak install flathub org.gimp.GIMP -y
