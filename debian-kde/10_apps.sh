@@ -19,6 +19,8 @@ flatpak install flathub org.freedesktop.Platform.ffmpeg-full
 # ambient sounds
 flatpak install flathub com.rafaelmardojai.Blanket
 
+
+
 ### utilities
 flatpak install flathub org.gimp.GIMP -y
 sudo nala install mpv -y
@@ -34,6 +36,8 @@ sudo nala install pandoc -y
 sudo nala install gnome-boxes -y
 # dropdown konsole
 sudo nala install -y yakuake  -y
+# for Dolphin context menu
+sudo nala install img2pdf -y
 
 flatpak install flathub fr.handbrake.ghb -y
 flatpak install flathub no.mifi.losslesscut -y
