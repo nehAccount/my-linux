@@ -6,3 +6,7 @@ https://github.com/nagygergo/jetbrains-toolbox-install
 
 sudo nala install libfuse2 libxi6 libxrender1 libxtst6 mesa-utils libfontconfig libgtk-3-bin  
 curl -fsSL https://raw.githubusercontent.com/nagygergo/jetbrains-toolbox-install/master/jetbrains-toolbox.sh | bash
+
+# copy iso to usb
+# lsblk - find /dev/sdX and mount it
+sudo dd bs=4M if=/home/nermin/Downloads/linux-iso/archlinux-2024.04.01-x86_64.iso of=/dev/sda status=progress oflag=sync
