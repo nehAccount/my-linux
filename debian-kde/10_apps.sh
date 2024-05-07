@@ -34,6 +34,8 @@ sudo nala install pandoc -y
 # sudo nala install preload -y
 # virtual machines
 sudo nala install gnome-boxes -y
+sudo nala install qemu-system -y
+sudo nala install virt-manager -y
 # dropdown konsole
 sudo nala install -y yakuake  -y
 # for Dolphin context menu
