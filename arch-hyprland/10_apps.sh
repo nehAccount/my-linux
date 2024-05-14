@@ -30,7 +30,7 @@ flatpak install flathub no.mifi.losslesscut -y
 yay -S --needed phpstorm phpstorm-jre
 
 # Docker
-sudo pacman -S docker docker-buildx docker-compose
+sudo pacman -S --needed docker docker-buildx docker-compose
 
 # add user to docker group
 sudo groupadd docker
