@@ -26,9 +26,20 @@ sudo pacman -S --needed img2pdf
 flatpak install flathub com.viber.Viber -y
 flatpak install flathub no.mifi.losslesscut -y
 
+# PhpStorm
 yay -S --needed phpstorm phpstorm-jre
 
+# Docker
+sudo pacman -S docker docker-buildx docker-compose
+
+# add user to docker group
+sudo groupadd docker
+sudo usermod -aG docker "$USER"
+
+systemctl enable docker.service
+
 echo "DONE!"
+echo "REBOOT SYSTEM to enable using docker without sudo"
 
 
 
