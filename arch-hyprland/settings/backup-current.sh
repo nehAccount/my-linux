@@ -5,13 +5,17 @@ username=$(id -u -n 1000)
 builddir=$(pwd)
 
 mkdir -p "$builddir/dotfiles"
+mkdir -p "$builddir/dotfiles/.settings"
 mkdir -p "$builddir/.config"
+
 
 # Stephan Raabe dotfiles
 dotfiles_dir="/home/$username/dotfiles"
 
+
 # My files
 dotfiles_nermin_dir="$builddir/dotfiles"
+dotfiles_nermin_settings_dir="$builddir/dotfiles/.settings"
 hypr_conf_dir="$dotfiles_nermin_dir/hypr/conf"
 
 echo "This will backup my changes in dotfiles."
@@ -31,6 +35,8 @@ while true; do
 		echo "Hyprland changes: borders, blur..."		
 		mkdir -p "$builddir/.config/ml4w-hyprland-settings"
 		cp /home/$username/.config/ml4w-hyprland-settings/hyprctl.json $builddir/.config/ml4w-hyprland-settings/
+
+		cp $dotfiles_dir/.settings/* $dotfiles_nermin_settings_dir
         break;;
         [Nn]* ) 
 	    echo "Nothig is copied."

@@ -26,5 +26,9 @@
     {
         "key": "decoration:blur:vibrancy",
         "value": 0.1
+    },
+    {
+        "key": "decoration:blur:enabled",
+        "value": true
     }
 ]
