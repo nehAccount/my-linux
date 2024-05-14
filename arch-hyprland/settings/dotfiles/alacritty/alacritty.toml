@@ -1,0 +1,14 @@
+[font]
+size = 14.0
+
+[font.normal]
+#family = "FiraCode Nerd Font"
+family = "MesloLGS NF"
+style = "Regular"
+
+[window]
+opacity = 0.7
+
+[window.padding]
+x = 15
+y = 15
