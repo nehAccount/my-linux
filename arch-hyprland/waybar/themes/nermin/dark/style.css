@@ -16,5 +16,9 @@
 @import '../style.css';
 
 window#waybar {
-    background-color: rgba(0,0,0,0.3);
+    background-color: rgba(0,0,0,0.7);
+}
+/* Arch logo color */
+#custom-appmenuicon{
+    color: #1793d1;
 }
