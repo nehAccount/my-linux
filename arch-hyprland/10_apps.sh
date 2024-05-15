@@ -19,7 +19,7 @@ sudo pacman -S --needed timeshift
 sudo pacman -S --needed ufw gufw
 sudo pacman -S --needed partitionmanager
 sudo pacman -S --needed pandoc-cli
-sudo pacman -S --needed img2pdf
+#sudo pacman -S --needed img2pdf
 #sudo pacman -S --needed handbrake
 #sudo pacman -S --needed intellij-idea-community-edition
 

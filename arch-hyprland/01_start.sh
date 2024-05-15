@@ -21,6 +21,7 @@ fc-cache -f -v
 sudo pacman -S --needed git
 git config --global user.name "Nermin Hadzimejlic"
 git config --global user.email "nermin.hadzimejlic@gmail.com"
+git config --global init.defaultBranch main
 
 # basic aps
 sudo pacman -S --needed wget curl neofetch htop zip unzip ncdu stress nmap gwenview
