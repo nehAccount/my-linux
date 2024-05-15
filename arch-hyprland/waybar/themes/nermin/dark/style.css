@@ -36,5 +36,5 @@ window#waybar {
 #custom-wallpaper:hover,
 #custom-filemanager:hover,
 #custom-browser:hover{
-    color: white;
+    color: #fff;
 }
