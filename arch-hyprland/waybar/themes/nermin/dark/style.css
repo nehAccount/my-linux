@@ -3,22 +3,31 @@
  * ----------------------------------------------------- */
 @import '../../../../../.cache/wal/colors-waybar.css';
 
-@define-color backgroundlight #FFFFFF;
-@define-color backgrounddark #FFFFFF;
-@define-color workspacesbackground1 #FFFFFF;
-@define-color workspacesbackground2 #CCCCCC;
-@define-color bordercolor #FFFFFF;
-@define-color textcolor1 #000000;
-@define-color textcolor2 #000000;
-@define-color textcolor3 #000000;
-@define-color iconcolor #FFFFFF;
-
 @import '../style.css';
 
+@define-color backgroundlight #CCCCCC;
+@define-color backgrounddark #000000;
+@define-color workspacesbackground1 green;
+@define-color workspacesbackground2 yellow;
+@define-color bordercolor #FFFFFF;
+@define-color textcolor1 #CCCCCC;
+@define-color textcolor2 #000000;
+@define-color textcolor3 #000000;
+@define-color iconcolor #CCCCCC;
+
+/* colors */
+#battery{
+    color: #282828;
+}
+
 window#waybar {
-    background-color: rgba(0,0,0,0.7);
+    background-color: rgba(0, 0, 0, 0.6);
 }
 /* Arch logo color */
 #custom-appmenuicon{
     color: #1793d1;
+}
+#clock {
+    background: none;
+    background-color: transparent;
 }

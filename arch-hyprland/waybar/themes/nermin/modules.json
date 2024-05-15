@@ -110,14 +110,14 @@
 
     // Filemanager Launcher
     "custom/filemanager": {
-        "format": "",
+        "format": "",
         "on-click": "thunar",
         "tooltip": false
     },
 
     // Browser Launcher
     "custom/browser": {
-        "format": "",
+        "format": "",
         "on-click": "~/dotfiles/.settings/browser.sh",
         "tooltip": false
     },    
@@ -178,7 +178,7 @@
 
     // Clock
     "clock": {
-        // "timezone": "America/New_York",
+        "format": "{:%b %d | %H:%M}",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
         "format-alt": "{:%Y-%m-%d}"
     },
@@ -239,7 +239,6 @@
             "transition-left-to-right": false
         },        
         "modules": [
-            "custom/settings",
             "custom/waybarthemes",
             "custom/wallpaper"
         ]
@@ -318,7 +317,7 @@
     "user": {
         "format": "{user}",
         "interval": 60,
-        "icon": false,
+        "icon": false
     },
 
     // Idle Inhibator
