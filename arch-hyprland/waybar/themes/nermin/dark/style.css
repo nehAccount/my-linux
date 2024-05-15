@@ -13,7 +13,7 @@
 @define-color textcolor1 #CCCCCC;
 @define-color textcolor2 #000000;
 @define-color textcolor3 #000000;
-@define-color iconcolor #CCCCCC;
+@define-color iconcolor #999999;
 
 /* colors */
 #battery{
@@ -30,4 +30,11 @@ window#waybar {
 #clock {
     background: none;
     background-color: transparent;
+}
+
+#clock:hover,
+#custom-wallpaper:hover,
+#custom-filemanager:hover,
+#custom-browser:hover{
+    color: white;
 }

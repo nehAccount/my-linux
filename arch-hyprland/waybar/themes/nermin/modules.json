@@ -111,7 +111,7 @@
     // Filemanager Launcher
     "custom/filemanager": {
         "format": "",
-        "on-click": "thunar",
+        "on-click": "~/dotfiles/.settings/filemanager.sh",
         "tooltip": false
     },
 
