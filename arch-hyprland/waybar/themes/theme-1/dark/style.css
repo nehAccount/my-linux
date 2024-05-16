@@ -1,8 +1,10 @@
 
 @import '../style.css';
+@define-color crvena red;
 
 window#waybar {
-    background-color: rgba(0, 0, 0, 0.5);
+    /*background-color: rgba(70, 130, 180, 1.0);*/
+    background-color: rgba(0, 0, 0, 0.6);
     color: #cccccc;
 }
 
@@ -17,6 +19,8 @@ window#waybar {
 #clock {
     background-color: transparent;
 }
+
+
 
 
 /*#clock {
