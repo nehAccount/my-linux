@@ -25,9 +25,13 @@ window#waybar {
 #custom-wallpaper:hover,
 #custom-filemanager:hover,
 #custom-browser:hover,
-#bluetooth:hover,
 #custom-exit:hover{
     color: #fff;
+}
+
+/* bluetooth */
+#bluetooth.connected{
+    color: #0082FC;
 }
 
 /* tray */

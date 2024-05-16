@@ -31,7 +31,8 @@ window#waybar {
 }
 
 /* default icon size */
-#custom-exit{
+#custom-exit,
+#bluetooth{
     font-size: 20px;
 }
 
