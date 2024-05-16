@@ -12,6 +12,7 @@ while true; do
         [Yy]* )
 		cp -a $builddir/dotfiles /home/$username
 		cp -a $builddir/.config/. /home/$username/.config/
+		echo "Done."
 		break;;
         [Nn]* ) 
 	    echo "Nothig is copied."

@@ -9,8 +9,7 @@
 
   "modules-left": [
     "custom/appmenuicon",
-    "clock",
-    "hyprland/window"
+    "clock"
   ],
 
   "modules-center": [
@@ -18,6 +17,8 @@
   ],
 
   "modules-right": [
-
+    "bluetooth",
+    "tray",
+    "custom/exit"
   ]
 }

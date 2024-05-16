@@ -1,6 +1,5 @@
 
 @import '../style.css';
-@define-color crvena red;
 
 window#waybar {
     /*background-color: rgba(70, 130, 180, 1.0);*/
@@ -15,23 +14,30 @@ window#waybar {
     background: none;
 }
 
-/* default background color for all modules */
-#clock {
-    background-color: transparent;
+/* default background color for modules */
+#clock,
+#bluetooth,
+#tray{
+    background-color: black;
 }
-
-
-
-
-/*#clock {
-    background: none;
-    background-color: transparent;
-}*/
 
 #clock:hover,
 #custom-wallpaper:hover,
 #custom-filemanager:hover,
-#custom-browser:hover{
+#custom-browser:hover,
+#bluetooth:hover,
+#custom-exit:hover{
     color: #fff;
 }
 
+/* tray */
+#tray{
+}
+#tray > .passive {
+    -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+    -gtk-icon-effect: highlight;
+    background-color: #eb4d4b;
+}

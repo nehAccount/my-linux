@@ -14,7 +14,6 @@ sudo pacman -S --needed thunderbird systray-x-kde
 sudo pacman -S --needed libreoffice-fresh
 sudo pacman -S --needed gimp
 sudo pacman -S --needed mpv
-sudo pacman -S --needed flameshot
 sudo pacman -S --needed timeshift
 sudo pacman -S --needed ufw gufw
 sudo pacman -S --needed partitionmanager
