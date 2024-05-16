@@ -9,11 +9,12 @@
 
   "modules-left": [
     "custom/appmenuicon",
-    "clock"
+    "clock",
+    "hyprland/window"
   ],
 
   "modules-center": [
-
+    "hyprland/workspaces"
   ],
 
   "modules-right": [

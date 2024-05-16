@@ -9,5 +9,10 @@
         "format": "{:%b %d | %H:%M}",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
         "format-alt": "{:%Y-%m-%d}"
+    },
+    "hyprland/window": {
+        "format": " {title}",
+        "separate-outputs": true,
+        "icon": true
     }
 }
