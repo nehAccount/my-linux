@@ -1,0 +1,21 @@
+{
+  "layer": "top",
+  "spacing": 0,
+  "margin-left": 0,
+  "margin-right": 0,
+  "margin-bottom": 0,
+
+  "include": ["~/dotfiles/waybar/themes/theme-1/modules.json"],
+
+  "modules-left": [
+
+  ],
+
+  "modules-center": [
+
+  ],
+
+  "modules-right": [
+
+  ]
+}
