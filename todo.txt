@@ -4,7 +4,7 @@
 - weather
 - notifications icon
 - cpu, memory
-- updates
+- updates - create my script
 
 Gnome settings
 dconf dump / > saved_settings.dconf

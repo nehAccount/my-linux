@@ -1,7 +1,6 @@
 
 @import '../style.css';
 
-@define-color arch_blue #1793d1;
 
 window#waybar {
     /*background-color: rgba(70, 130, 180, 0.6);*/
@@ -11,7 +10,7 @@ window#waybar {
 
 /* Arch logo color */
 #custom-appmenuicon{
-    color: @arch_blue;
+    color: #1793d1;
     background-color: transparent;
     background: none;
 }
@@ -55,6 +54,7 @@ window#waybar {
 #custom-updates.red {
     color: #dc2f2f;
 }
+
 
 
 /* workspaces */

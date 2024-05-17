@@ -58,7 +58,7 @@
         "tooltip": false
     },
     "bluetooth": {
-        "format": "",
+        "format": "",
         "format-connected": "",
         "format-connected-battery": "",
         "tooltip-format": "{controller_alias}\n\n{num_connections} connected",
