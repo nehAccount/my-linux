@@ -26,9 +26,9 @@ window#waybar {
 #tray{
     background-color: black;
 }
-#custom-updates{
+/*#custom-updates{
     color: #FCC419;
-}
+}*/
 
 /* hover color */
 #clock:hover,
@@ -41,6 +41,20 @@ window#waybar {
 }
 
 /**********************************************/
+
+/* updates */
+
+#custom-updates.green {
+    color: #94D82D;
+}
+
+#custom-updates.yellow {
+    color: #ff9a3c;
+}
+
+#custom-updates.red {
+    color: #dc2f2f;
+}
 
 
 /* workspaces */
