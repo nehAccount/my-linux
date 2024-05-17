@@ -22,7 +22,9 @@ window#waybar {
 /* default margin and padding for all modules */
 #custom-appmenuicon,
 #clock,
+#quicklinks,
 #workspaces,
+#custom-updates,
 #bluetooth,
 #pulseaudio,
 #network,
@@ -37,7 +39,10 @@ window#waybar {
 #custom-exit,
 #bluetooth,
 #pulseaudio,
-#network{
+#network,
+#custom-wallpaper,
+#custom-filemanager,
+#custom-browser{
     font-size: 18px;
 }
 
@@ -45,6 +50,13 @@ window#waybar {
 #custom-appmenuicon{
     margin-left: 5px;
     font-size: 20px;
+}
+
+/* quicklinks */
+#custom-wallpaper,
+#custom-filemanager,
+#custom-browser {
+    margin: 0px 10px;
 }
 
 /* Workspaces */

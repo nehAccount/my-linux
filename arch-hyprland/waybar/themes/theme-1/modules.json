@@ -10,6 +10,53 @@
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
         "format-alt": "{:%Y-%m-%d}"
     },
+
+    "group/quicklinks": {
+        "orientation": "horizontal",
+        "modules": [
+            "custom/wallpaper",
+            "custom/filemanager",
+            "custom/browser"
+        ]
+    },
+    "custom/wallpaper": {
+        "format": "",
+        "on-click": "~/dotfiles/hypr/scripts/wallpaper.sh select",
+        "on-click-right": "~/dotfiles/hypr/scripts/wallpaper.sh",
+        "tooltip": "Change Wallpaper"
+    },
+    "custom/filemanager": {
+        "format": "",
+        "on-click": "~/dotfiles/.settings/filemanager.sh",
+        "tooltip": false
+    },
+    "custom/browser": {
+        "format": "",
+        "on-click": "~/dotfiles/.settings/browser.sh",
+        "tooltip": false
+    },
+
+    "hyprland/workspaces" : {
+        "on-click": "activate",
+        "active-only": false,
+        "all-outputs": true,
+        "format": "{}",
+        "format-icons": {
+            "urgent": "",
+            "active": "",
+            "default": ""
+        }
+    },
+    "custom/updates": {
+        "format": "  {}",
+        "tooltip-format": "{}",
+        "escape": true,
+        "return-type": "json",
+        "exec": "~/dotfiles/scripts/updates.sh",
+        "restart-interval": 60,
+        "on-click": "alacritty -e ~/dotfiles/scripts/installupdates.sh",
+        "tooltip": false
+    },
     "bluetooth": {
         "format": "",
         "format-connected": "",

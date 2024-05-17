@@ -4,8 +4,8 @@
 @define-color arch_blue #1793d1;
 
 window#waybar {
-    /*background-color: rgba(70, 130, 180, 1.0);*/
-    background-color: rgba(0, 0, 0, 0.5);
+    /*background-color: rgba(70, 130, 180, 0.6);*/
+    background-color: rgba(0, 0, 0, 0.7);
     color: #cccccc;
 }
 
@@ -18,11 +18,16 @@ window#waybar {
 
 /* default background color for modules */
 #clock,
+#quicklinks,
 #workspaces,
+#custom-updates,
 #bluetooth,
 #system,
 #tray{
     background-color: black;
+}
+#custom-updates{
+    color: #FCC419;
 }
 
 /* hover color */
@@ -48,7 +53,7 @@ window#waybar {
     color: #cccccc;
 }
 #workspaces button.active {
-    background: @arch_blue;
+    background: #333333;
     color: #FFFFFF;
 }
 
