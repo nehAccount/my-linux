@@ -15,6 +15,7 @@
         "orientation": "horizontal",
         "modules": [
             "custom/wallpaper",
+            "custom/phpstorm",
             "custom/filemanager",
             "custom/browser"
         ]
@@ -24,6 +25,11 @@
         "on-click": "~/dotfiles/hypr/scripts/wallpaper.sh select",
         "on-click-right": "~/dotfiles/hypr/scripts/wallpaper.sh",
         "tooltip": "Change Wallpaper"
+    },
+    "custom/phpstorm": {
+        "format": " ",
+        "on-click": "/usr/bin/phpstorm",
+        "tooltip-format": "PhpStorm"
     },
     "custom/filemanager": {
         "format": "",

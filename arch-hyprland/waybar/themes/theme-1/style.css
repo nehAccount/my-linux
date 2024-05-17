@@ -42,7 +42,8 @@ window#waybar {
 #network,
 #custom-wallpaper,
 #custom-filemanager,
-#custom-browser{
+#custom-browser,
+#custom-phpstorm{
     font-size: 18px;
 }
 
@@ -54,6 +55,7 @@ window#waybar {
 
 /* quicklinks */
 #custom-wallpaper,
+#custom-phpstorm,
 #custom-filemanager,
 #custom-browser {
     margin: 0px 10px;
