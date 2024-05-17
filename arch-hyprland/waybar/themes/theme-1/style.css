@@ -24,6 +24,7 @@ window#waybar {
 #clock,
 #workspaces,
 #bluetooth,
+#system,
 #tray,
 #custom-exit{
     border-radius: 6px;
@@ -33,7 +34,8 @@ window#waybar {
 
 /* default icon size */
 #custom-exit,
-#bluetooth{
+#bluetooth,
+#network{
     font-size: 20px;
 }
 
@@ -60,7 +62,7 @@ window#waybar {
     margin: 0px 3px;
     padding: 0px 5px 0px 5px;
     border-radius: 6px;
-    transition: all 0.5s ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
 #workspaces button.active {
     transition: all 0.5s ease-in-out;
@@ -68,5 +70,5 @@ window#waybar {
 
 /* Power - Exit*/
 #custom-exit{
-    margin-right: 8px;
+    margin-right: 10px;
 }

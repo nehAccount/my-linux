@@ -5,7 +5,7 @@
 
 window#waybar {
     /*background-color: rgba(70, 130, 180, 1.0);*/
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.9);
     color: #cccccc;
 }
 
@@ -20,6 +20,7 @@ window#waybar {
 #clock,
 #workspaces,
 #bluetooth,
+#system,
 #tray{
     background-color: black;
 }
@@ -29,6 +30,7 @@ window#waybar {
 #custom-wallpaper:hover,
 #custom-filemanager:hover,
 #custom-browser:hover,
+#network:hover,
 #custom-exit:hover{
     color: #fff;
 }
@@ -50,6 +52,15 @@ window#waybar {
     color: #FFFFFF;
 }
 
+/* network */
+#network:not(.disabled),
+#network:not(.disconected){
+    color: #94D82D;
+}
+#network.disabled,
+#network.disconnected{
+    color: #FA5252;
+}
 
 /* bluetooth */
 #bluetooth.connected{

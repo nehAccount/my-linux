@@ -18,6 +18,7 @@
 
   "modules-right": [
     "bluetooth",
+    "group/system",
     "tray",
     "custom/exit"
   ]

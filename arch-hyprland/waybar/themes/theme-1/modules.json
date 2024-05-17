@@ -21,6 +21,24 @@
         "interval": 30,
         "on-click": "blueman-manager"
     },
+    "group/system": {
+        "orientation": "horizontal",
+        "modules": [
+            "network"
+        ]
+    },
+    "network": {
+        "format": "{ifname}",
+        "format-wifi": " ",
+        "format-ethernet": "",
+        "format-disconnected": " ",
+        "tooltip-format": " {ifname} via {gwaddri}",
+        "tooltip-format-wifi": "{essid} ({signalStrength}%)\n{ipaddr}/{cidr}",
+        "tooltip-format-ethernet": "{ipaddr}/{cidr}",
+        "tooltip-format-disconnected": "No network",
+        "max-length": 50,
+        "on-click": "~/dotfiles/.settings/networkmanager.sh"
+    },
     "tray": {
         "icon-size": 20,
         "spacing": 10,
