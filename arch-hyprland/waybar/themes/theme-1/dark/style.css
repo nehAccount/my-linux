@@ -4,7 +4,7 @@
 
 window#waybar {
     /*background-color: rgba(70, 130, 180, 0.6);*/
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 1.0);
     color: #cccccc;
 }
 
@@ -25,9 +25,6 @@ window#waybar {
 #tray{
     background-color: black;
 }
-/*#custom-updates{
-    color: #FCC419;
-}*/
 
 /* hover color */
 #clock:hover,
@@ -46,16 +43,15 @@ window#waybar {
 #custom-updates.green {
     color: #94D82D;
 }
-
 #custom-updates.yellow {
     color: #ff9a3c;
 }
-
 #custom-updates.red {
     color: #dc2f2f;
 }
-
-
+#custom-updates.no-update{
+    color: #555555;
+}
 
 /* workspaces */
 
