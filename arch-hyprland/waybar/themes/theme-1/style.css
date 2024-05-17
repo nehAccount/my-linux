@@ -5,7 +5,7 @@
 
 /* General */
 * {
-    font-family: "SF Pro Rounded", "Fira Sans Semibold", FontAwesome, Roboto, Helvetica, Arial, sans-serif;
+    font-family: "SF Pro Rounded", "Fira Sans Semibold", FontAwesome, Roboto, sans-serif;
     border: none;
     border-radius: 0;
     font-size: 16px;
@@ -22,6 +22,7 @@ window#waybar {
 /* default margin and padding for all modules */
 #custom-appmenuicon,
 #clock,
+#workspaces,
 #bluetooth,
 #tray,
 #custom-exit{
@@ -40,6 +41,29 @@ window#waybar {
 #custom-appmenuicon{
     margin-left: 5px;
     font-size: 20px;
+}
+
+/* Workspaces */
+
+/* reset defaults */
+#workspaces > * {
+    margin: 0px;
+    padding: 0px;
+    box-shadow: none;
+    text-shadow: none;
+    background: transparent;
+}
+#workspaces{
+    padding: 3px;
+}
+#workspaces button {
+    margin: 0px 3px;
+    padding: 0px 5px 0px 5px;
+    border-radius: 6px;
+    transition: all 0.5s ease-in-out;
+}
+#workspaces button.active {
+    transition: all 0.5s ease-in-out;
 }
 
 /* Power - Exit*/

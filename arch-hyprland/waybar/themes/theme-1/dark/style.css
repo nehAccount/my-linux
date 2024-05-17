@@ -1,6 +1,8 @@
 
 @import '../style.css';
 
+@define-color arch_blue #1793d1;
+
 window#waybar {
     /*background-color: rgba(70, 130, 180, 1.0);*/
     background-color: rgba(0, 0, 0, 0.6);
@@ -9,18 +11,20 @@ window#waybar {
 
 /* Arch logo color */
 #custom-appmenuicon{
-    color: #1793d1;
+    color: @arch_blue;
     background-color: transparent;
     background: none;
 }
 
 /* default background color for modules */
 #clock,
+#workspaces,
 #bluetooth,
 #tray{
     background-color: black;
 }
 
+/* hover color */
 #clock:hover,
 #custom-wallpaper:hover,
 #custom-filemanager:hover,
@@ -28,6 +32,24 @@ window#waybar {
 #custom-exit:hover{
     color: #fff;
 }
+
+/**********************************************/
+
+
+/* workspaces */
+
+#workspaces button {
+    color: #666666;
+}
+#workspaces button:hover {
+    background: #333333;
+    color: #cccccc;
+}
+#workspaces button.active {
+    background: @arch_blue;
+    color: #FFFFFF;
+}
+
 
 /* bluetooth */
 #bluetooth.connected{
