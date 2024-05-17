@@ -21,11 +21,15 @@
         "interval": 30,
         "on-click": "blueman-manager"
     },
-    "group/system": {
-        "orientation": "horizontal",
-        "modules": [
-            "network"
-        ]
+    "pulseaudio": {
+        "scroll-step": 1,
+        "format": "{icon}",
+        "format-muted": " ",
+        "tooltip-format": "{volume}%",
+        "format-icons": {
+            "default": [" "]
+        },
+        "on-click": "pavucontrol"
     },
     "network": {
         "format": "{ifname}",

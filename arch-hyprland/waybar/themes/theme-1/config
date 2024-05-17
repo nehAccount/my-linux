@@ -18,7 +18,8 @@
 
   "modules-right": [
     "bluetooth",
-    "group/system",
+    "pulseaudio",
+    "network",
     "tray",
     "custom/exit"
   ]
