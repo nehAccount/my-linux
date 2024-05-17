@@ -4,7 +4,7 @@ do
     text=$(curl -s "https://wttr.in/$1?format=1")
     if [[ $? == 0 ]]
     then
-        text=$(echo "$text" | sed -E "s/\s+/ /g")
+        text=$(echo "$text" | sed -E "s/\s+/ /g" | tr C " ")
         tooltip=$(curl -s "https://wttr.in/$1?format=4")
         if [[ $? == 0 ]]
         then
