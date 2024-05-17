@@ -53,7 +53,10 @@ window#waybar {
     margin-left: 5px;
     font-size: 20px;
 }
-
+#custom-weather{
+    font-size: 17px;
+    font-weight: 500;
+}
 /* quicklinks */
 #custom-wallpaper,
 #custom-phpstorm,
