@@ -22,6 +22,7 @@ window#waybar {
 /* default margin and padding for all modules */
 #custom-appmenuicon,
 #clock,
+#custom-weather,
 #quicklinks,
 #workspaces,
 #custom-updates,

@@ -10,7 +10,13 @@
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
         "format-alt": "{:%Y-%m-%d}"
     },
-
+    "custom/weather": {
+        "exec": "~/dotfiles/waybar/scripts/get_weather.sh Zenica",
+        "return-type": "json",
+        "format": "{}",
+        "tooltip": true,
+        "interval": 900
+    },
     "group/quicklinks": {
         "orientation": "horizontal",
         "modules": [

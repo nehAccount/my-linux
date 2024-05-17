@@ -10,6 +10,7 @@
   "modules-left": [
     "custom/appmenuicon",
     "clock",
+    "custom/weather",
     "group/quicklinks"
   ],
 

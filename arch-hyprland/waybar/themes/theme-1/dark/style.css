@@ -17,6 +17,7 @@ window#waybar {
 
 /* default background color for modules */
 #clock,
+#custom-weather,
 #quicklinks,
 #workspaces,
 #custom-updates,
