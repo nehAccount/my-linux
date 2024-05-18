@@ -10,8 +10,9 @@ while true; do
     read -p "Do you really want to APPLY SETTINGS? (Yy/Nn): " yn
     case $yn in
         [Yy]* )
-		cp -a $builddir/dotfiles /home/$username
-		cp -a $builddir/.config/. /home/$username/.config/
+		cp -a "$builddir"/dotfiles /home/"$username"
+		cp -a "$builddir"/.config/. /home/"$username"/.config/
+		cp -a "$builddir"/MyScripts ~/
 		echo "Done."
 		break;;
         [Nn]* ) 

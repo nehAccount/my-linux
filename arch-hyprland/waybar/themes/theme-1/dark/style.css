@@ -32,7 +32,8 @@ window#waybar {
 }
 #cpu,
 #memory,
-#disk{
+#disk,
+#custom-weather{
     background-color: #262f3a;
     border: 1px solid #374554;
 }

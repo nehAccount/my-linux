@@ -11,12 +11,12 @@
         "format-alt": "{:%Y-%m-%d}"
     },
     "custom/weather": {
-        "exec": "~/dotfiles/waybar/scripts/get_weather.sh Zenica",
-        "on-click": "~/dotfiles/waybar/scripts/get_weather.sh Zenica",
-        "return-type": "json",
+        "restart-interval": 910,
         "format": "{}",
-        "tooltip": true,
-        "interval": 900
+        "tooltip-format": "My Tooltip",
+        "exec": "~/MyScripts/get-weather.sh",
+        "on-click": "~/MyScripts/get-weather.sh",
+        "return-type": "json"
     },
     "group/quicklinks": {
         "orientation": "horizontal",
