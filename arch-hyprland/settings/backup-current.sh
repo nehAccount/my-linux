@@ -39,10 +39,14 @@ while true; do
 
           echo "Hyprland changes: borders, blur..."
           mkdir -p "$builddir/.config/ml4w-hyprland-settings"
-          cp /home/$username/.config/ml4w-hyprland-settings/hyprctl.json $builddir/.config/ml4w-hyprland-settings/
+          cp /home/"$username"/.config/ml4w-hyprland-settings/hyprctl.json $builddir/.config/ml4w-hyprland-settings/
 
           echo "Settings"
-          cp $dotfiles_dir/.settings/* $dotfiles_nermin_settings_dir
+          cp $dotfiles_dir/.settings/* "$dotfiles_nermin_settings_dir"
+
+          echo "GTK settings"
+          cp -a ~/.config/gtk-3.0 "$builddir"/.config
+          cp -a ~/.config/gtk-4.0/ "$builddir"/.config
 
 
         break;;
