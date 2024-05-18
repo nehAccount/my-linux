@@ -31,6 +31,9 @@ window#waybar {
 #custom-weather,
 #quicklinks,
 #workspaces,
+#cpu,
+#memory,
+#disk,
 #custom-updates,
 #bluetooth,
 #pulseaudio,
@@ -42,7 +45,14 @@ window#waybar {
     margin: 5px 0px 5px 0px; /* see: spacing in config for horizontal spacing*/
     padding: 2px 10px 2px 10px;
 }
-
+#cpu,
+#memory,
+#disk,
+#battery{
+    font-family: "SF Mono", "SF Pro Rounded", "Fira Sans Semibold", FontAwesome, Roboto, sans-serif;
+    min-width: 45px;
+    font-size: 14px;
+}
 /* default icon size */
 #custom-exit,
 #bluetooth,

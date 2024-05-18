@@ -19,6 +19,9 @@ window#waybar {
 #clock,
 #custom-weather,
 #quicklinks,
+#cpu,
+#memory,
+#disk,
 #workspaces,
 #custom-updates,
 #bluetooth,
@@ -26,6 +29,13 @@ window#waybar {
 #battery,
 #tray{
     background-color: black;
+}
+#cpu,
+#memory,
+#disk,
+#battery{
+    background-color: #262f3a;
+    border: 1px solid #374554;
 }
 
 /* hover color */

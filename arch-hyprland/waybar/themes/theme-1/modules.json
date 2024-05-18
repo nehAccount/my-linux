@@ -48,7 +48,6 @@
         "on-click": "~/dotfiles/.settings/browser.sh",
         "tooltip": false
     },
-
     "hyprland/workspaces" : {
         "on-click": "activate",
         "active-only": false,
@@ -62,13 +61,25 @@
     },
     "custom/updates": {
         "format": "  {}",
-        "tooltip-format": "{}",
+        "tooltip-format": "{} update(s)",
         "escape": true,
         "return-type": "json",
         "exec": "~/dotfiles/scripts/my-updates.sh",
         "restart-interval": 60,
         "on-click": "alacritty -e ~/dotfiles/scripts/installupdates.sh",
-        "tooltip": false
+        "tooltip": true
+    },
+    "cpu": {
+        "interval": 1,
+        "format": "CPU {usage}%"
+    },
+    "memory": {
+        "interval": 5,
+        "format": "MEM {used}G"
+    },
+    "disk": {
+        "interval": 15,
+        "format": "FREE {free}"
     },
     "bluetooth": {
         "format": "",
@@ -109,8 +120,8 @@
             "warning": 33,
             "critical": 15
         },
-        "format": "{icon}   {capacity}%",
-        "format-charging": "  {capacity}%",
+        "format": "{icon} {capacity}%",
+        "format-charging": " {capacity}%",
         "format-alt": "{icon}  {time}",
         "format-icons": [" ", " ", " ", " ", " "],
         "tooltip-format": "{time}"
