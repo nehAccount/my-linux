@@ -11,7 +11,13 @@
     font-size: 16px;
     font-weight: 500;
 }
-
+/* Mono Fonts */
+/*#battery{
+    font-family: "SF Mono", "SF Pro Rounded", "Fira Sans Semibold", FontAwesome, Roboto, sans-serif;
+}*/
+#battery{
+    font-size: 14px;
+}
 window#waybar {
     background-color: rgba(133,133,133,0.7);
     border-bottom: 0;
@@ -28,6 +34,7 @@ window#waybar {
 #custom-updates,
 #bluetooth,
 #pulseaudio,
+#battery,
 #network,
 #tray,
 #custom-exit{
@@ -54,8 +61,8 @@ window#waybar {
     font-size: 20px;
 }
 #custom-weather{
-    font-size: 17px;
-    font-weight: 500;
+    /*font-size: 17px;
+    font-weight: 500;*/
 }
 /* quicklinks */
 #custom-wallpaper,
@@ -87,6 +94,7 @@ window#waybar {
 #workspaces button.active {
     transition: all 0.5s ease-in-out;
 }
+
 
 /* Power - Exit*/
 #custom-exit{

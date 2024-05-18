@@ -12,6 +12,7 @@
     },
     "custom/weather": {
         "exec": "~/dotfiles/waybar/scripts/get_weather.sh Zenica",
+        "on-click": "~/dotfiles/waybar/scripts/get_weather.sh Zenica",
         "return-type": "json",
         "format": "{}",
         "tooltip": true,
@@ -101,6 +102,18 @@
         "tooltip-format-disconnected": "No network",
         "max-length": 50,
         "on-click": "~/dotfiles/.settings/networkmanager.sh"
+    },
+    "battery": {
+        "interval": 5,
+        "states": {
+            "warning": 33,
+            "critical": 15
+        },
+        "format": "{icon}   {capacity}%",
+        "format-charging": "  {capacity}%",
+        "format-alt": "{icon}  {time}",
+        "format-icons": [" ", " ", " ", " ", " "],
+        "tooltip-format": "{time}"
     },
     "tray": {
         "icon-size": 20,

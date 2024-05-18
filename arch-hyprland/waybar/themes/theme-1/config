@@ -23,6 +23,7 @@
     "bluetooth",
     "pulseaudio",
     "network",
+    "battery",
     "tray",
     "custom/exit"
   ]

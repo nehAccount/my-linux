@@ -23,6 +23,7 @@ window#waybar {
 #custom-updates,
 #bluetooth,
 #system,
+#battery,
 #tray{
     background-color: black;
 }
@@ -81,6 +82,31 @@ window#waybar {
 /* bluetooth */
 #bluetooth.connected{
     color: #0082FC;
+}
+
+/* -----------------------------------------------------
+ * Battery
+ * ----------------------------------------------------- */
+#battery:not(.plugged){
+    color: #0082FC;
+}
+#battery.warning:not(.plugged){
+    color: orange;
+}
+@keyframes blink {
+    to {
+        color: red;
+    }
+}
+#battery.critical:not(.charging) {
+    animation-name: blink;
+    animation-duration: 0.7s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+#battery.charging {
+    color: #94D82D;
 }
 
 /* tray */
