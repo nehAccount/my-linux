@@ -32,8 +32,7 @@ window#waybar {
 }
 #cpu,
 #memory,
-#disk,
-#battery{
+#disk{
     background-color: #262f3a;
     border: 1px solid #374554;
 }
