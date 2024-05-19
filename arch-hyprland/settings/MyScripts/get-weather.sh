@@ -13,7 +13,6 @@ curl --request GET -sL \
      --output $file
 
 sleep 5
-
 ##############
 # temperature
 temp=$(cat $file | jq -r .current | jq -r .temperature_2m)
