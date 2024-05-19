@@ -8,22 +8,65 @@ file=/home/"$username"/MyScripts/open-meteo/response.json
 
 ######################
 # get data from API
-curl --request GET -sL \
-     --url 'https://api.open-meteo.com/v1/forecast?latitude=44.2017&longitude=17.904&current=temperature_2m,is_day,precipitation,rain,showers,snowfall,weather_code&timezone=Europe%2FBerlin&forecast_days=1'\
-     --output $file
+#curl --request GET -sL \
+#     --url 'https://api.open-meteo.com/v1/forecast?latitude=44.2017&longitude=17.904&current=temperature_2m,is_day,precipitation,rain,showers,snowfall,weather_code&timezone=Europe%2FBerlin&forecast_days=1'\
+#     --output $file
 
-sleep 5
+#sleep 5
 ##############
+
+
 # temperature
 temp=$(cat $file | jq -r .current | jq -r .temperature_2m)
 rounded_temperature=$(printf "%.0f\n" "$temp")
 
-#echo $rounded_temperature
+# weather_code
+code=$(cat $file | jq -r .current | jq -r .weather_code)
+
+# is_day
+day=$(cat $file | jq -r .current | jq -r .is_day)
+
+# time
+time=$(cat $file | jq -r .current | jq -r .time)
+
+
 ########
 # icon
-icon=" "
+code=0
+
+case $code in
+      0)
+          icon='  ' ;;
+      1|2)
+          icon='Cloudy' ;;
+      3)
+          icon='Overcast' ;;
+      *)
+          icon=" "
+esac
+
+
+
 
 #############
 # final data
 data="$icon $rounded_temperature°"
-printf '{"text": "%s", "tooltip": "ttt", "class": "my-weather"}' "$data"
+printf '{"text": "%s", "tooltip": "%s", "class": "my-weather"}' "$data" "$time"
+
+
+# WMO Weather interpretation codes (WW)
+# Code 		  Description
+#
+# 0 		      Clear sky
+# 1, 2, 3 	  Mainly clear, partly cloudy, and overcast
+# 45, 48 	    Fog and depositing rime fog
+# 51, 53, 55 	Drizzle: Light, moderate, and dense intensity
+# 56, 57 	    Freezing Drizzle: Light and dense intensity
+# 61, 63, 65 	Rain: Slight, moderate and heavy intensity
+# 66, 67 	    Freezing Rain: Light and heavy intensity
+# 71, 73, 75 	Snow fall: Slight, moderate, and heavy intensity
+# 77 		      Snow grains
+# 80, 81, 82 	Rain showers: Slight, moderate, and violent
+# 85, 86 	    Snow showers slight and heavy
+# 95 * 		    Thunderstorm: Slight or moderate
+# 96, 99 * 	  Thunderstorm with slight and heavy hail
