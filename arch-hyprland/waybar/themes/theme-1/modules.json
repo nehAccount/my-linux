@@ -14,8 +14,8 @@
         "restart-interval": 910,
         "format": "{}",
         "tooltip-format": "My Tooltip",
-        "exec": "~/MyScripts/get-weather.sh",
-        "on-click": "~/MyScripts/get-weather.sh",
+        "exec": "~/MyScripts/open-meteo/get-weather.sh",
+        "on-click": "~/MyScripts/open-meteo/get-weather.sh",
         "return-type": "json"
     },
     "group/quicklinks": {

@@ -48,6 +48,8 @@ while true; do
           cp -a ~/.config/gtk-3.0 "$builddir"/.config
           cp -a ~/.config/gtk-4.0/ "$builddir"/.config
 
+          echo "MyScripts"
+          cp -a ~/MyScripts "$builddir"
 
         break;;
         [Nn]* ) 
