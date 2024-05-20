@@ -32,50 +32,59 @@ time=$(cat $file | jq -r .current | jq -r .time)
 
 ########
 # icon
-# code=33
-
+# code=0
+class="unknown"
 case $code in
       0)
-          icon='Clear' ;;
+        icon='Clear'
+        class="clear" ;;
 
       1|2)
-          icon='Cloudy' ;;
+        icon='Cloudy'
+        class="cloudy" ;;
 
       3)
-          icon='Overcast' ;;
+        icon='Overcast'
+        class="overcast";;
 
       45|48)
-          icon='Fog' ;;
+        icon='Fog'
+        class="fog" ;;
 
       51|53|55|56|57)
-          icon='Drizzle' ;;
+        icon='Drizzle'
+        class="drizzle" ;;
 
       61|63|65|66|67)
-          icon='Rain' ;;
+        icon='Rain'
+        class="rain" ;;
 
       71|73|75|77)
-          icon='Snow' ;;
+        icon='Snow'
+        class="snow" ;;
 
       80|81|82)
-          icon='Rain showers' ;;
+        icon='Rain showers'
+        class="rain-showers" ;;
 
       85|86)
-          icon='Snow showers' ;;
+        icon='Snow showers'
+        class="snow-showers";;
 
       95|96|99)
-          icon='T-Storm' ;;
+        icon='T-Storm'
+        class="t-storm" ;;
 
       *)
-          icon=" "
+        icon=" "
+        class="unknown"
 esac
-
-
-
 
 #############
 # final data
 data="$icon $rounded_temperature°"
-printf '{"text": "%s", "tooltip": "%s", "class": "my-weather"}' "$data" "$time"
+printf '{"text": "%s", "tooltip": "%s", "class": "%s"}' "$data" "$time" "$class"
+
 
 
 # WMO Weather interpretation codes (WW)
