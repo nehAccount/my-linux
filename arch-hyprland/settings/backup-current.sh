@@ -44,9 +44,9 @@ while true; do
           echo "Settings"
           cp $dotfiles_dir/.settings/* "$dotfiles_nermin_settings_dir"
 
-          echo "GTK settings"
-          cp -a ~/.config/gtk-3.0 "$builddir"/.config
-          cp -a ~/.config/gtk-4.0/ "$builddir"/.config
+          #echo "GTK settings"
+          #cp -a ~/.config/gtk-3.0 "$builddir"/.config
+          #cp -a ~/.config/gtk-4.0/ "$builddir"/.config
 
           echo "MyScripts"
           cp -a ~/MyScripts "$builddir"
