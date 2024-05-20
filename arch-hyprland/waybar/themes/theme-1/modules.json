@@ -13,7 +13,7 @@
     "custom/weather": {
         "restart-interval": 910,
         "format": "{}",
-        "tooltip-format": "My Tooltip",
+        "tooltip": "{}",
         "exec": "~/MyScripts/open-meteo/get-weather.sh",
         "on-click": "~/MyScripts/open-meteo/get-weather.sh",
         "return-type": "json"

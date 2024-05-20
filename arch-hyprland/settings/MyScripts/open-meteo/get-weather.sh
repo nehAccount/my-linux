@@ -8,11 +8,11 @@ file=/home/"$username"/MyScripts/open-meteo/response.json
 
 ######################
 # get data from API
-#curl --request GET -sL \
-#     --url 'https://api.open-meteo.com/v1/forecast?latitude=44.2017&longitude=17.904&current=temperature_2m,is_day,precipitation,rain,showers,snowfall,weather_code&timezone=Europe%2FBerlin&forecast_days=1'\
-#     --output $file
+curl --request GET -sL \
+     --url 'https://api.open-meteo.com/v1/forecast?latitude=44.2017&longitude=17.904&current=temperature_2m,is_day,precipitation,rain,showers,snowfall,weather_code&timezone=Europe%2FBerlin&forecast_days=1'\
+     --output $file
 
-#sleep 5
+sleep 5
 ##############
 
 
@@ -34,6 +34,7 @@ time=$(cat $file | jq -r .current | jq -r .time)
 # icon
 # code=0
 class="unknown"
+
 case $code in
       0)
         icon='Clear'
