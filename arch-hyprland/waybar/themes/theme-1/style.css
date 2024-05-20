@@ -45,6 +45,7 @@ window#waybar {
     margin: 5px 0px 5px 0px; /* see: spacing in config for horizontal spacing*/
     padding: 2px 10px 2px 10px;
 }
+#custom-weather,
 #cpu,
 #memory,
 #disk,
