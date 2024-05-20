@@ -11,7 +11,7 @@
         "format-alt": "{:%Y-%m-%d}"
     },
     "custom/weather": {
-        "restart-interval": 910,
+        "restart-interval": 902,
         "format": "{}",
         "tooltip": "{}",
         "exec": "~/MyScripts/open-meteo/get-weather.sh",
