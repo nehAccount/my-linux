@@ -7,8 +7,15 @@ family = "MesloLGS NF"
 style = "Regular"
 
 [window]
-opacity = 0.7
+opacity = 0.8
 
 [window.padding]
 x = 15
 y = 15
+
+[cursor]
+blink_interval = 500
+
+[cursor.style]
+shape = "Underline"
+blinking = "Always"

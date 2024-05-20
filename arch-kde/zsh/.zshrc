@@ -130,3 +130,6 @@ export PATH="$PATH:/snap/bin"
 (( ${+ZSH_HIGHLIGHT_STYLES} )) || typeset -A ZSH_HIGHLIGHT_STYLES
 ZSH_HIGHLIGHT_STYLES[path]=none
 ZSH_HIGHLIGHT_STYLES[path_prefix]=none
+
+#typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
+#pfetch
