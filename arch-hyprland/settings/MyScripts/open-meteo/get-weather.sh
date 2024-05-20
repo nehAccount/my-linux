@@ -32,15 +32,39 @@ time=$(cat $file | jq -r .current | jq -r .time)
 
 ########
 # icon
-code=0
+# code=33
 
 case $code in
       0)
-          icon='  ' ;;
+          icon='Clear' ;;
+
       1|2)
           icon='Cloudy' ;;
+
       3)
           icon='Overcast' ;;
+
+      45|48)
+          icon='Fog' ;;
+
+      51|53|55|56|57)
+          icon='Drizzle' ;;
+
+      61|63|65|66|67)
+          icon='Rain' ;;
+
+      71|73|75|77)
+          icon='Snow' ;;
+
+      80|81|82)
+          icon='Rain showers' ;;
+
+      85|86)
+          icon='Snow showers' ;;
+
+      95|96|99)
+          icon='T-Storm' ;;
+
       *)
           icon=" "
 esac
