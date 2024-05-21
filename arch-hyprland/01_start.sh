@@ -19,7 +19,7 @@ sudo fc-cache -f -v
 
 # weather icons font
 mkdir -p "$user_fonts_dir"
-cp -a $builddir/weather-font-icons/* "$user_fonts_dir"
+#cp -a $builddir/weather-font-icons/* "$user_fonts_dir"
 
 fc-cache -f -v
 
