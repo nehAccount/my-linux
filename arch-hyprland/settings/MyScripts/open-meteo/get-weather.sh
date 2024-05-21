@@ -38,10 +38,16 @@ class="unknown"
 case $code in
       0)
         icon='Clear \ue800'
+        if [ "$day" == 0 ]; then
+            icon='Clear \ue803'
+        fi
         class="clear" ;;
 
       1|2)
         icon='Cloudy \ue805'
+        if [ "$day" == 0 ]; then
+            icon='Cloudy \ue803'
+        fi
         class="cloudy" ;;
 
       3)
