@@ -32,48 +32,48 @@ time=$(cat $file | jq -r .current | jq -r .time)
 
 ########
 # icon
-# code=0
+# code=333
 class="unknown"
 
 case $code in
       0)
-        icon='Clear'
+        icon='Clear \ue800'
         class="clear" ;;
 
       1|2)
-        icon='Cloudy'
+        icon='Cloudy \ue805'
         class="cloudy" ;;
 
       3)
-        icon='Overcast'
+        icon='Overcast \ue802'
         class="overcast";;
 
       45|48)
-        icon='Fog'
+        icon='Fog \ue80a'
         class="fog" ;;
 
       51|53|55|56|57)
-        icon='Drizzle'
+        icon='Drizzle \ue806'
         class="drizzle" ;;
 
       61|63|65|66|67)
-        icon='Rain'
+        icon='Rain \ue804'
         class="rain" ;;
 
       71|73|75|77)
-        icon='Snow'
+        icon='Snow \ue807'
         class="snow" ;;
 
       80|81|82)
-        icon='Rain showers'
+        icon='Rain Showers \ue804'
         class="rain-showers" ;;
 
       85|86)
-        icon='Snow showers'
+        icon='Snow Showers \ue807'
         class="snow-showers";;
 
       95|96|99)
-        icon='T-Storm'
+        icon='T-Storm \ue808'
         class="t-storm" ;;
 
       *)
