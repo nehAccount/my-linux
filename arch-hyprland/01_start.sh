@@ -3,6 +3,7 @@
 username=$(id -u -n 1000)
 builddir=$(pwd)
 fonts_dir="/usr/share/fonts"
+user_fonts_dir="/home/$username/.fonts"
 
 # update system
 sudo pacman -Sy
@@ -15,6 +16,11 @@ sudo pacman -S --needed amd-ucode
 # fonts
 sudo cp -a "$builddir"/fonts/* "$fonts_dir"
 sudo fc-cache -f -v
+
+# weather icons font
+mkdir -p "$user_fonts_dir"
+cp -a $builddir/weather-font-icons/* "$user_fonts_dir"
+
 fc-cache -f -v
 
 # git
