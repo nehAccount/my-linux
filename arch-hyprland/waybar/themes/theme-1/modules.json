@@ -71,15 +71,15 @@
     },
     "cpu": {
         "interval": 1,
-        "format": "CPU {usage}%"
+        "format": "cpu {usage}%"
     },
     "memory": {
         "interval": 5,
-        "format": "MEM {used}G"
+        "format": "mem {used}G"
     },
     "disk": {
         "interval": 15,
-        "format": "FREE {free}"
+        "format": "free {free}"
     },
     "bluetooth": {
         "format": "",
