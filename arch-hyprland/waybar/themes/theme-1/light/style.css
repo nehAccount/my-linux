@@ -1,20 +1,133 @@
-/* -----------------------------------------------------
- * Import Pywal colors 
- * ----------------------------------------------------- */
-@import '../../../../../.cache/wal/colors-waybar.css';
-
-@define-color backgroundlight #FFFFFF;
-@define-color backgrounddark #FFFFFF;
-@define-color workspacesbackground1 #FFFFFF;
-@define-color workspacesbackground2 #CCCCCC;
-@define-color bordercolor #FFFFFF;
-@define-color textcolor1 #000000;
-@define-color textcolor2 #000000;
-@define-color textcolor3 #000000;
-@define-color iconcolor #FFFFFF;
 
 @import '../style.css';
 
+
 window#waybar {
-    background-color: rgba(255,255,255,0.8);
+    /*background-color: rgba(70, 130, 180, 0.6);*/
+    background-color: rgba(0, 0, 0, 1.0);
+    color: #cccccc;
+}
+
+/* Arch logo color */
+#custom-appmenuicon{
+    color: #1793d1;
+    background-color: transparent;
+    background: none;
+}
+
+/* default background color for modules */
+#clock,
+#custom-weather,
+#quicklinks,
+#cpu,
+#memory,
+#disk,
+#workspaces,
+#custom-updates,
+#bluetooth,
+#system,
+#battery,
+#tray{
+    background-color: black;
+}
+#cpu,
+#memory,
+#disk,
+#custom-weather{
+    background-color: #212932;
+    border: 1px solid #323d4c;
+}
+
+/* hover color */
+#clock:hover,
+#custom-wallpaper:hover,
+#custom-filemanager:hover,
+#custom-browser:hover,
+#pulseaudio:hover,
+#custom-exit:hover{
+    color: #fff;
+}
+
+/**********************************************/
+
+/* updates */
+
+#custom-updates.green {
+    color: #94D82D;
+}
+#custom-updates.yellow {
+    color: #ff9a3c;
+}
+#custom-updates.red {
+    color: #dc2f2f;
+}
+#custom-updates.no-update{
+    color: #555555;
+}
+
+/* workspaces */
+
+#workspaces button {
+    color: #666666;
+}
+#workspaces button:hover {
+    background: #212932;
+    color: #cccccc;
+}
+#workspaces button.active {
+    background: #212932;
+    color: #FFFFFF;
+    border: 1px solid #323d4c;
+}
+
+/* network */
+#network:not(.disabled),
+#network:not(.disconected){
+    color: #94D82D;
+}
+#network.disabled,
+#network.disconnected{
+    color: #FA5252;
+}
+
+/* bluetooth */
+#bluetooth.connected{
+    color: #0082FC;
+}
+
+/* -----------------------------------------------------
+ * Battery
+ * ----------------------------------------------------- */
+#battery:not(.plugged){
+    color: #0082FC;
+}
+#battery.warning:not(.plugged){
+    color: orange;
+}
+@keyframes blink {
+    to {
+        color: red;
+    }
+}
+#battery.critical:not(.charging) {
+    animation-name: blink;
+    animation-duration: 0.7s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+#battery.charging {
+    color: #94D82D;
+}
+
+/* tray */
+#tray{
+}
+#tray > .passive {
+    -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+    -gtk-icon-effect: highlight;
+    background-color: #eb4d4b;
 }
