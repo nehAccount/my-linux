@@ -9,7 +9,7 @@ file=/home/"$username"/MyScripts/open-meteo/response.json
 ######################
 # get data from API
 curl --request GET -sL \
-     --url 'https://api.open-meteo.com/v1/forecast?latitude=43.3152&longitude=17.6838&current=temperature_2m,is_day,precipitation,rain,showers,snowfall,weather_code&timezone=Europe%2FBerlin&forecast_days=1'\
+     --url 'https://api.open-meteo.com/v1/forecast?latitude=44.2017&longitude=17.904&current=temperature_2m,is_day,precipitation,rain,showers,snowfall,weather_code&timezone=Europe%2FBerlin&forecast_days=1'\
      --output $file
 
 sleep 2
