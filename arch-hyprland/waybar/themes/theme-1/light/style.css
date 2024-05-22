@@ -4,8 +4,8 @@
 
 window#waybar {
     /*background-color: rgba(70, 130, 180, 0.6);*/
-    background-color: rgba(0, 0, 0, 1.0);
-    color: #cccccc;
+    background-color: rgb(232, 240, 246);
+    color: #333333;
 }
 
 /* Arch logo color */
@@ -26,16 +26,17 @@ window#waybar {
 #custom-updates,
 #bluetooth,
 #system,
-#battery,
-#tray{
-    background-color: black;
+#battery{
+    background-color: rgb(232, 240, 246);
 }
+
 #cpu,
 #memory,
 #disk,
-#custom-weather{
-    background-color: #212932;
-    border: 1px solid #323d4c;
+#custom-weather,
+#tray{
+    background-color: #dbe6ec;
+    border: 1px solid #ced9de;
 }
 
 /* hover color */
@@ -43,9 +44,10 @@ window#waybar {
 #custom-wallpaper:hover,
 #custom-filemanager:hover,
 #custom-browser:hover,
+#custom-phpstorm,
 #pulseaudio:hover,
 #custom-exit:hover{
-    color: #fff;
+    color: #000000;
 }
 
 /**********************************************/
@@ -71,13 +73,13 @@ window#waybar {
     color: #666666;
 }
 #workspaces button:hover {
-    background: #212932;
-    color: #cccccc;
+    background: #a0afb6;
+    color: #333333;
 }
 #workspaces button.active {
-    background: #212932;
+    background: #a0afb6;
     color: #FFFFFF;
-    border: 1px solid #323d4c;
+    /*border: 1px solid #323d4c;*/
 }
 
 /* network */
@@ -120,14 +122,3 @@ window#waybar {
     color: #94D82D;
 }
 
-/* tray */
-#tray{
-}
-#tray > .passive {
-    -gtk-icon-effect: dim;
-}
-
-#tray > .needs-attention {
-    -gtk-icon-effect: highlight;
-    background-color: #eb4d4b;
-}

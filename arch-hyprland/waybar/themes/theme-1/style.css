@@ -106,4 +106,15 @@ window#waybar {
 #custom-exit{
     margin-right: 10px;
 }
+/* Tooltip */
+tooltip {
+    border-radius: 10px;
+    background-color: #000000;
+    opacity:0.9;
+    padding:20px;
+    margin:0px;
+}
 
+tooltip label {
+    color: #cccccc;
+}
