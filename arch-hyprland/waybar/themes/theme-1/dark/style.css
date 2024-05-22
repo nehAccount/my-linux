@@ -34,8 +34,8 @@ window#waybar {
 #memory,
 #disk,
 #custom-weather{
-    background-color: #262f3a;
-    border: 1px solid #374554;
+    background-color: #212932;
+    border: 1px solid #323d4c;
 }
 
 /* hover color */
@@ -71,12 +71,13 @@ window#waybar {
     color: #666666;
 }
 #workspaces button:hover {
-    background: #333333;
+    background: #212932;
     color: #cccccc;
 }
 #workspaces button.active {
-    background: #333333;
+    background: #212932;
     color: #FFFFFF;
+    border: 1px solid #323d4c;
 }
 
 /* network */
