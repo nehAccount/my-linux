@@ -82,7 +82,10 @@
         "format": "FREE {free}"
     },
     "bluetooth": {
-        "format": "",
+        "format": "",
+        "format-on": "",
+        "format-off": "",
+        "format-disabled": "",
         "format-connected": "",
         "format-connected-battery": "",
         "tooltip-format": "{controller_alias}\n\n{num_connections} connected",
@@ -98,7 +101,7 @@
         "format-muted": " ",
         "tooltip-format": "{volume}%",
         "format-icons": {
-            "default": [" "]
+            "default": [" "]
         },
         "on-click": "pavucontrol"
     },

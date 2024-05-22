@@ -43,6 +43,7 @@ window#waybar {
 #custom-wallpaper:hover,
 #custom-filemanager:hover,
 #custom-browser:hover,
+#custom-phpstorm:hover,
 #pulseaudio:hover,
 #custom-exit:hover{
     color: #fff;
