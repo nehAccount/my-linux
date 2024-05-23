@@ -55,6 +55,7 @@ window#waybar {
 #pulseaudio,
 #network,
 #custom-wallpaper,
+#custom-thunderbird,
 #custom-filemanager,
 #custom-browser,
 #custom-phpstorm{
@@ -73,6 +74,7 @@ window#waybar {
 /* quicklinks */
 #custom-wallpaper,
 #custom-phpstorm,
+#custom-thunderbird,
 #custom-filemanager,
 #custom-browser {
     margin: 0px 10px;

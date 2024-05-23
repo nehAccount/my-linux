@@ -23,6 +23,7 @@
         "modules": [
             "custom/wallpaper",
             "custom/phpstorm",
+            "custom/thunderbird",
             "custom/filemanager",
             "custom/browser"
         ]
@@ -37,6 +38,11 @@
         "format": " ",
         "on-click": "/usr/bin/phpstorm",
         "tooltip-format": "PhpStorm"
+    },
+    "custom/thunderbird": {
+        "format": "",
+        "on-click": "/usr/bin/thunderbird",
+        "tooltip-format": "Thunderbird"
     },
     "custom/filemanager": {
         "format": "",
