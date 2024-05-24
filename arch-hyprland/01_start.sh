@@ -30,7 +30,7 @@ git config --global user.email "nermin.hadzimejlic@gmail.com"
 git config --global init.defaultBranch main
 
 # basic aps
-sudo pacman -S --needed wget curl fastfetch htop zip unzip ncdu stress nmap eog bat
+sudo pacman -S --needed wget curl fastfetch htop zip unzip ncdu stress nmap bat
 
 # flatpak
 sudo pacman -S --needed flatpak
