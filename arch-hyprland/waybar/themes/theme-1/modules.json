@@ -77,11 +77,13 @@
     },
     "cpu": {
         "interval": 1,
-        "format": "cpu {usage}%"
+        "format": "cpu {usage}%",
+        "on-click": "alacritty -e btop"
     },
     "memory": {
         "interval": 5,
-        "format": "mem {used}G"
+        "format": "mem {used}G",
+        "on-click": "alacritty -e htop"
     },
     "disk": {
         "interval": 15,
