@@ -21,10 +21,10 @@
 
   "modules-right": [
     "custom/updates",
-    "custom/notification",
     "cpu",
     "memory",
     "disk",
+    "custom/notification",
     "bluetooth",
     "pulseaudio",
     "network",
