@@ -16,7 +16,7 @@ while true; do
 		echo "Done."
 		break;;
         [Nn]* ) 
-	    echo "Nothig is copied."
+	    echo "Nothing is copied."
             exit
         break;;
         * ) echo "Please answer yes or no.";;
