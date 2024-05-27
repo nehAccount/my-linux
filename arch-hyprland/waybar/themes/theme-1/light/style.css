@@ -47,7 +47,8 @@ window#waybar {
 #custom-thunderbird:hover,
 #custom-phpstorm:hover,
 #pulseaudio:hover,
-#custom-exit:hover{
+#custom-exit:hover,
+#custom-notification:hover{
     color: #000000;
 }
 

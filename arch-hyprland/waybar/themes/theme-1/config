@@ -21,6 +21,7 @@
 
   "modules-right": [
     "custom/updates",
+    "custom/notification",
     "cpu",
     "memory",
     "disk",
