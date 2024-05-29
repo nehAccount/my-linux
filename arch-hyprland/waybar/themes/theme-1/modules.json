@@ -42,7 +42,7 @@
     },
     "custom/idea": {
         "format": "",
-        "on-click": "/usr/bin/idea %f",
+        "on-click": "/usr/bin/idea",
         "tooltip-format": "IntelliJ IDEA"
     },
     "custom/thunderbird": {
