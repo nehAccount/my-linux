@@ -82,7 +82,7 @@
     },
     "memory": {
         "interval": 5,
-        "format": "mem {used}G",
+        "format": "ram {used}G",
         "on-click": "alacritty -e htop"
     },
     "disk": {

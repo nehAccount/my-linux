@@ -7,7 +7,7 @@ fonts_dir="/usr/share/fonts"
 # update system
 sudo pacman -Syu
 
-sudo pacman -S --needed nautilus gnome-text-editor
+sudo pacman -S --needed nautilus gnome-text-editor gnome-disk-utility
 sudo pacman -S --needed nextcloud-client
 sudo pacman -S --needed chromium
 sudo pacman -S --needed thunderbird systray-x-kde
@@ -16,7 +16,7 @@ sudo pacman -S --needed gimp
 sudo pacman -S --needed mpv
 sudo pacman -S --needed timeshift
 sudo pacman -S --needed ufw gufw
-sudo pacman -S --needed partitionmanager
+# sudo pacman -S --needed partitionmanager
 sudo pacman -S --needed pandoc-cli
 # gnome image viewer
 sudo pacman -S --needed eog
