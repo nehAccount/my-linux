@@ -36,7 +36,7 @@ sudo pacman -S --needed wget curl fastfetch htop zip unzip ncdu stress nmap bat 
 sudo pacman -S --needed flatpak
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 
-sudo pacman -S --needed xdg-desktop-portal-kde xdg-desktop-portal-gnome xdg-desktop-portal-gtk xdg-desktop-portal-wlr
+sudo pacman -S --needed xdg-desktop-portal-hyprland xdg-desktop-portal-wlr xdg-desktop-portal-kde xdg-desktop-portal-gnome xdg-desktop-portal-gtk
 
 
 # clean cache
