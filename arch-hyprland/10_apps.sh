@@ -22,9 +22,7 @@ sudo pacman -S --needed pandoc-cli
 sudo pacman -S --needed eog
 #sudo pacman -S --needed img2pdf
 #sudo pacman -S --needed handbrake
-#sudo pacman -S --needed nodejs npm
-#sudo pacman -S --needed code
-#sudo pacman -S --needed intellij-idea-community-edition
+sudo pacman -S --needed intellij-idea-community-edition
 
 flatpak install flathub com.viber.Viber -y
 flatpak install flathub no.mifi.losslesscut -y
