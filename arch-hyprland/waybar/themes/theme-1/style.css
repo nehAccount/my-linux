@@ -60,6 +60,7 @@ window#waybar {
 #custom-filemanager,
 #custom-browser,
 #custom-phpstorm,
+#custom-idea,
 #custom-notification{
     font-size: 18px;
 }
@@ -76,6 +77,7 @@ window#waybar {
 /* quicklinks */
 #custom-wallpaper,
 #custom-phpstorm,
+#custom-idea,
 #custom-thunderbird,
 #custom-filemanager,
 #custom-browser {
