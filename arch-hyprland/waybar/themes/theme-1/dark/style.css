@@ -48,7 +48,8 @@ window#waybar {
 #custom-thunderbird:hover,
 #pulseaudio:hover,
 #custom-exit:hover,
-#custom-notification:hover{
+#custom-notification:hover,
+#custom-cliphist:hover{
     color: #fff;
 }
 

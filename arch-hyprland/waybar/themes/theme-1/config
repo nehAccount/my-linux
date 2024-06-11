@@ -27,6 +27,7 @@
     "custom/notification",
     "bluetooth",
     "pulseaudio",
+    "custom/cliphist",
     "network",
     "battery",
     "tray",
