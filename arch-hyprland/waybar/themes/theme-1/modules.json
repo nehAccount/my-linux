@@ -157,7 +157,8 @@
         "tooltip-format-ethernet": "{ipaddr}/{cidr}",
         "tooltip-format-disconnected": "No network",
         "max-length": 50,
-        "on-click": "~/dotfiles/.settings/networkmanager.sh"
+        "on-click": "~/dotfiles/.settings/networkmanager.sh",
+        "on-click-right": "alacritty -e nmtui"
     },
     "battery": {
         "interval": 5,
