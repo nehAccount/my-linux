@@ -60,6 +60,8 @@ window#waybar {
 #custom-thunderbird,
 #custom-filemanager,
 #custom-browser,
+#custom-firefox,
+#custom-chromium,
 #custom-phpstorm,
 #custom-idea,
 #custom-notification{
@@ -81,7 +83,9 @@ window#waybar {
 #custom-idea,
 #custom-thunderbird,
 #custom-filemanager,
-#custom-browser {
+#custom-browser,
+#custom-firefox,
+#custom-chromium{
     margin: 0px 10px;
 }
 

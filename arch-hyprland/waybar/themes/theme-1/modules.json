@@ -26,14 +26,15 @@
             "custom/phpstorm",
             "custom/thunderbird",
             "custom/filemanager",
-            "custom/browser"
+            "custom/firefox",
+            "custom/chromium"
         ]
     },
     "custom/wallpaper": {
         "format": "",
         "on-click": "~/dotfiles/hypr/scripts/wallpaper.sh select",
         "on-click-right": "~/dotfiles/hypr/scripts/wallpaper.sh",
-        "tooltip": "Change Wallpaper"
+        "tooltip-format": "Change Wallpaper"
     },
     "custom/phpstorm": {
         "format": " ",
@@ -53,12 +54,22 @@
     "custom/filemanager": {
         "format": "",
         "on-click": "~/dotfiles/.settings/filemanager.sh",
-        "tooltip": false
+        "tooltip-format": "File Manager"
     },
     "custom/browser": {
         "format": "",
         "on-click": "~/dotfiles/.settings/browser.sh",
         "tooltip": false
+    },
+    "custom/firefox": {
+        "format": "",
+        "on-click": "/usr/bin/firefox",
+        "tooltip-format": "Firefox"
+    },
+    "custom/chromium": {
+        "format": "",
+        "on-click": "/usr/bin/chromium",
+        "tooltip-format": "Chromium"
     },
     "hyprland/workspaces" : {
         "on-click": "activate",
