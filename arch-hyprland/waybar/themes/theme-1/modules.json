@@ -22,12 +22,12 @@
         "orientation": "horizontal",
         "modules": [
             "custom/wallpaper",
+            "custom/chromium",
             "custom/idea",
             "custom/phpstorm",
             "custom/thunderbird",
             "custom/filemanager",
-            "custom/firefox",
-            "custom/chromium"
+            "custom/firefox"
         ]
     },
     "custom/wallpaper": {
