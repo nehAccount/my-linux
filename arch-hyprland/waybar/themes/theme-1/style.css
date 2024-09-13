@@ -5,11 +5,11 @@
 
 /* General */
 * {
-    font-family: "SF Pro Rounded", "Fira Sans Semibold", FontAwesome, Roboto, sans-serif, "NotoSansMono Nerd Font";
+    font-family: "Ubuntu Sans", "SF Pro Rounded", "Fira Sans Semibold", FontAwesome, Roboto, sans-serif, "NotoSansMono Nerd Font";
     border: none;
     border-radius: 0;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 600;
 }
 #custom-weather,
 #cpu,
