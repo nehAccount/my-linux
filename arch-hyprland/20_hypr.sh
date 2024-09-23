@@ -9,6 +9,7 @@ sudo pacman -S --needed dolphin kate qt5ct qt6ct
 sudo pacman -S --needed materia-gtk-theme
 # GTK Icons
 yay -S suru-plus-telinkrin-git
+yay -S yaru-icon-theme
 
 # File association in dolphin.
 # delete plasma- prefix after copy
