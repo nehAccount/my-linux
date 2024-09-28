@@ -1,0 +1,36 @@
+{
+  "layer": "top",
+  "height": 42,
+  "spacing": 5,
+  "margin-left": 0,
+  "margin-right": 0,
+  "margin-bottom": 0,
+
+  "include": ["~/dotfiles/waybar/themes/theme-1/modules.json"],
+
+  "modules-left": [
+    "custom/appmenuicon",
+    "clock",
+    "custom/weather",
+    "group/quicklinks"
+  ],
+
+  "modules-center": [
+    "hyprland/workspaces"
+  ],
+
+  "modules-right": [
+    "custom/updates",
+    "cpu",
+    "memory",
+    "disk",
+    "custom/notification",
+    "bluetooth",
+    "pulseaudio",
+    "custom/cliphist",
+    "network",
+    "battery",
+    "tray",
+    "custom/exit"
+  ]
+}
