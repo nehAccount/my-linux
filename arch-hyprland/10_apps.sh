@@ -27,6 +27,7 @@ sudo pacman -S --needed intellij-idea-community-edition
 flatpak install flathub com.viber.Viber -y
 flatpak install flathub no.mifi.losslesscut -y
 flatpak install flathub com.jgraph.drawio.desktop -y
+flatpak install flathub io.missioncenter.MissionCenter -y
 
 # PhpStorm
 yay -S --needed phpstorm phpstorm-jre
