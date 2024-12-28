@@ -1,0 +1,70 @@
+#!/bin/bash
+
+generalPackages=(
+    amd-ucode
+    rsync
+    git
+    wget
+    curl
+    fastfetch
+    htop
+    zip
+    unzip
+    ncdu
+    stress
+    nmap
+    bat
+    btop
+    nautilus
+    firefox
+    alacritty
+    power-profiles-daemon
+    xarchiver
+    qalculate-gtk
+    gparted
+    dosfstools
+    starship
+    gnome-screenshot
+    nemo
+    nemo-fileroller
+    dconf
+    dconf-editor
+    mpv
+    ufw
+    gufw
+    pandoc-cli
+    eog
+    python-pip
+    python-psutil
+    python-rich
+    python-click
+    python-gobject
+    python-pywal
+    pacman-contrib
+);
+
+generalPackagesYay=(
+    bibata-cursor-theme
+    pacseek
+    mint-themes
+);
+
+appPackages=(
+    chromium
+    timeshift
+    zed
+    nextcloud-client
+    thunderbird
+    libreoffice-fresh
+    gimp
+    docker
+    docker-buildx
+    docker-compose
+);
+appPackagesYay=(
+    phpstorm
+    phpstorm-jre
+    zen-browser-avx2-bin
+);
+
+
