@@ -1,0 +1,16 @@
+#!/bin/bash
+
+# extract colors from current wallpaper
+
+prefix="'file://"
+suffix="'"
+
+file=$(dconf read /org/cinnamon/desktop/background/picture-uri) 
+
+prefix_removed_string=${file/#$prefix}
+filePath=${prefix_removed_string/%$suffix}
+
+wal -q -i "$filePath"
+
+send-notification "Success" "Colors from wallpaper extracted"
+

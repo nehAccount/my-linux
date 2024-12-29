@@ -19,6 +19,13 @@ generalPackages=(
     firefox
     alacritty
     power-profiles-daemon
+    bluez
+    bluez-utils
+    blueman
+    figlet
+    eza
+    tumbler
+    brightnessctl
     xarchiver
     qalculate-gtk
     gparted
@@ -41,6 +48,8 @@ generalPackages=(
     python-gobject
     python-pywal
     pacman-contrib
+    ttf-jetbrains-mono-nerd
+    gum
 );
 
 generalPackagesYay=(

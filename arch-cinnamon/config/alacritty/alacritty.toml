@@ -1,0 +1,29 @@
+[font]
+size = 14.0
+
+[font.normal]
+family = "JetBrainsMono NF"
+#family = "MesloLGS NF"
+style = "Regular"
+
+[window]
+opacity = 0.8
+position = "None"
+decorations = "None"
+startup_mode = "Maximized"
+decorations_theme_variant = "None"
+
+[window.padding]
+x = 20
+y = 20
+
+[cursor]
+blink_interval = 500
+
+[cursor.style]
+shape = "Underline"
+blinking = "Always"
+
+#[window.dimensions]
+#columns = 130
+#lines = 30

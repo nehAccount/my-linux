@@ -1,0 +1,17 @@
+#!/bin/bash
+
+icon=/usr/share/icons/distro.svg
+
+if [[ -z $1 ]]; then
+    title="Test Notification Title"
+else
+    title=$1
+fi
+
+if [[ -z $2 ]]; then
+    body=""
+else
+    body=$2
+fi
+
+notify-send -i "$icon" "$title" "$body"
