@@ -1,18 +1,10 @@
-# Import colorscheme from 'wal' asynchronously
-# &   # Run the process in the background.
-# ( ) # Hide shell job control messages.
+# pywall colors
 (cat ~/.cache/wal/sequences &)
 
+# fastfetch template
 if [[ -o interactive ]]; then
     fastfetch --config examples/12
 fi
-# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
-# Initialization code that may require console input (password prompts, [y/n]
-# confirmations, etc.) must go above this block; everything else may go below.
-if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-fi
-
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -26,8 +18,7 @@ export ZSH="$HOME/.oh-my-zsh"
 #ZSH_THEME="fino-nermin"
 #ZSH_THEME="agnoster-nermin"
 #ZSH_THEME="robbyrussell-nermin"
-#ZSH_THEME="af-magic-nermin"
-ZSH_THEME="powerlevel10k/powerlevel10k"
+# ZSH_THEME="af-magic-nermin"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -93,6 +84,7 @@ plugins=(
 git
 zsh-autosuggestions
 zsh-syntax-highlighting
+history
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -128,18 +120,18 @@ bashcompinit
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias cleanup='~/MyHyprland/settings/cleanup.sh'
+
+# ALIASES
+alias cleanup='~/.local/share/cinnamon/my-scripts/cleanup.sh'
+alias hh='cd ~'
 
 # Add snap applications to PATH - added by Nermin
 export PATH="$PATH:/snap/bin"
 
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-
+# disable path underline
 (( ${+ZSH_HIGHLIGHT_STYLES} )) || typeset -A ZSH_HIGHLIGHT_STYLES
 ZSH_HIGHLIGHT_STYLES[path]=none
 ZSH_HIGHLIGHT_STYLES[path_prefix]=none
 
-
-#typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
-#pfetch
+# load starship last
+eval "$(starship init zsh)"

@@ -39,6 +39,9 @@ cp -a "$builddir"/config/* "$HOME"/.config
 
 # set wallpaper
 
+echo "Getting colors from wallpaper..."
+exec-wal
+
 echo "Done!"
 
 
