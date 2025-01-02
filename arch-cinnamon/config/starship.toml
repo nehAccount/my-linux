@@ -1,0 +1,23 @@
+format = """
+[󰣇 ](#1793d1)\
+$directory\
+$git_branch\
+$git_status\
+\n$character"""
+
+# Insert a blank line between shell prompts
+add_newline = true
+
+# Increase the default command timeout to 2 seconds
+command_timeout = 2000
+
+[directory]
+truncate_to_repo = false
+style = "fg:text"
+format = "[ $path ]($style)"
+
+[git_branch]
+symbol = "|  "
+format = '[[ $symbol](green) $branch ](blue)'
+
+
