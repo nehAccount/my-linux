@@ -50,6 +50,7 @@ generalPackages=(
     pacman-contrib
     ttf-jetbrains-mono-nerd
     gum
+    bind
 );
 
 generalPackagesYay=(
