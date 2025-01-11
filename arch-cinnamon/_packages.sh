@@ -76,6 +76,7 @@ appPackagesYay=(
     phpstorm
     phpstorm-jre
     zen-browser-avx2-bin
+    losslesscut-bin
 );
 
 
