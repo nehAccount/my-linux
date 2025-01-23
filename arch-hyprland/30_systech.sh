@@ -1,7 +1,9 @@
 #!/bin/bash
 
+# see: https://wiki.archlinux.org/title/Node.js
 sudo pacman -S --needed postgresql
-sudo pacman -S --needed nodejs npm
+# sudo pacman -S --needed nodejs npm
+sudo pacman -S --needed nodejs-lts-iron npm
 sudo pacman -S --needed intellij-idea-community-edition
 sudo pacman -S --needed code
 
