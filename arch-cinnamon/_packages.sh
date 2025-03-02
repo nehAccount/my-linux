@@ -56,7 +56,6 @@ generalPackages=(
 generalPackagesYay=(
     bibata-cursor-theme
     pacseek
-    mint-themes
     cinnamon-sounds
 );
 
