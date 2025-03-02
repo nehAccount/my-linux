@@ -22,8 +22,8 @@ sudo tar -xvf "$builddir"/icons/Colloid.tar.xz -C /usr/share/icons
 # distro icon
 sudo cp -a "$builddir"/icons/distro.svg /usr/share/icons
 
-# scripts
-cp -a "$builddir"/my-scripts "$HOME"/.local/share/cinnamon
+# shares
+cp -a "$builddir"/share "$HOME"/.local/share/cinnamon
 
 # make scripts executable
 sudo ln -s "$HOME"/.local/share/cinnamon/my-scripts/send-notification /usr/local/bin/

@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Install Updates
+Exec=alacritty -e /home/nermin/MyHyprland/config/hypr/script/install-updates.sh
+Comment=
+Terminal=false
+PrefersNonDefaultGPU=false
+Icon=/usr/share/icons/breeze/actions/22/svn-update-symbolic.svg
+Type=Application
