@@ -24,14 +24,14 @@ cp -a "$builddir"/icons/distro.svg "$HOME"/.local/share/icons
 sudo cp -a "$builddir"/icons/distro.svg /usr/share/icons
 
 # shares
-cp -a "$builddir"/share "$HOME"/.local/share/cinnamon
+cp -a "$builddir"/share/* "$HOME"/.local/share/cinnamon
 
 # make scripts executable
-sudo cp -a "$HOME"/.local/share/cinnamon/my-scripts/send-notification /usr/local/bin/
+sudo ln -s "$HOME"/.local/share/cinnamon/my-scripts/send-notification /usr/local/bin/
 sudo chmod +x /usr/local/bin/send-notification
 
-#sudo ln -s "$HOME"/.local/share/cinnamon/my-scripts/exec-wal /usr/local/bin/
-#sudo chmod +x /usr/local/bin/exec-wal
+sudo ln -s "$HOME"/.local/share/cinnamon/my-scripts/exec-wal /usr/local/bin/
+sudo chmod +x /usr/local/bin/exec-wal
 
 # config
 cp -a "$builddir"/config/* "$HOME"/.config
