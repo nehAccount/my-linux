@@ -50,6 +50,7 @@ cursor-blink-time=1200
 cursor-size=24
 cursor-theme='Bibata-Modern-Classic'
 font-name='Ubuntu 13'
+gtk-theme='Mint-Y-Aqua'
 icon-theme='Colloid-Dark'
 text-scaling-factor=1.0
 toolkit-accessibility=false

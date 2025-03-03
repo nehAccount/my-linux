@@ -64,6 +64,7 @@ generalPackages=(
 generalPackagesYay=(
     bibata-cursor-theme
     pacseek
+    mint-themes
     cinnamon-sounds
 );
 
@@ -82,7 +83,6 @@ appPackages=(
 appPackagesYay=(
     phpstorm
     phpstorm-jre
-    zen-browser-avx2-bin
     losslesscut-bin
 );
 

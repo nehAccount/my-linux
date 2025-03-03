@@ -22,14 +22,14 @@ fi
 source ./_packages.sh
 
 # pacman
-sudo pacman -S --needed "${generalPackages[@]}"
+sudo pacman -S --needed --noconfirm "${generalPackages[@]}"
 # yay
-yay -S --needed "${generalPackagesYay[@]}"
+yay -S --needed --noconfirm "${generalPackagesYay[@]}"
 
 # ------------------------------------------------------
 # Flatpak
 # ------------------------------------------------------
-sudo pacman -S --needed flatpak
+sudo pacman -S --needed --noconfirm flatpak
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 
 # ------------------------------------------------------
@@ -49,8 +49,8 @@ powerprofilesctl set balanced
 # ------------------------------------------------------
 # clear cache
 # ------------------------------------------------------
-sudo pacman -Sc
-sudo pacman -Scc
+sudo pacman -Sc --noconfirm
+sudo pacman -Scc --noconfirm
 
 echo "Done!"
 
