@@ -59,6 +59,10 @@ generalPackages=(
     ttf-ubuntu-font-family
     gum
     bind
+    zsh
+    zsh-autosuggestions
+    zsh-syntax-highlighting
+    zsh-autocomplete
 );
 
 generalPackagesYay=(
@@ -66,6 +70,7 @@ generalPackagesYay=(
     pacseek
     mint-themes
     cinnamon-sounds
+    zsh-git-prompt
 );
 
 appPackages=(

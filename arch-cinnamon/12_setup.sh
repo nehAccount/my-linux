@@ -44,6 +44,11 @@ dconf load /org/cinnamon/ < "$builddir"/org-cinnamon.dconf
 
 gsettings set org.cinnamon.muffin placement-mode 'center'
 
+# zsh
+sudo cp -a "$builddir"/zsh/.zshrc "$HOME"
+sudo chsh -s /usr/bin/zsh
+
+exec-wal
 send-notification "Setup" "Done!"
 echo "Done!"
 
