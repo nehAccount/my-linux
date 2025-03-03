@@ -50,8 +50,9 @@ sudo ln -s "$HOME"/.local/share/cinnamon/my-scripts/exec-wal /usr/local/bin/
 sudo chmod +x /usr/local/bin/exec-wal
 
 exec-wal
-send-notification "Setup finished." "Reboot System!"
-echo "Done!"
+send-notification "Setup finished." "System will reboot in 10 seconds!"
+sleep 10
+sudo reboot
 
 
 
