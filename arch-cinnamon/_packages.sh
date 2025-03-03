@@ -48,7 +48,15 @@ generalPackages=(
     python-gobject
     python-pywal
     pacman-contrib
+    breeze-icons
+    noto-fonts
+    otf-font-awesome
+    ttf-fira-sans
+    ttf-firacode-nerd
+    ttf-hack
     ttf-jetbrains-mono-nerd
+    ttf-liberation
+    ttf-ubuntu-font-family
     gum
     bind
 );
