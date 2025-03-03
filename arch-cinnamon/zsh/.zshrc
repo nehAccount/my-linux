@@ -35,6 +35,7 @@ ZSH_CACHE_DIR=$HOME/.cache/zsh
 # plugins
 source $PLUGINS/zsh-autosuggestions/zsh-autosuggestions.zsh
 source $PLUGINS/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source $PLUGINS/zsh-autocomplete/zsh-autocomplete.plugin.zsh
 
 # disable underline for syntax highlighting
 (( ${+ZSH_HIGHLIGHT_STYLES} )) || typeset -A ZSH_HIGHLIGHT_STYLES

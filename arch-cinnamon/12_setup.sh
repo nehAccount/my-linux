@@ -26,13 +26,6 @@ sudo cp -a "$builddir"/icons/distro.svg /usr/share/icons
 # shares
 cp -a "$builddir"/share/* "$HOME"/.local/share/cinnamon
 
-# make scripts executable
-sudo ln -s "$HOME"/.local/share/cinnamon/my-scripts/send-notification /usr/local/bin/
-sudo chmod +x /usr/local/bin/send-notification
-
-sudo ln -s "$HOME"/.local/share/cinnamon/my-scripts/exec-wal /usr/local/bin/
-sudo chmod +x /usr/local/bin/exec-wal
-
 # config
 cp -a "$builddir"/config/* "$HOME"/.config
 
@@ -47,9 +40,17 @@ gsettings set org.cinnamon.muffin placement-mode 'center'
 # zsh
 sudo cp -a "$builddir"/zsh/.zshrc "$HOME"
 sudo chsh -s /usr/bin/zsh
+chsh -s /usr/bin/zsh
+
+# make scripts executable
+sudo ln -s "$HOME"/.local/share/cinnamon/my-scripts/send-notification /usr/local/bin/
+sudo chmod +x /usr/local/bin/send-notification
+
+sudo ln -s "$HOME"/.local/share/cinnamon/my-scripts/exec-wal /usr/local/bin/
+sudo chmod +x /usr/local/bin/exec-wal
 
 exec-wal
-send-notification "Setup" "Done!"
+send-notification "Setup finished." "Reboot System!"
 echo "Done!"
 
 
