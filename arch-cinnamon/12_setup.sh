@@ -43,6 +43,14 @@ cp -a "$builddir"/config/* "$HOME"/.config
 # echo "Getting colors from wallpaper..."
 # exec-wal
 
+# file to load: dconf dump /org/cinnamon/ > org-cinnamon.dconf
+# dconf load /org/cinnamon/ < "$builddir"/_cinnamon/org-cinnamon.dconf
+
+dconf dump /org/cinnamon/ > org-cinnamon-backup-orig.dconf
+dconf load /org/cinnamon/ < "$builddir"/org-cinnamon.dconf
+
+# gsettings set org.cinnamon.muffin placement-mode 'center'
+
 send-notification "Setup" "Done!"
 echo "Done!"
 

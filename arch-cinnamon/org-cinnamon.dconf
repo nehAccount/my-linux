@@ -1,0 +1,168 @@
+[/]
+desklet-snap-interval=25
+desktop-effects=true
+desktop-effects-close='traditional'
+desktop-effects-minimize='traditional'
+desktop-effects-on-dialogs=true
+enabled-applets=['panel1:left:0:menu@cinnamon.org:0', 'panel1:right:12:systray@cinnamon.org:3', 'panel1:right:19:xapp-status@cinnamon.org:4', 'panel1:right:13:notifications@cinnamon.org:5', 'panel1:right:14:removable-drives@cinnamon.org:7', 'panel1:right:15:keyboard@cinnamon.org:8', 'panel1:right:16:network@cinnamon.org:10', 'panel1:right:17:sound@cinnamon.org:11', 'panel1:right:18:power@cinnamon.org:12', 'panel1:center:0:calendar@cinnamon.org:13', 'panel1:right:9:windows-quick-list@cinnamon.org:24', 'panel1:right:20:system-controls@rcalixte:25', 'panel1:left:2:grouped-window-list@cinnamon.org:29', 'panel1:right:8:expo@cinnamon.org:37', 'panel1:right:11:spacer@cinnamon.org:38', 'panel1:center:1:weather@mockturtl:106', 'panel1:right:21:spacer@cinnamon.org:107', 'panel1:right:0:SpicesUpdate@claudiux:113']
+enabled-desklets=['diskspace@schorschii:0:1750:925', 'diskspace@schorschii:1:1750:750']
+enabled-extensions=['BlurCinnamon@klangman', 'transparent-panels@germanfr', 'OsdWithNumber@JosephMcc']
+hotcorner-layout=['expo:true:0', 'scale:true:0', 'scale:false:0', 'desktop:true:0']
+next-applet-id=114
+next-desklet-id=2
+panel-edit-mode=false
+panel-zone-icon-sizes='[{"panelId":1,"left":32,"center":22,"right":22}]'
+panel-zone-symbolic-icon-sizes='[{"panelId": 1, "left": 22, "center": 28, "right": 16}]'
+panel-zone-text-sizes='[{"panelId":1,"left":0,"center":0,"right":0}]'
+panels-autohide=['1:false', '2:intel']
+panels-enabled=['1:0:top']
+panels-height=['1:40', '2:40']
+panels-hide-delay=['1:0', '2:0']
+panels-show-delay=['1:0', '2:0']
+window-effect-speed=2
+workspace-expo-view-as-grid=true
+workspace-osd-visible=true
+
+[cinnamon-session]
+quit-time-delay=60
+
+[desktop/a11y/applications]
+screen-keyboard-enabled=false
+screen-reader-enabled=false
+
+[desktop/a11y/mouse]
+dwell-click-enabled=false
+dwell-threshold=10
+dwell-time=1.2
+secondary-click-enabled=false
+secondary-click-time=1.2
+
+[desktop/applications/calculator]
+exec='qalculate-gtk'
+
+[desktop/applications/terminal]
+exec='alacritty'
+exec-arg='--'
+
+
+[desktop/interface]
+cursor-blink-time=1200
+cursor-size=24
+cursor-theme='Bibata-Modern-Classic'
+font-name='Ubuntu 13'
+icon-theme='Colloid-Dark'
+text-scaling-factor=1.0
+toolkit-accessibility=false
+
+[desktop/keybindings/media-keys]
+terminal=['<Primary><Alt>t', '<Super>Return']
+
+[desktop/keybindings/wm]
+close=['<Alt>F4', '<Super>q']
+switch-to-workspace-1=['<Super>1']
+switch-to-workspace-2=['<Super>2']
+switch-to-workspace-3=['<Super>3']
+switch-to-workspace-4=['<Super>4']
+switch-to-workspace-5=['<Super>5']
+
+[desktop/media-handling]
+autorun-never=false
+
+[desktop/notifications]
+fullscreen-notifications=true
+notification-duration=10
+remove-old=false
+
+[desktop/peripherals/keyboard]
+delay=uint32 500
+numlock-state=true
+repeat-interval=uint32 30
+
+[desktop/peripherals/mouse]
+double-click=400
+drag-threshold=8
+speed=0.55408388520971297
+
+[desktop/peripherals/touchpad]
+speed=0.71615720524017457
+
+[desktop/sound]
+allow-amplified-volume=true
+event-sounds=false
+volume-sound-enabled=true
+volume-sound-file='/usr/share/sounds/LinuxMint/stereo/volume.oga'
+
+[desktop/wm/preferences]
+num-workspaces=4
+titlebar-font='Ubuntu Semi-Bold 13'
+workspace-names=@as []
+
+[gestures]
+pinch-percent-threshold=uint32 40
+swipe-down-2='PUSH_TILE_DOWN::end'
+swipe-down-3='TOGGLE_OVERVIEW::end'
+swipe-down-4='VOLUME_DOWN::end'
+swipe-left-2='PUSH_TILE_LEFT::end'
+swipe-left-3='WORKSPACE_NEXT::end'
+swipe-left-4='WINDOW_WORKSPACE_PREVIOUS::end'
+swipe-percent-threshold=uint32 60
+swipe-right-2='PUSH_TILE_RIGHT::end'
+swipe-right-3='WORKSPACE_PREVIOUS::end'
+swipe-right-4='WINDOW_WORKSPACE_NEXT::end'
+swipe-up-2='PUSH_TILE_UP::end'
+swipe-up-3='TOGGLE_EXPO::end'
+swipe-up-4='VOLUME_UP::end'
+tap-3='MEDIA_PLAY_PAUSE::end'
+
+[launcher]
+check-frequency=300
+memory-limit=2048
+
+[muffin]
+placement-mode='center'
+workspace-cycle=true
+workspaces-only-on-primary=true
+
+[settings-daemon/peripherals/keyboard]
+numlock-state='on'
+
+[settings-daemon/plugins/color]
+night-light-last-coordinates=(43.520000000000003, 18.25)
+
+[settings-daemon/plugins/power]
+button-power='interactive'
+lid-close-ac-action='suspend'
+lid-close-battery-action='suspend'
+sleep-display-ac=1800
+sleep-display-battery=1800
+sleep-inactive-ac-timeout=0
+sleep-inactive-battery-timeout=0
+
+[settings-daemon/plugins/xsettings]
+buttons-have-icons=false
+hinting='slight'
+menus-have-icons=false
+
+[sounds]
+close-enabled=true
+close-file='/usr/share/sounds/LinuxMint/stereo/close.oga'
+login-enabled=true
+login-file='/usr/share/sounds/LinuxMint/stereo/login.oga'
+logout-enabled=true
+logout-file='/usr/share/sounds/LinuxMint/stereo/logout.ogg'
+map-enabled=false
+map-file='/usr/share/sounds/LinuxMint/stereo/map.oga'
+maximize-enabled=false
+maximize-file='/usr/share/sounds/LinuxMint/stereo/map.oga'
+minimize-enabled=false
+minimize-file='/usr/share/sounds/LinuxMint/stereo/map.oga'
+notification-enabled=true
+notification-file='/usr/share/sounds/LinuxMint/stereo/tile.oga'
+plug-enabled=true
+plug-file='/usr/share/sounds/LinuxMint/stereo/plug.oga'
+unmaximize-file='/usr/share/sounds/LinuxMint/stereo/map.oga'
+unplug-enabled=true
+unplug-file='/usr/share/sounds/LinuxMint/stereo/unplug.oga'
+
+[theme]
+name='cinnamon'
