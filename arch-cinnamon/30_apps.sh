@@ -4,7 +4,7 @@
 builddir=$(pwd)
 
 # update system
-sudo pacman -Syu
+sudo pacman -Syu --noconfirm
 
 # ------------------------------------------------------
 # Check if yay is installed
@@ -19,18 +19,8 @@ fi
 # ------------------------------------------------------
 # Install  packages
 # ------------------------------------------------------
-# source ./_packages.sh
-appPackages=(
-    chromium
-    timeshift
-);
-appPackagesYay=(
-    losslesscut-bin
-);
-flatpakPackages=(
-    com.viber.Viber
-    com.github.unrud.VideoDownloader
-);
+source ./_packages.sh
+
 # pacman
 sudo pacman -S --needed --noconfirm "${appPackages[@]}"
 # yay
@@ -40,6 +30,8 @@ yay -S --needed --noconfirm "${appPackagesYay[@]}"
 # Flatpak
 # ------------------------------------------------------
 flatpak install flathub -y "${flatpakPackages[@]}"
+
+# docker setup
 
 
 send-notification "Apps installation finished." "Reboot system!"
