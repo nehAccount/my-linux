@@ -71,6 +71,7 @@ generalPackagesYay=(
     mint-themes
     cinnamon-sounds
     zsh-git-prompt
+    lightdm-settings
 );
 
 appPackages=(
@@ -91,4 +92,11 @@ appPackagesYay=(
     losslesscut-bin
 );
 
+flatpakPackages=(
+    com.viber.Viber
+    com.jgraph.drawio.desktop
+    io.missioncenter.MissionCenter
+    org.gnome.Boxes
+    com.github.unrud.VideoDownloader
+);
 
