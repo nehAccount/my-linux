@@ -49,12 +49,14 @@ sudo chmod +x /usr/local/bin/send-notification
 sudo ln -s "$HOME"/.local/share/cinnamon/my-scripts/exec-wal /usr/local/bin/
 sudo chmod +x /usr/local/bin/exec-wal
 
-# wallpapers
+# copy wallpapers
 cp -a "$builddir"/wallpapers "$HOME"/Pictures/
-gsettings set org.cinnamon.desktop.background picture-uri 'file:///home/nermin/Pictures/wallpapers/default.jpg'
+# set default wallpaper
+file='file:///'$HOME'/Pictures/wallpapers/default.jpg'
+gsettings set org.cinnamon.desktop.background picture-uri "$file"
 
 exec-wal
-send-notification "Setup finished." "System will reboot in 10 seconds!"
+send-notification "Setup finished." "System will reboot in 15 seconds!"
 sleep 10
 sudo reboot
 
