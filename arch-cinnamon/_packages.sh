@@ -98,5 +98,7 @@ flatpakPackages=(
     io.missioncenter.MissionCenter
     org.gnome.Boxes
     com.github.unrud.VideoDownloader
+    com.getpostman.Postman
+    org.qbittorrent.qBittorrent
 );
 
