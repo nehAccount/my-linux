@@ -4,7 +4,7 @@
 builddir=$(pwd)
 
 # update system
-sudo pacman -Syu
+sudo pacman -Syu --noconfirm
 
 # ------------------------------------------------------
 # Check if yay is installed

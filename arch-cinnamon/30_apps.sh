@@ -31,10 +31,17 @@ yay -S --needed --noconfirm "${appPackagesYay[@]}"
 # ------------------------------------------------------
 flatpak install flathub -y "${flatpakPackages[@]}"
 
+# ------------------------------------------------------
 # docker setup
+# ------------------------------------------------------
+# add user to docker group
+sudo groupadd docker
+sudo usermod -aG docker "$USER"
+systemctl enable docker.service
 
-
-send-notification "Apps installation finished." "Reboot system!"
+send-notification "Apps installation finished." "System will reboot in 15 seconds!"
+sleep 15
+sudo reboot
 
 
 
