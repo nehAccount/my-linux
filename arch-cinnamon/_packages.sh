@@ -80,6 +80,7 @@ appPackages=(
     zed
     nextcloud-client
     thunderbird
+    systray-x-common
     libreoffice-fresh
     gimp
     docker

@@ -20,7 +20,7 @@ sudo cp -a "$builddir"/Templates/* "$HOME"/Templates
 sudo tar -xvf "$builddir"/icons/Colloid.tar.xz -C /usr/share/icons
 
 # distro icon
-cp -a "$builddir"/icons/distro.svg "$HOME"/.local/share/icons
+# cp -a "$builddir"/icons/distro.svg "$HOME"/.local/share/icons
 sudo cp -a "$builddir"/icons/distro.svg /usr/share/icons
 
 # shares
