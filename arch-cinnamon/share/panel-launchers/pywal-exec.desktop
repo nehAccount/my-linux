@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=Wallpaper Colors
-Exec=/home/nermin/.local/share/cinnamon/my-scripts/exec-wal.sh
+Exec=exec-wal
 Comment=Extract colors from current wallpaper
 Terminal=false
 PrefersNonDefaultGPU=false

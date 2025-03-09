@@ -17,10 +17,10 @@ export PLUGINS=/usr/share/zsh/plugins
 export HISTFILE=~/.zsh_history
 
 # How many commands zsh will load to memory.
-export HISTSIZE=10000
+export HISTSIZE=3000
 
 # How many commands history will save on file.
-export SAVEHIST=10000
+export SAVEHIST=3000
 
 # History won't save duplicates.
 setopt HIST_IGNORE_ALL_DUPS

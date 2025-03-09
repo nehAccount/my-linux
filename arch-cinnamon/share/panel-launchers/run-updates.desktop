@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=Run Updates
-Exec=alacritty -e /home/nermin/MyHyprland/config/hypr/script/install-updates.sh
+Exec=alacritty -e /home/nermin/.local/share/cinnamon/my-scripts/update-all.sh
 Comment=
 Terminal=false
 PrefersNonDefaultGPU=false
