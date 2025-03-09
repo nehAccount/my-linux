@@ -1,0 +1,105 @@
+#!/bin/bash
+
+generalPackages=(
+    amd-ucode
+    rsync
+    git
+    wget
+    curl
+    fastfetch
+    htop
+    zip
+    unzip
+    ncdu
+    stress
+    nmap
+    bat
+    btop
+    nautilus
+    firefox
+    alacritty
+    power-profiles-daemon
+    bluez
+    bluez-utils
+    blueman
+    figlet
+    eza
+    tumbler
+    brightnessctl
+    xarchiver
+    qalculate-gtk
+    gparted
+    dosfstools
+    starship
+    gnome-screenshot
+    nemo
+    nemo-fileroller
+    dconf
+    dconf-editor
+    mpv
+    ufw
+    gufw
+    pandoc-cli
+    eog
+    python-pip
+    python-psutil
+    python-rich
+    python-click
+    python-gobject
+    python-pywal
+    pacman-contrib
+    breeze-icons
+    noto-fonts
+    otf-font-awesome
+    ttf-fira-sans
+    ttf-firacode-nerd
+    ttf-hack
+    ttf-jetbrains-mono-nerd
+    ttf-liberation
+    ttf-ubuntu-font-family
+    gum
+    bind
+    zsh
+    zsh-autosuggestions
+    zsh-syntax-highlighting
+    zsh-autocomplete
+);
+
+generalPackagesYay=(
+    bibata-cursor-theme
+    pacseek
+    mint-themes
+    cinnamon-sounds
+    zsh-git-prompt
+    lightdm-settings
+);
+
+appPackages=(
+    chromium
+    timeshift
+    zed
+    nextcloud-client
+    thunderbird
+    systray-x-common
+    libreoffice-fresh
+    gimp
+    docker
+    docker-buildx
+    docker-compose
+);
+appPackagesYay=(
+    phpstorm
+    phpstorm-jre
+    losslesscut-bin
+);
+
+flatpakPackages=(
+    com.viber.Viber
+    com.jgraph.drawio.desktop
+    io.missioncenter.MissionCenter
+    org.gnome.Boxes
+    com.github.unrud.VideoDownloader
+    com.getpostman.Postman
+    org.qbittorrent.qBittorrent
+);
+

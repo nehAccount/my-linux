@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Resources
+Exec=flatpak run io.missioncenter.MissionCenter
+Comment=
+Terminal=false
+PrefersNonDefaultGPU=false
+Icon=/usr/share/icons/breeze/places/22/folder-rpm-symbolic.svg
+Type=Application
