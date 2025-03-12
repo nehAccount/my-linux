@@ -69,26 +69,38 @@ generalPackages=(
 generalPackagesYay=(
     bibata-cursor-theme
     pacseek
+    mint-themes
     cinnamon-sounds
     zsh-git-prompt
     lightdm-settings
 );
 
 appPackages=(
+    chromium
     timeshift
+    zed
     nextcloud-client
     thunderbird
     systray-x-common
+    libreoffice-fresh
+    gimp
     docker
     docker-buildx
     docker-compose
 );
 appPackagesYay=(
-
+    phpstorm
+    phpstorm-jre
+    losslesscut-bin
 );
 
 flatpakPackages=(
     com.viber.Viber
+    com.jgraph.drawio.desktop
     io.missioncenter.MissionCenter
+    org.gnome.Boxes
+    com.github.unrud.VideoDownloader
+    com.getpostman.Postman
+    org.qbittorrent.qBittorrent
 );
 
