@@ -1,5 +1,6 @@
 #!/bin/bash
-
+echo ":: Full system and applications update"
+echo " "
 
 # update packages
 yay
