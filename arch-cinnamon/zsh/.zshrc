@@ -52,5 +52,8 @@ alias l='ls -lah --color=auto'
 alias ll='ls -lh --color=auto'
 alias la='ls -lAh --color=auto'
 
+# enable delete key
+bindkey "^[[3~" delete-char
+
 # load starship last
 eval "$(starship init zsh)"
