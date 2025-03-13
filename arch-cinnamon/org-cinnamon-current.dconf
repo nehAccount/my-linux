@@ -4,11 +4,11 @@ desktop-effects=true
 desktop-effects-close='traditional'
 desktop-effects-minimize='traditional'
 desktop-effects-on-dialogs=true
-enabled-applets=['panel1:left:0:menu@cinnamon.org:0', 'panel1:right:3:systray@cinnamon.org:3', 'panel1:right:12:xapp-status@cinnamon.org:4', 'panel1:right:6:notifications@cinnamon.org:5', 'panel1:right:7:removable-drives@cinnamon.org:7', 'panel1:right:8:keyboard@cinnamon.org:8', 'panel1:right:9:network@cinnamon.org:10', 'panel1:right:10:sound@cinnamon.org:11', 'panel1:right:11:power@cinnamon.org:12', 'panel1:center:0:calendar@cinnamon.org:13', 'panel1:right:13:system-controls@rcalixte:25', 'panel1:left:2:grouped-window-list@cinnamon.org:29', 'panel1:right:1:expo@cinnamon.org:37', 'panel1:right:2:spacer@cinnamon.org:38', 'panel1:center:1:weather@mockturtl:106', 'panel1:right:14:spacer@cinnamon.org:107', 'panel1:right:4:SpicesUpdate@claudiux:113', 'panel1:right:5:panel-launchers@cinnamon.org:114']
+enabled-applets=['panel1:left:0:menu@cinnamon.org:0', 'panel1:right:4:systray@cinnamon.org:3', 'panel1:right:13:xapp-status@cinnamon.org:4', 'panel1:right:7:notifications@cinnamon.org:5', 'panel1:right:8:removable-drives@cinnamon.org:7', 'panel1:right:9:keyboard@cinnamon.org:8', 'panel1:right:10:network@cinnamon.org:10', 'panel1:right:11:sound@cinnamon.org:11', 'panel1:right:12:power@cinnamon.org:12', 'panel1:center:0:calendar@cinnamon.org:13', 'panel1:right:14:system-controls@rcalixte:25', 'panel1:left:2:grouped-window-list@cinnamon.org:29', 'panel1:right:0:expo@cinnamon.org:37', 'panel1:right:3:spacer@cinnamon.org:38', 'panel1:center:1:weather@mockturtl:106', 'panel1:right:15:spacer@cinnamon.org:107', 'panel1:right:6:SpicesUpdate@claudiux:113', 'panel1:right:5:panel-launchers@cinnamon.org:114', 'panel1:right:1:workspace-switcher@cinnamon.org:115']
 enabled-desklets=['diskspace@schorschii:0:1750:925', 'diskspace@schorschii:1:1750:750']
-enabled-extensions=['OsdWithNumber@JosephMcc', 'BlurCinnamon@klangman', 'transparent-panels@germanfr']
+enabled-extensions=['OsdWithNumber@JosephMcc', 'BlurCinnamon@klangman']
 hotcorner-layout=['expo:true:0', 'scale:true:0', 'scale:false:0', 'desktop:true:0']
-next-applet-id=115
+next-applet-id=116
 next-desklet-id=2
 panel-edit-mode=false
 panel-zone-icon-sizes='[{"panelId":1,"left":32,"center":22,"right":22}]'
@@ -43,7 +43,6 @@ exec='qalculate-gtk'
 [desktop/applications/terminal]
 exec='alacritty'
 exec-arg='--'
-
 
 [desktop/interface]
 cursor-blink-time=1200
@@ -95,7 +94,7 @@ volume-sound-file='/usr/share/sounds/LinuxMint/stereo/volume.oga'
 
 [desktop/wm/preferences]
 num-workspaces=4
-titlebar-font='Fira Sans Medium 13'
+titlebar-font='Fira Sans Semi-Bold 13'
 workspace-names=@as []
 
 [gestures]
