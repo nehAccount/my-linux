@@ -1,0 +1,8 @@
+
+see: https://github.com/vinceliuice/Orchis-theme
+
+# light
+./install.sh -l -n my-orchis -c light -s standard -i arch --tweaks solid --round 10px
+
+#dark
+./install.sh -l -n my-orchis -c dark -s standard -i arch --tweaks solid nord --round 10px

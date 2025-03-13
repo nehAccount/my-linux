@@ -74,6 +74,12 @@ sudo tar -xvf "$builddir"/icons/Colloid.tar.xz -C /usr/share/icons
 sudo cp -a "$builddir"/icons/distro.svg /usr/share/icons
 
 # ------------------------------------------------------
+# themes
+# ------------------------------------------------------
+mkdir -p "$HOME/.themes"
+cp -a "$builddir"/home/themes/* "$HOME"/.themes
+
+# ------------------------------------------------------
 # shares
 # ------------------------------------------------------
 mkdir -p "$HOME/.local/share"

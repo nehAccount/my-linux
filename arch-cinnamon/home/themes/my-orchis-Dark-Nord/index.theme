@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=my-orchis-Dark-Nord
+Comment=An flat Materia Gtk+ theme based on Elegant Design
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=my-orchis-Dark-Nord
+MetacityTheme=my-orchis-Dark-Nord
+IconTheme=Tela-circle-dark
+CursorTheme=Vimix-dark
+ButtonLayout=close,minimize,maximize:menu
