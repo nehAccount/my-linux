@@ -64,6 +64,7 @@ generalPackages=(
     zsh-syntax-highlighting
     zsh-autocomplete
     orchis-theme
+    xdg-desktop-portal-gtk
 );
 
 generalPackagesYay=(
