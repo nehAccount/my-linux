@@ -236,7 +236,7 @@
         "dependency": "manualLocation",
         "description": "Location",
         "tooltip": "You can enter coordinates 'Latitude,Longitude' (e.g. 51.5085,-0.1257) or use 'City,Country-code' (e.g. London,UK) or try to enter {House number} {Street} {City/Town} {Postcode} {Country}. The search algorithm is very flexible with the format. After 3 seconds without typing the address you entered is replaced automatically for validating your choice. Powered by nominatim.openstreetmap.org.",
-        "value": "44.1962413,17.912017"
+        "value": "44.2052,17.9089"
     },
     "locationDescription": {
         "type": "label",
@@ -381,7 +381,7 @@
         "default": "",
         "description": "Override label on panel",
         "tooltip": "Some of the available values are: {c} is condition, {t} is temperature and {u} is unit.\nCan be used if label does not fit on vertical panel, among other smart things.",
-        "value": "{t}° {c}"
+        "value": " {t}° {c}"
     },
     "tooltipTextOverride": {
         "type": "entry",

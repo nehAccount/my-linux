@@ -88,7 +88,7 @@
         "tooltip": "Select an icon to show in the panel.",
         "default_icon": "cinnamon-symbolic",
         "dependency": "menu-custom",
-        "value": "/home/nermin/.local/share/icons/distro.svg"
+        "value": "/usr/share/icons/distro.svg"
     },
     "menu-icon-size": {
         "type": "spinbutton",
@@ -161,7 +161,7 @@
         "units": "px",
         "description": "Favorites icon size",
         "dependency": "favbox-show",
-        "value": 32
+        "value": 42
     },
     "show-favorites": {
         "type": "switch",
@@ -247,12 +247,12 @@
     "popup-width": {
         "type": "generic",
         "default": 590,
-        "value": 729.7440185546875
+        "value": 681.5421142578125
     },
     "popup-height": {
         "type": "generic",
         "default": 515,
-        "value": 692.3158569335938
+        "value": 673.4777221679688
     },
     "reset-menu-size-button": {
         "type": "button",

@@ -359,14 +359,15 @@
         "value": [
             "cinnamon-settings.desktop",
             "org.gnome.Boxes.desktop:flatpak",
-            "github-desktop.desktop",
-            "nemo.desktop",
+            "chromium.desktop",
             "com.viber.Viber.desktop:flatpak",
+            "nemo.desktop",
             "dev.zed.Zed.desktop",
             "org.mozilla.Thunderbird.desktop",
             "jetbrains-phpstorm.desktop",
             "Alacritty.desktop",
-            "firefox.desktop"
+            "firefox.desktop",
+            "qalculate-gtk.desktop"
         ]
     },
     "__md5__": "b7d0a7558cf87c22c50195c9d408485f"
