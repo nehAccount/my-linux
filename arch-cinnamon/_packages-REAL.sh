@@ -84,6 +84,7 @@ appPackages=(
     systray-x-common
     libreoffice-fresh
     gimp
+    gnome-boxes
     docker
     docker-buildx
     docker-compose
@@ -98,7 +99,6 @@ flatpakPackages=(
     com.viber.Viber
     com.jgraph.drawio.desktop
     io.missioncenter.MissionCenter
-    org.gnome.Boxes
     com.github.unrud.VideoDownloader
     com.getpostman.Postman
     org.qbittorrent.qBittorrent
