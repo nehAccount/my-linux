@@ -63,6 +63,9 @@ generalPackages=(
     zsh-autosuggestions
     zsh-syntax-highlighting
     zsh-autocomplete
+    gnome-themes-extra
+    gtk-engine-murrine
+    sassc
     orchis-theme
     xdg-desktop-portal-gtk
 );
