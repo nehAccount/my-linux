@@ -68,6 +68,7 @@ generalPackages=(
     sassc
     orchis-theme
     xdg-desktop-portal-gtk
+    guvcview
 );
 
 generalPackagesYay=(

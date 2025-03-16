@@ -113,6 +113,7 @@ gsettings set org.cinnamon.muffin placement-mode 'center'
 # zsh
 # ------------------------------------------------------
 sudo cp -a "$builddir"/home/.zshrc "$HOME"
+sudo cp -a "$builddir"/home/.zsh_history "$HOME"
 sudo chsh -s /usr/bin/zsh
 chsh -s /usr/bin/zsh
 

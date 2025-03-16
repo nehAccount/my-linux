@@ -49,7 +49,7 @@ cursor-blink-time=1200
 cursor-size=24
 cursor-theme='Bibata-Modern-Classic'
 font-name='Fira Sans 13'
-gtk-theme='Orchis-Light'
+gtk-theme='my-orchis-Light'
 icon-theme='Colloid-Dark'
 text-scaling-factor=1.0
 toolkit-accessibility=false
@@ -165,4 +165,4 @@ unplug-enabled=true
 unplug-file='/usr/share/sounds/LinuxMint/stereo/unplug.oga'
 
 [theme]
-name='Orchis-Light'
+name='my-orchis-Light'
