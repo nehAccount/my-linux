@@ -70,7 +70,7 @@ fc-cache -f -v
 # ------------------------------------------------------
 # icons
 # ------------------------------------------------------
-sudo tar -xvf "$builddir"/icons/Colloid-Viber.tar.gz -C /usr/share/icons
+sudo tar -xvf "$builddir"/icons/Colloid.tar.gz -C /usr/share/icons
 sudo cp -a "$builddir"/icons/distro.svg /usr/share/icons
 
 # ------------------------------------------------------
@@ -83,9 +83,7 @@ cp -a "$builddir"/home/local/share/* "$HOME"/.local/share
 # themes
 # ------------------------------------------------------
 mkdir -p "$HOME/.themes"
-# cp -a "$builddir"/home/themes/* "$HOME"/.themes
-ln -s "$HOME"/.local/share/themes/my-orchis-Light "$HOME"/.themes/
-ln -s "$HOME"/.local/share/themes/my-orchis-Dark-Nord "$HOME"/.themes/
+cp -a "$builddir"/home/themes/* "$HOME"/.themes
 
 # ------------------------------------------------------
 # config
