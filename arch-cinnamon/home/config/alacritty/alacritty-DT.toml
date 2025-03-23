@@ -7,12 +7,11 @@ family = "JetBrainsMono NF"
 style = "Regular"
 
 [window]
-opacity = 0.9
+opacity = 0.8
 position = "None"
-#decorations = "None"
-#startup_mode = "Maximized"
-decorations_theme_variant = "None" # "Dark" | "Light" | "None"
-title = "Terminal"
+decorations = "None"
+startup_mode = "Maximized"
+decorations_theme_variant = "None"
 
 [window.padding]
 x = 20
@@ -25,6 +24,6 @@ blink_interval = 500
 shape = "Underline"
 blinking = "Always"
 
-[window.dimensions]
-columns = 150
-lines = 33
+#[window.dimensions]
+#columns = 130
+#lines = 30

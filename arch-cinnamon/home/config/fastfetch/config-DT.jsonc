@@ -26,6 +26,16 @@
     },
     "break",
     {
+      "key": "OS           ",
+      "keyColor": "red",
+      "type": "os",
+    },
+    {
+      "key": "Machine      ",
+      "keyColor": "green",
+      "type": "host",
+    },
+    {
       "key": "Kernel       ",
       "keyColor": "magenta",
       "type": "kernel",
@@ -34,6 +44,17 @@
       "key": "Packages     ",
       "keyColor": "cyan",
       "type": "packages",
+    },
+    {
+      "key": "Uptime       ",
+      "keyColor": "red",
+      "type": "uptime",
+    },
+    {
+      "key": "Resolution   ",
+      "keyColor": "yellow",
+      "type": "display",
+      "compactType": "original-with-refresh-rate",
     },
     {
       "key": "WM           ",
@@ -47,13 +68,23 @@
     },
     {
       "key": "Shell        ",
-      "keyColor": "yellow",
+      "keyColor": "cyan",
       "type": "shell",
     },
     {
       "key": "Terminal     ",
       "keyColor": "red",
       "type": "terminal",
+    },
+    {
+      "key": "CPU          ",
+      "keyColor": "yellow",
+      "type": "cpu",
+    },
+    {
+      "key": "GPU          ",
+      "keyColor": "blue",
+      "type": "gpu",
     },
     {
       "key": "Memory       ",
