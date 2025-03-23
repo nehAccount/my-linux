@@ -1,0 +1,49 @@
+/* global config ---- */
+@import "~/MyHyprland/config/rofi/globals.rasi"
+
+/* font ------- */
+//@import "~/MyHyprland/config/rofi/font.rasi"
+* {
+    font: "JetBrainsMono NF 14";
+    //font: "JetBrainsMono NF Medium 14";
+}
+
+/* colors (custom wal template) ---- */
+@import "~/.cache/wal/colors-rofi-pywal.rasi"
+
+
+/**********************************/
+// config
+/**********************************/
+configuration {
+	//modes: "drun";
+	//show-icons: true;
+	//drun-display-format: "{name}";
+	//display-drun: "Applications";
+
+  timeout {
+      action: "kb-cancel";
+      delay:  0;
+  }
+  filebrowser {
+      directories-first: true;
+      sorting-method:    "name";
+  }
+}
+
+/* global design ---- */
+@import "~/MyHyprland/config/rofi/globals-design.rasi"
+
+/**********************************/
+// design
+/**********************************/
+window {
+    width: 40%;
+    height: 80%;
+}
+prompt, textbox-prompt-colon, entry {
+    font: "JetBrainsMono NF 18";
+}
+message {
+    background-color: @color11;
+}

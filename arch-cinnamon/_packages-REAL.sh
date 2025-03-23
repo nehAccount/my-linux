@@ -69,6 +69,7 @@ generalPackages=(
     orchis-theme
     xdg-desktop-portal-gtk
     guvcview
+    rofi
 );
 
 generalPackagesYay=(

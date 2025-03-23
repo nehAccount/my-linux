@@ -1,0 +1,61 @@
+/* global config ---- */
+@import "~/MyHyprland/config/rofi/globals.rasi"
+
+/* font ------- */
+@import "~/MyHyprland/config/rofi/font.rasi"
+
+/* colors (custom wal template) ---- */
+@import "~/.cache/wal/colors-rofi-pywal.rasi"
+
+
+/**********************************/
+// Wallpapers config
+/**********************************/
+configuration {
+	show-icons: true;
+	drun-display-format: "{name}";
+
+  timeout {
+      action: "kb-cancel";
+      delay:  0;
+  }
+  filebrowser {
+      directories-first: true;
+      sorting-method:    "name";
+  }
+}
+
+/* global design ---- */
+@import "~/MyHyprland/config/rofi/globals-design.rasi"
+
+/**********************************/
+// Wallpapers design
+/**********************************/
+
+window {
+    width: 90%;
+    height: 90%;
+}
+listview {
+	flow: horizontal;
+	fixed-columns: true;
+	columns: 4;
+	lines: 3;
+	spacing: 0.5em;
+}
+element {
+	orientation: vertical;
+	padding: 0.1em;
+    children: [element-icon, element-text ];
+}
+element-icon {
+	size: calc(((100% - 1em) / 4 ));
+	horizontal-align: 0.5;
+	vertical-align: 0.5;
+}
+element-text {
+	horizontal-align: 0.5;
+	vertical-align: 0.5;
+    padding: 0.2em;
+    color: gray;
+}

@@ -1,0 +1,5 @@
+* {
+    //font: "JetBrainsMono NF 14";
+    //font: "JetBrainsMono NF Medium 14";
+    font: "Fira Sans Regular 14";
+}
