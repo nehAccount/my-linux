@@ -2413,14 +2413,3 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   background-color: rgba(0, 0, 0, 0);
   border-radius: 0px;
 }
-
-/* MY CORRECTIONS*/
-/****************************************/
-/* MY MOD */
-
-.applet-label{
-    font-weight: 500;
-}
-.workspace-button {
-    font-weight: 500;
-}

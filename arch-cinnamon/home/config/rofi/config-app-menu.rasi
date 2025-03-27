@@ -15,7 +15,7 @@ configuration {
 	modes: "drun";
 	show-icons: true;
 	drun-display-format: "{name}";
-	display-drun: "Applications";
+	display-drun: "Find";
 
   timeout {
       action: "kb-cancel";
@@ -39,5 +39,5 @@ window {
     height: 70%;
 }
 element-icon {
-    size: 48px;
+    size: 64px;
 }

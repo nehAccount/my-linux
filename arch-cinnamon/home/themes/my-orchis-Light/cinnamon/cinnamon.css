@@ -2522,6 +2522,7 @@ StScrollBar StButton#hhandle:active {
     border-radius: 0px;
 }
 
+/* MY CORRECTIONS*/
 /****************************************/
 /* MY MOD */
 
@@ -2562,6 +2563,7 @@ rgba(232, 240, 246, 1) = #E8F0EC
 
 .workspace-button {
     color: #5d605e;
+    font-weight: 500;
 }
 
 .workspace-button:outlined,
@@ -2577,3 +2579,4 @@ rgba(232, 240, 246, 1) = #E8F0EC
     background-gradient-end: rgba(232, 240, 246, 0.7);
     background-color: rgba(232, 240, 246, 0.7);
 }
+
