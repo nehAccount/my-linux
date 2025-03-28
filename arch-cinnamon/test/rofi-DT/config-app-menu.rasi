@@ -1,7 +1,12 @@
+/* global config ---- */
+@import "~/.config/rofi/globals.rasi"
+
+/* font ------- */
+@import "~/.config/rofi/font.rasi"
+
+/* colors (custom wal template) ---- */
 @import "~/.cache/wal/colors-rofi-pywal.rasi"
-@import "~/.config/rofi/share/globals.rasi"
-@import "~/.config/rofi/share/font.rasi"
-@import "~/.config/rofi/share/design.rasi"
+
 
 /**********************************/
 // APP MENU config
@@ -22,10 +27,17 @@ configuration {
   }
 }
 
+/* global design ---- */
+@import "~/.config/rofi/globals-design.rasi"
+
+/**********************************/
+// APP MENU design
+/**********************************/
+
 window {
     width: 40%;
     height: 70%;
 }
 element-icon {
-    size: 56px;
+    size: 64px;
 }

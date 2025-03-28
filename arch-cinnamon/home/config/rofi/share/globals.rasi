@@ -1,0 +1,8 @@
+configuration {
+	show-icons: false;
+	//display-drun: "search";
+	hover-select: true;
+	me-select-entry: "";
+    me-accept-entry: "MousePrimary";
+    window-format: "{w} · {c} · {t}";
+}

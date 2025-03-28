@@ -1,0 +1,140 @@
+
+window {
+    width:                        500px;
+    height: 			         500px;
+    background-color:             @background;
+    padding:                      20px 50px;
+    margin:                       0px; 
+    color:                        @foreground;
+    border:                       2px;
+    border-color:                 @color11;
+    location:                     center;
+    anchor:                       center;
+    fullscreen:                   false;
+    enabled:                      true;
+    border-radius:                0em;
+}
+
+/* ---- Inputbar ---- */
+inputbar {
+    enabled:                      true;
+    text-color:                   @color11;
+    spacing:                      5px;
+    padding:                      20px 20px 20px 0px;
+    border-radius:                5px;
+    border-color:                 @foreground;
+    background-color:             transparent;
+    margin: 20px 0px;
+}
+entry {
+    text-color:        @color11;
+    cursor:            text;
+    spacing:           0;
+    placeholder-color: Gray;
+    placeholder:       "";
+}
+num-filtered-rows {
+    expand:     false;
+    text-color: @color11;
+}
+num-rows {
+    expand:     false;
+    text-color: Gray;
+}
+textbox-num-sep {
+    expand:     false;
+    str:        "|";
+    text-color: Gray;
+}
+
+/* ---- Body ---- */
+message {
+    border: 0px;
+    padding: 10px;
+    border-radius: 5px;
+}
+listview {
+    border: 0px ;
+}
+sidebar {
+    border: 0px;
+}
+
+/* ---- Element ---- */
+element {
+    padding: 10px ;
+    margin: 1px 20px 1px 0px;
+    cursor:  pointer;
+    spacing: 10px ;
+    border:  1;
+    border-color: transparent;
+    border-radius: 10px;
+}
+element normal.normal {
+    background-color:            inherit;
+    text-color:                  @foreground;
+}
+
+element normal.urgent {
+    background-color:            inherit;
+    text-color:                  @foreground;
+}
+
+element normal.active {
+    background-color:            inherit;
+    text-color:                  @foreground;
+}
+
+element selected.normal {
+    background-color:            @hover;
+    text-color:                  @foreground;
+    border-color:               transparent;
+}
+
+element selected.urgent {
+    background-color:            inherit;
+    text-color:                  @foreground;
+}
+
+element selected.active {
+    background-color:            inherit;
+    text-color:                  @foreground;
+}
+
+element alternate.normal {
+    background-color:            inherit;
+    text-color:                  @foreground;
+}
+
+element alternate.urgent {
+    background-color:            inherit;
+    text-color:                  @foreground;
+}
+
+element alternate.active {
+    background-color:            inherit;
+    text-color:                  @foreground;
+}
+
+element-icon {
+    background-color:            transparent;
+    text-color:                  inherit;
+    cursor:                      inherit;
+}
+
+element-text {
+    background-color:            transparent;
+    text-color:                  inherit;
+    cursor:                      inherit;
+    vertical-align:              0.5;
+    horizontal-align:            0.0;
+}
+
+scrollbar {
+    width:        4px ;
+    padding:      0;
+    handle-width: 4px ;
+    border:       0;
+    handle-color: @hover;
+}
+

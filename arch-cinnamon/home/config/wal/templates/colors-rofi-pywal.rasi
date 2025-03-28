@@ -1,6 +1,7 @@
 * {{
     background: rgba({background.rgb}, 0.85);
     foreground: {foreground};
+    hover:      rgba({color11.rgb}, 0.1);
     color0:     {color0};
     color1:     {color1};
     color2:     {color2};

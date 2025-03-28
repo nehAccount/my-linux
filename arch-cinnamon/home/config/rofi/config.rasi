@@ -1,37 +1,4 @@
-/* global config ---- */
-@import "~/.config/rofi/globals.rasi"
-
-/* font ------- */
-@import "~/.config/rofi/font.rasi"
-
-/* colors (custom wal template) ---- */
 @import "~/.cache/wal/colors-rofi-pywal.rasi"
-
-
-/**********************************/
-// config
-/**********************************/
-configuration {
-	//modes: "drun";
-	//show-icons: true;
-	//drun-display-format: "{name}";
-	//display-drun: "Applications";
-
-  timeout {
-      action: "kb-cancel";
-      delay:  0;
-  }
-  filebrowser {
-      directories-first: true;
-      sorting-method:    "name";
-  }
-}
-
-/* global design ---- */
-@import "~/.config/rofi/globals-design.rasi"
-
-/**********************************/
-// design
-/**********************************/
-
-
+@import "~/.config/rofi/share/globals.rasi"
+@import "~/.config/rofi/share/font.rasi"
+@import "~/.config/rofi/share/design.rasi"
