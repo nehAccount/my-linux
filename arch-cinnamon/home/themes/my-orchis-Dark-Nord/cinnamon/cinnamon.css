@@ -2419,8 +2419,15 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 /* MY MOD */
 
 .applet-label{
-    font-weight: 500;
+  font-weight: 500;
 }
 .workspace-button {
-    font-weight: 500;
+  font-weight: 500;
+  color: #606267
+}
+.workspace-button:hover {
+  color: #ccc;
+}
+.workspace-button:outlined {
+  color: #1a73e8;
 }
