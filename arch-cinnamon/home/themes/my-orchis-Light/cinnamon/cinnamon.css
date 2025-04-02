@@ -2560,6 +2560,9 @@ rgba(232, 240, 246, 1) = #E8F0EC
 .grouped-window-list-item-box:focus {
     border-color: #1a73e8;
 }
+.grouped-window-list-item-box .progress{
+  border-radius: 0px;
+}
 
 .workspace-button {
     color: #5d605e;

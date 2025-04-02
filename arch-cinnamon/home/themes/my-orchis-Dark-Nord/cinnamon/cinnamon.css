@@ -2431,3 +2431,6 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 .workspace-button:outlined {
   color: #1a73e8;
 }
+.grouped-window-list-item-box .progress{
+  border-radius: 0px;
+}
