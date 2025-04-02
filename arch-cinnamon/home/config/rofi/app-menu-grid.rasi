@@ -3,7 +3,7 @@
 window {
 	fullscreen:       false;
 	width: 60%;
-    height: 65%;
+    height: 75%;
 	padding:          3em;
 	spacing:          3em;
 	border-color: @color11;
