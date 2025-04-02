@@ -47,7 +47,7 @@ exec-arg='--'
 
 [desktop/background]
 picture-options='zoom'
-picture-uri='file:///home/nermin/Pictures/wallpapers/forrest.jpg'
+picture-uri='file:///home/nermin/Pictures/wallpapers/photo-1464002255390-2de63a26c637.jpg'
 
 [desktop/background/slideshow]
 delay=15
@@ -64,12 +64,12 @@ text-scaling-factor=1.0
 toolkit-accessibility=false
 
 [desktop/keybindings]
-custom-list=['custom0', 'custom1', '__dummy__']
+custom-list=['custom0', 'custom1']
 show-desklets=@as []
 
 [desktop/keybindings/custom-keybindings/custom0]
 binding=['Super_L']
-command='rofi -show drun -replace -i -config ~/.config/rofi/config-app-menu.rasi'
+command='rofi -show drun -replace -i -config ~/.config/rofi/app-menu-grid.rasi'
 name='rofi app menu'
 
 [desktop/keybindings/custom-keybindings/custom1]
