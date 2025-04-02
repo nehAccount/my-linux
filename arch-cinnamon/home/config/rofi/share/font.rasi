@@ -1,6 +1,6 @@
 * {
-    //font: "JetBrainsMono NF 14";
+    //font: "JetBrainsMono NF 11";
     //font: "JetBrainsMono NF Medium 14";
     //font: "Fira Sans Regular 14";
-    font: "SF Pro Rounded Regular 14";
+    font: "SF Pro Rounded Regular 11";
 }

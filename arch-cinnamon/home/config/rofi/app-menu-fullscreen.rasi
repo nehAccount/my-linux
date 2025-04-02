@@ -1,0 +1,195 @@
+@import "~/.cache/wal/colors-rofi-pywal.rasi"
+@import "~/.config/rofi/share/font.rasi"
+@import "~/.config/rofi/share/globals.rasi"
+
+* {
+	background-color: transparent;
+	text-color:       white;
+}
+
+configuration {
+	modes: "drun";
+	show-icons: true;
+	drun-display-format: "{name}";
+	display-drun: "Find";
+
+  timeout {
+      action: "kb-cancel";
+      delay:  0;
+  }
+}
+
+window {
+	fullscreen:       true;
+	background-color: @background;
+	padding:          4em;
+	children:         [ wrap, listview-split];
+	spacing:          4em;
+	border-color: transparent;
+	border: 0px;
+}
+
+
+/** We add an extra child to this is PREVIEW=true */
+listview-split {
+  orientation: horizontal;
+  spacing: 0.4em;
+  children: [listview];
+}
+
+wrap {
+	expand: false;
+	orientation: vertical;
+	children: [ inputbar, message ];
+	border: 0px 0px 2px 0px;
+	border-color: @hover;
+	border-radius: 0em;
+}
+
+icon-ib {
+	expand: false;
+	filename: "system-search";
+	vertical-align: 0.5;
+	horizontal-align: 0.5;
+	size: 2em;
+}
+inputbar {
+	spacing: 0.4em;
+	padding: 0.4em;
+	children: [ icon-ib, entry ];
+	
+}
+entry {
+	placeholder: "";
+	placeholder-color: grey;
+	vertical-align: 0.5;
+	font: "SF Pro Rounded Light 18";
+	color: @color1;
+}
+message {
+	background-color: transparent;
+	border: 0px;
+	padding: 0.4em;
+	spacing: 0.4em;
+}
+
+listview {
+	flow: horizontal;
+	fixed-columns: true;
+	columns: 7;
+	lines: 5;
+	spacing: 2.0em;
+	border: 0px;
+}
+
+element {
+	orientation: vertical;
+	padding: 1em;
+	border: 0px;
+	border-radius: 0.6em;
+    children: [element-icon, element-text ];
+}
+element-icon {
+	//size: calc(((100% - 8em) / 7 ));
+	size: 5em;
+	horizontal-align: 0.5;
+	vertical-align: 0.5;
+}
+element-text {
+	horizontal-align: 0.5;
+	vertical-align: 0.5;
+    padding: 0.2em;
+}
+
+element selected {
+    background-color: red;
+	border-color: @color11;
+	border: 0px;
+	border-radius: 0.6em;
+}
+
+element normal.normal {
+    background-color:            inherit;
+    text-color:                  @foreground;
+}
+
+element normal.urgent {
+    background-color:            inherit;
+    text-color:                  @foreground;
+}
+
+element normal.active {
+    background-color:            inherit;
+    text-color:                  @foreground;
+}
+
+element selected.normal {
+    background-color:            @hover;
+    text-color:                  @foreground;
+    border-color:               transparent;
+}
+
+element selected.urgent {
+    background-color:            inherit;
+    text-color:                  @foreground;
+}
+
+element selected.active {
+    background-color:            inherit;
+    text-color:                  @foreground;
+}
+
+element alternate.normal {
+    background-color:            inherit;
+    text-color:                  @foreground;
+}
+
+element alternate.urgent {
+    background-color:            inherit;
+    text-color:                  @foreground;
+}
+
+element alternate.active {
+    background-color:            inherit;
+    text-color:                  @foreground;
+}
+
+scrollbar {
+    width:        0.6em ;
+    padding:      0;
+    handle-width: 0.6em ;
+    border:       0;
+    handle-color: @hover;
+}
+
+/**
+ * Launching rofi with environment PREVIEW set to true
+ * will split the screen and show a preview widget.
+ */
+@media ( enabled: env(PREVIEW, false)) {
+  /** preview widget */
+  icon-current-entry {
+    expand:          true;
+    size:            80%;
+  }
+  listview-split {
+    children: [listview, icon-current-entry];
+  }
+  listview {
+  columns: 4;
+  }
+
+}
+
+@media ( enabled: env(NO_IMAGE, false)) {
+	listview {
+		columns: 1;
+		spacing: 0.4em;
+	}
+	element {
+		children: [ element-text ];
+	}
+	element-text {
+		horizontal-align: 0.0;
+	}
+}
