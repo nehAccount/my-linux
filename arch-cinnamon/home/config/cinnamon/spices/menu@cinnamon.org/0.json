@@ -72,7 +72,7 @@
         "type": "keybinding",
         "description": "Keyboard shortcut to open and close the menu",
         "default": "Super_L::Super_R",
-        "value": "Super_L::Super_R"
+        "value": "<Super>space::<Super>space"
     },
     "menu-custom": {
         "type": "switch",
@@ -99,7 +99,7 @@
         "units": "px",
         "description": "Icon size",
         "dependency": "menu-custom",
-        "value": 24
+        "value": 22
     },
     "menu-label": {
         "type": "entry",
@@ -150,7 +150,7 @@
         "default": true,
         "description": "Show favorites and session buttons",
         "tooltip": "Choose whether or not to show the left pane of the menu.",
-        "value": false
+        "value": true
     },
     "fav-icon-size": {
         "type": "spinbutton",
@@ -247,7 +247,7 @@
     "popup-width": {
         "type": "generic",
         "default": 590,
-        "value": 681.5421142578125
+        "value": 713.959228515625
     },
     "popup-height": {
         "type": "generic",
