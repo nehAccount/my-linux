@@ -152,6 +152,14 @@ exec-wal
 send-notification "Installation finished." "System will reboot in 15 seconds!"
 
 # ------------------------------------------------------
+# nautilus-open-any-terminal (alacritty on right click)
+# ------------------------------------------------------
+gsettings set com.github.stunkymonkey.nautilus-open-any-terminal terminal alacritty
+gsettings set com.github.stunkymonkey.nautilus-open-any-terminal keybindings '<Ctrl><Alt>t'
+gsettings set com.github.stunkymonkey.nautilus-open-any-terminal new-tab true
+gsettings set com.github.stunkymonkey.nautilus-open-any-terminal flatpak system
+
+# ------------------------------------------------------
 # reboot system
 # ------------------------------------------------------
 sleep 15

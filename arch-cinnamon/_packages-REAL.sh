@@ -79,6 +79,7 @@ generalPackagesYay=(
     cinnamon-sounds
     zsh-git-prompt
     lightdm-settings
+    nautilus-open-any-terminal
 );
 
 appPackages=(
