@@ -22,11 +22,11 @@ configuration {
 window {
 	fullscreen:       true;
 	background-color: @background;
-	padding:          4em;
+	padding:          7em 15em;
 	children:         [ wrap, listview-split];
 	spacing:          4em;
-	border-color: transparent;
-	border: 0px;
+	border-color:     transparent;
+	border:           0px;
 }
 
 
@@ -37,13 +37,15 @@ listview-split {
   children: [listview];
 }
 
+/** SEARCH BAR **/
 wrap {
 	expand: false;
 	orientation: vertical;
 	children: [ inputbar, message ];
-	border: 0px 0px 2px 0px;
+	border: 2px;
 	border-color: @hover;
-	border-radius: 0em;
+	border-radius: 2em;
+	padding: 8px;
 }
 
 icon-ib {
@@ -76,18 +78,19 @@ message {
 listview {
 	flow: horizontal;
 	fixed-columns: true;
-	columns: 7;
-	lines: 5;
+	columns: 5;
+	lines: 3;
 	spacing: 2.0em;
 	border: 0px;
+	background-color: transparent;
 }
 
 element {
 	orientation: vertical;
 	padding: 1em;
 	border: 0px;
-	border-radius: 0.6em;
-    children: [element-icon, element-text ];
+	border-radius: 1em;
+  children: [element-icon, element-text ];
 }
 element-icon {
 	//size: calc(((100% - 8em) / 7 ));
@@ -98,28 +101,16 @@ element-icon {
 element-text {
 	horizontal-align: 0.5;
 	vertical-align: 0.5;
-    padding: 0.2em;
-}
-
-element selected {
-    background-color: red;
-	border-color: @color11;
-	border: 0px;
-	border-radius: 0.6em;
+  padding: 0.2em;
 }
 
 element normal.normal {
-    background-color:            inherit;
+    background-color:            transparent;
     text-color:                  @foreground;
 }
 
-element normal.urgent {
-    background-color:            inherit;
-    text-color:                  @foreground;
-}
-
-element normal.active {
-    background-color:            inherit;
+element alternate.normal {
+    background-color:            transparent;
     text-color:                  @foreground;
 }
 
@@ -129,35 +120,10 @@ element selected.normal {
     border-color:               transparent;
 }
 
-element selected.urgent {
-    background-color:            inherit;
-    text-color:                  @foreground;
-}
-
-element selected.active {
-    background-color:            inherit;
-    text-color:                  @foreground;
-}
-
-element alternate.normal {
-    background-color:            inherit;
-    text-color:                  @foreground;
-}
-
-element alternate.urgent {
-    background-color:            inherit;
-    text-color:                  @foreground;
-}
-
-element alternate.active {
-    background-color:            inherit;
-    text-color:                  @foreground;
-}
-
 scrollbar {
-    width:        0.6em ;
+    width:        0.4em ;
     padding:      0;
-    handle-width: 0.6em ;
+    handle-width: 0.4em ;
     border:       0;
     handle-color: @hover;
 }

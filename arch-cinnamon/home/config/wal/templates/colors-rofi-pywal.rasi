@@ -1,7 +1,7 @@
 * {{
-    background: rgba({background.rgb}, 0.85);
+    background: rgba({background.rgb}, 0.90);
     foreground: {foreground};
-    hover:      rgba({color11.rgb}, 0.1);
+    hover:      rgba({color11.rgb}, 0.2);
     color0:     {color0};
     color1:     {color1};
     color2:     {color2};

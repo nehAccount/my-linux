@@ -2,19 +2,19 @@
 
 window {
 	fullscreen:       false;
-	width: 60%;
-    height: 75%;
+	width:            60%;
+  height:           75%;
 	padding:          3em;
 	spacing:          3em;
-	border-color: @color11;
-	border: 2px;
-	border-radius: 0em;
+	border-color:     @hover;
+	border:           4px;
+	border-radius:    1.5em;
 }
 listview {
-	columns: 5;
-	lines: 3;
-	spacing: 1.0em;
+	columns:   5;
+	lines:     3;
+	spacing:   1.0em;
 }
 element-icon {
-	size: 4em;
+	size:      4em;
 }
