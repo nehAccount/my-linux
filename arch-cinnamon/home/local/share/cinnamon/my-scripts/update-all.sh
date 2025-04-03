@@ -15,4 +15,4 @@ sleep 3
 send-notification "Update completed" "All applications successfully updated"
 echo 
 echo ":: Update completed."
-sleep 2
+#sleep 2
