@@ -2,8 +2,8 @@
 
 window {
 	fullscreen:       false;
-	width:            60%;
-  height:           75%;
+	width:            50%;
+    height:           70%;
 	padding:          3em;
 	spacing:          3em;
 	border-color:     @hover;
