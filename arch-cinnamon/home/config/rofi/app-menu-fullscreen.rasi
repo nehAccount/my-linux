@@ -53,7 +53,7 @@ icon-ib {
 	filename: "system-search";
 	vertical-align: 0.5;
 	horizontal-align: 0.5;
-	size: 1.6em;
+	size: 1.8em;
 }
 inputbar {
 	spacing: 0.4em;
