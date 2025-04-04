@@ -22,7 +22,7 @@ configuration {
 window {
 	fullscreen:       true;
 	background-color: @background;
-	padding:          7em 15em;
+	padding:          7em 20%;
 	children:         [ wrap, listview-split];
 	spacing:          4em;
 	border-color:     transparent;
