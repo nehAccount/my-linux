@@ -6,6 +6,9 @@ family = "JetBrainsMono NF"
 #family = "MesloLGS NF"
 style = "Regular"
 
+[font.bold]
+style = "Regular"
+
 [window]
 opacity = 0.9
 position = "None"
