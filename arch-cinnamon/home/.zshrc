@@ -45,6 +45,7 @@ ZSH_HIGHLIGHT_STYLES[path_prefix]=none
 # ALIASES
 alias cleanup='~/.local/share/cinnamon/my-scripts/cleanup.sh'
 alias update-all='~/.local/share/cinnamon/my-scripts/update-all.sh'
+alias set-theme='~/.local/share/cinnamon/my-scripts/set-theme.sh'
 alias home='cd ~'
 alias hh='cd ~'
 alias lsa='ls -lah --color=auto'
