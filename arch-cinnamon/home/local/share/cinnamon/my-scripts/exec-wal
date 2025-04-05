@@ -10,7 +10,17 @@ file=$(dconf read /org/cinnamon/desktop/background/picture-uri)
 prefix_removed_string=${file/#$prefix}
 filePath=${prefix_removed_string/%$suffix}
 
-wal -q -i "$filePath"
+currentTheme=$(dconf read /org/cinnamon/theme/name)
 
-send-notification "Success" "Colors from wallpaper extracted"
+# check if theme name contains 'Dark' or 'cinnamon'
+if [[ $currentTheme =~ "dark" || $currentTheme =~ "Dark" || $currentTheme =~ "cinnamon" ]]
+then
+    # apply dark scheme
+    wal -q -i "$filePath"
+    send-notification "Success" "Colors from wallpaper extracted (dark theme)"
+else
+    # apply light scheme
+    wal -q -l -i "$filePath"
+    send-notification "Success" "Colors from wallpaper extracted (light theme)"
+fi
 
