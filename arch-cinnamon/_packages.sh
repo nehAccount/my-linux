@@ -89,6 +89,7 @@ appPackages=(
     docker
     docker-buildx
     docker-compose
+    mission-center
 );
 appPackagesYay=(
 
@@ -96,6 +97,5 @@ appPackagesYay=(
 
 flatpakPackages=(
     com.viber.Viber
-    io.missioncenter.MissionCenter
 );
 

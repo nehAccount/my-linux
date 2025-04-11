@@ -6,12 +6,14 @@
     "launcherList": {
         "type": "generic",
         "default": [
+            "firefox.desktop",
+            "org.gnome.Terminal.desktop",
             "nemo.desktop"
         ],
         "value": [
             "pywal-exec.desktop",
             "run-updates.desktop",
-            "mission-center.desktop"
+            "cinnamon-custom-launcher-2.desktop"
         ]
     },
     "allow-dragging": {

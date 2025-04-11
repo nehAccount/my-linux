@@ -1,6 +1,6 @@
 [Desktop Entry]
-Name=Resources
-Exec=flatpak run io.missioncenter.MissionCenter
+Name=Mission Center
+Exec=missioncenter
 Comment=
 Terminal=false
 PrefersNonDefaultGPU=false

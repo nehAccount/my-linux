@@ -95,6 +95,7 @@ appPackages=(
     docker
     docker-buildx
     docker-compose
+    mission-center
 );
 appPackagesYay=(
     phpstorm
@@ -105,7 +106,6 @@ appPackagesYay=(
 flatpakPackages=(
     com.viber.Viber
     com.jgraph.drawio.desktop
-    io.missioncenter.MissionCenter
     com.github.unrud.VideoDownloader
     com.getpostman.Postman
     org.qbittorrent.qBittorrent
