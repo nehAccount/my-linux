@@ -18,22 +18,26 @@ configuration {
       delay:  0;
   }
 }
-
+ 
 window {
-	fullscreen:       true;
+	fullscreen:       false;
+	location:   north;
+	 margin:                       80px;
+    //anchor:   south west;
 	background-color: @background;
-	padding:          7em 20%;
+	padding:          0.5em;
 	children:         [ wrap, listview-split];
-	spacing:          4em;
-	border-color:     transparent;
-	border:           0px;
+	spacing:          0.5em;
+	border-color:     @hover;
+	border:           1px;
+	border-radius:    1em;
 }
 
 
 /** We add an extra child to this is PREVIEW=true */
 listview-split {
   orientation: horizontal;
-  spacing: 0.4em;
+  spacing: 0.1em;
   children: [listview];
 }
 
@@ -42,38 +46,38 @@ wrap {
 	expand: false;
 	orientation: vertical;
 	children: [ inputbar, message ];
-	border: 2px;
-	border-color: @hover;
-	border-radius: 2em;
-	padding: 8px;
-}
-
-icon-ib {
-	expand: false;
-	//filename: "system-search";
-	filename: "search";
-	vertical-align: 0.5;
-	horizontal-align: 0.5;
-	size: 1.8em;
+	border: 1px;
+	background-color: @hover;
+	border-color: @color2;
+	border-radius: 0.5em;
+	padding: 0.2em;
 }
 inputbar {
 	spacing: 0.4em;
-	padding: 0.4em;
+	padding: 0.2em;
 	children: [ icon-ib, entry ];
-	
+
 }
+icon-ib {
+	expand: false;
+	filename: "search";
+	vertical-align: 0.5;
+	horizontal-align: 0.5;
+	size: 1em;
+}
+
 entry {
 	placeholder: "";
 	placeholder-color: grey;
 	vertical-align: 0.5;
-	font: "SF Pro Rounded Light 18";
-	color: @color1;
+	font: "SF Pro Rounded Light 14";
+	color: @foreground;
 }
 message {
 	background-color: transparent;
 	border: 0px;
-	padding: 0.4em;
-	spacing: 0.4em;
+	//padding: 0.4em;
+	//spacing: 0.4em;
 }
 
 listview {
@@ -81,7 +85,7 @@ listview {
 	fixed-columns: true;
 	columns: 5;
 	lines: 3;
-	spacing: 2.0em;
+	spacing: 0.5em;
 	border: 0px;
 	background-color: transparent;
 }
@@ -90,19 +94,19 @@ element {
 	orientation: vertical;
 	padding: 1em;
 	border: 0px;
-	border-radius: 1em;
-  children: [element-icon, element-text ];
+	border-radius: 0.5em;
+    children: [element-icon, element-text ];
 }
 element-icon {
 	//size: calc(((100% - 8em) / 7 ));
-	size: 5em;
+	size: 3em;
 	horizontal-align: 0.5;
 	vertical-align: 0.5;
 }
 element-text {
 	horizontal-align: 0.5;
 	vertical-align: 0.5;
-  padding: 0.2em;
+    padding: 0.2em;
 }
 
 element normal.normal {
@@ -116,9 +120,10 @@ element alternate.normal {
 }
 
 element selected.normal {
-    background-color:            @hover;
+    background-color:            transparent;
     text-color:                  @foreground;
-    border-color:               transparent;
+    border-color:               @hover;
+    border: 1px;
 }
 
 scrollbar {

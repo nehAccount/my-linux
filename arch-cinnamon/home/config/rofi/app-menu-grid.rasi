@@ -3,7 +3,7 @@
 window {
 	fullscreen:       false;
 	width:            50%;
-    height:           70%;
+    height:           75%;
 	padding:          3em;
 	spacing:          3em;
 	border-color:     @hover;

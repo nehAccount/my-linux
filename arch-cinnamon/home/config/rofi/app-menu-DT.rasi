@@ -1,0 +1,31 @@
+@import "~/.cache/wal/colors-rofi-pywal.rasi"
+@import "~/.config/rofi/share/globals.rasi"
+@import "~/.config/rofi/share/font.rasi"
+@import "~/.config/rofi/share/design.rasi"
+
+/**********************************/
+// APP MENU config
+/**********************************/
+configuration {
+	modes: "drun";
+	show-icons: true;
+	drun-display-format: "{name}";
+	display-drun: "Find";
+
+  timeout {
+      action: "kb-cancel";
+      delay:  0;
+  }
+  filebrowser {
+      directories-first: true;
+      sorting-method:    "name";
+  }
+}
+
+window {
+    width: 40%;
+    height: 70%;
+}
+element-icon {
+    size: 56px;
+}
