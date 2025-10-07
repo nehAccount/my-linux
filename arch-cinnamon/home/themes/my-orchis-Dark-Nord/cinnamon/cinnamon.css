@@ -2418,6 +2418,17 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 /****************************************/
 /* MY MOD */
 
+.menu .popup-menu-content,
+.popup-menu .popup-menu-content,
+.popup-combo-menu .popup-menu-content {
+    color: white;
+    padding: 6px;
+    background-color: rgba(28, 31, 38, 0.9);
+    border-radius: 18px;
+    margin: 6px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.35);
+}
+
 .applet-label{
   font-weight: 500;
 }
@@ -2434,3 +2445,28 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 .grouped-window-list-item-box .progress{
   border-radius: 0px;
 }
+/* volume bar */
+.media-keys-osd {
+    margin-bottom: 4em;
+    border-radius: 9999px;
+    font-weight: bold;
+    spacing: 12px;
+    padding: 20px 28px;
+    background-color: rgba(28, 31, 38, 0.9);
+    border: 1px solid #333;
+}
+
+/* polkit dialog */
+.dialog {
+    background-color: rgba(28, 31, 38, 0.9);
+    border-radius: 16px;
+    padding: 32px;
+    border: 1px solid #333;
+}
+/*.dialog .dialog-button {
+    background-color: #1a73e8;
+    color: white;
+    border-radius: 8px;
+    padding: 8px 16px;
+    margin: 0 8px;
+}*/
