@@ -2453,10 +2453,19 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
     font-weight: bold;
     spacing: 12px;
     padding: 20px 28px;
+    background-color: rgb(57, 63, 78);
+    border: 1px solid #333;
+}
+/* workspace indicator */
+.workspace-switch-osd {
+    min-width: 140px;
+    margin-bottom: 4em;
+    border-radius: 24px;
+    font-weight: bold;
+    padding: 12px 36px 0 36px;
     background-color: rgba(28, 31, 38, 0.9);
     border: 1px solid #333;
 }
-
 /* polkit dialog */
 /* test: GTK_DEBUG=interactive pkexec echo test */
 .dialog {

@@ -319,22 +319,6 @@ StScrollBar StButton#hhandle:active {
 .cinnamon-link:hover {
     color: #488fed;
 }
-
-#Tooltip {
-    border-radius: 9999px;
-    padding: 6px 12px;
-    background-color: rgba(52, 52, 52, 0.9);
-    color: white;
-    margin: 6px;
-    box-shadow:
-        0 2px 2px -1px rgba(0, 0, 0, 0.2),
-        0 4px 4px 0 rgba(0, 0, 0, 0.14),
-        0 1px 6px 0 rgba(0, 0, 0, 0.12);
-    font-size: 1em;
-    font-weight: normal;
-    text-align: center;
-}
-
 .menu,
 .popup-menu,
 .popup-combo-menu {
@@ -2526,6 +2510,7 @@ StScrollBar StButton#hhandle:active {
 /****************************************/
 /* MY MOD */
 
+
 /*
 rgba(232, 240, 246, 1) = #E8F0EC
 */
@@ -2561,7 +2546,7 @@ rgba(232, 240, 246, 1) = #E8F0EC
     border-color: #1a73e8;
 }
 .grouped-window-list-item-box .progress{
-  border-radius: 0px;
+    border-radius: 0px;
 }
 
 .workspace-button {
@@ -2583,3 +2568,129 @@ rgba(232, 240, 246, 1) = #E8F0EC
     background-color: rgba(232, 240, 246, 0.7);
 }
 
+/* menu */
+.menu .popup-menu-content,
+.popup-menu .popup-menu-content,
+.popup-combo-menu .popup-menu-content {
+    background-color: rgba(232, 240, 246, 0.9);
+}
+#Tooltip {
+    border-radius: 9999px;
+    border: 1px solid #ccc;
+    padding: 6px 12px;
+    background-color: rgba(232, 240, 246, 0.9);
+    color: rgba(22, 24, 29, 1);
+    margin: 6px;
+    box-shadow:
+            0 2px 2px -1px rgba(0, 0, 0, 0.2),
+            0 4px 4px 0 rgba(0, 0, 0, 0.14),
+            0 1px 6px 0 rgba(0, 0, 0, 0.12);
+    font-size: 1em;
+    font-weight: normal;
+    text-align: center;
+}
+/* volume bar */
+.media-keys-osd {
+    margin-bottom: 4em;
+    border-radius: 24px;
+    font-weight: bold;
+    spacing: 12px;
+    padding: 20px 28px;
+    background-color: rgba(232, 240, 246, 0.9);
+    border: 1px solid #ccc;
+}
+.media-keys-osd .level {
+    min-width: 160px;
+    -barlevel-height: 6px;
+    -barlevel-background-color: #C2C9CE;
+    -barlevel-active-background-color: #1a73e8;
+    -barlevel-amplify-color: #f8e45c;
+    -barlevel-amplify-separator-width: 3px;
+}
+/* workspace indicator */
+.workspace-switch-osd {
+    min-width: 140px;
+    margin-bottom: 4em;
+    border-radius: 24px;
+    font-weight: bold;
+    padding: 12px 36px 0 36px;
+    background-color: rgba(232, 240, 246, 0.9);
+    border: 1px solid #ccc;
+}
+.workspace-switch-osd-indicator {
+    background-color: rgba(28, 31, 38, 0.7);
+    padding: 2.66667px;
+    margin: 13.33333px;
+    border-radius: 32px;
+}
+.workspace-switch-osd-indicator:active {
+    background-color: #3584e4;
+    padding: 5.33333px;
+    margin: 10.66667px;
+}
+/* polkit dialog */
+/* test: GTK_DEBUG=interactive pkexec echo test */
+.dialog {
+    background-color: rgba(232, 240, 246, 0.9);
+    border-radius: 18px;
+    padding: 32px;
+    border: 1px solid #ccc;
+}
+.dialog .dialog-button, .dialog .dialog-button:destructive-action, .dialog .dialog-button:default {
+    font-weight: bold;
+    padding: 12px;
+    border-radius: 16px;
+    border: 1px solid #ccc;
+    background-color: rgba(232, 240, 246, 1);
+}
+.dialog .dialog-button:hover {
+    color: white;
+    background-color: #1a73e8;
+}
+.dialog .dialog-button:active {
+    color: white;
+    background-color: #1a73e8;
+}
+.dialog .dialog-button:insensitive {
+    color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(232, 240, 246, 1);
+}
+.dialog .dialog-button:default {
+    color: white;
+    background-color: #1a73e8;
+}
+.dialog .dialog-button:hover:default {
+    color: white;
+    background-color: #629fea;
+}
+.dialog .dialog-button:active:default {
+    color: white;
+    background-color: #1a73e8;
+}
+.dialog .dialog-button:checked:default {
+    color: white;
+    background-color: #1a73e8;
+}
+.dialog .dialog-button:insensitive:default {
+    border-color: #ccc;
+    color: #ccc;
+    background-color: rgba(232, 240, 246, 1);
+}
+.polkit-dialog-user-combo {
+    background-color: rgba(232, 240, 246, 0);
+}
+.prompt-dialog-password-entry {
+    background-color: rgba(232, 240, 246, 1);
+    border-radius: 16px;
+    padding: 12px;
+    border: 1px solid #1f76e1;
+    color: rgba(28, 31, 38, 1);
+    min-width: 300px;
+}
+.prompt-dialog-password-entry StLabel.hint-text {
+    color: #666;
+}
+.prompt-dialog-password-entry StIcon.peek-password {
+    icon-size: 16px;
+    color: #666;
+}
