@@ -2418,6 +2418,24 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 /****************************************/
 /* MY MOD */
 
+/* panel */
+.applet-label{
+    font-weight: 500;
+}
+.workspace-button {
+    font-weight: 500;
+    color: #606267
+}
+.workspace-button:hover {
+    color: #ccc;
+}
+.workspace-button:outlined {
+    color: #1a73e8;
+}
+.grouped-window-list-item-box .progress{
+    border-radius: 0px;
+}
+/* menu */
 .menu .popup-menu-content,
 .popup-menu .popup-menu-content,
 .popup-combo-menu .popup-menu-content {
@@ -2428,27 +2446,10 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
     margin: 6px;
     box-shadow: 0 3px 8px rgba(0, 0, 0, 0.35);
 }
-
-.applet-label{
-  font-weight: 500;
-}
-.workspace-button {
-  font-weight: 500;
-  color: #606267
-}
-.workspace-button:hover {
-  color: #ccc;
-}
-.workspace-button:outlined {
-  color: #1a73e8;
-}
-.grouped-window-list-item-box .progress{
-  border-radius: 0px;
-}
 /* volume bar */
 .media-keys-osd {
     margin-bottom: 4em;
-    border-radius: 9999px;
+    border-radius: 24px;
     font-weight: bold;
     spacing: 12px;
     padding: 20px 28px;
@@ -2462,12 +2463,12 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
     background-color: rgba(28, 31, 38, 0.9);
     border-radius: 18px;
     padding: 32px;
-    border: 1px solid #1d2123;
+    border: 1px solid #333;
 }
 .dialog .dialog-button, .dialog .dialog-button:destructive-action, .dialog .dialog-button:default {
     font-weight: bold;
     padding: 12px;
-    border-radius: 12px;
+    border-radius: 16px;
     border: 1px solid #101216;
     color: white;
     background-color: rgba(28, 31, 38, 1);
@@ -2486,7 +2487,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 .dialog .dialog-button:default {
     color: white;
-    background-color: #3584e4;
+    background-color: #1a73e8;
 }
 .dialog .dialog-button:hover:default {
     color: white;
@@ -2494,11 +2495,11 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 .dialog .dialog-button:active:default {
     color: white;
-    background-color: #1f76e1;
+    background-color: #1a73e8;
 }
 .dialog .dialog-button:checked:default {
     color: white;
-    background-color: #1f76e1;
+    background-color: #1a73e8;
 }
 .dialog .dialog-button:insensitive:default {
     border-color: #333333;
@@ -2510,7 +2511,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 .prompt-dialog-password-entry {
     background-color: #101216;
-    border-radius: 12px;
+    border-radius: 16px;
     padding: 12px;
     border: 1px solid #1f76e1;
     color: white;
