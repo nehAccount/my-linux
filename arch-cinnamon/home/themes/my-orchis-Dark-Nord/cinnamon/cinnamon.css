@@ -2457,16 +2457,51 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 
 /* polkit dialog */
+/* test: GTK_DEBUG=interactive pkexec echo test */
 .dialog {
     background-color: rgba(28, 31, 38, 0.9);
-    border-radius: 16px;
+    border-radius: 18px;
     padding: 32px;
     border: 1px solid #333;
 }
-/*.dialog .dialog-button {
-    background-color: #1a73e8;
+.dialog .dialog-button, .dialog .dialog-button:destructive-action, .dialog .dialog-button:default {
+    font-weight: bold;
+    padding: 12px;
+    border-radius: 12px;
+    border: 1px solid #333;
     color: white;
-    border-radius: 8px;
-    padding: 8px 16px;
-    margin: 0 8px;
-}*/
+    background-color: rgba(28, 31, 38, 1);
+}
+.dialog .dialog-button:hover {
+    color: white;
+    background-color: #1a73e8;
+}
+.dialog .dialog-button:active {
+    color: white;
+    background-color: #1a73e8;
+}
+.dialog .dialog-button:insensitive {
+    color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(28, 31, 38, 0.9);
+}
+.dialog .dialog-button:default {
+    color: white;
+    background-color: #3584e4;
+}
+.dialog .dialog-button:hover:default {
+    color: white;
+    background-color: #629fea;
+}
+.dialog .dialog-button:active:default {
+    color: white;
+    background-color: #1f76e1;
+}
+.dialog .dialog-button:checked:default {
+    color: white;
+    background-color: #1f76e1;
+}
+.dialog .dialog-button:insensitive:default {
+    border-color: #333333;
+    color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(28, 31, 38, 0.9);
+}
