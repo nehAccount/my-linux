@@ -2462,13 +2462,13 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
     background-color: rgba(28, 31, 38, 0.9);
     border-radius: 18px;
     padding: 32px;
-    border: 1px solid #333;
+    border: 1px solid #1d2123;
 }
 .dialog .dialog-button, .dialog .dialog-button:destructive-action, .dialog .dialog-button:default {
     font-weight: bold;
     padding: 12px;
     border-radius: 12px;
-    border: 1px solid #333;
+    border: 1px solid #101216;
     color: white;
     background-color: rgba(28, 31, 38, 1);
 }
@@ -2504,4 +2504,15 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
     border-color: #333333;
     color: rgba(255, 255, 255, 0.5);
     background-color: rgba(28, 31, 38, 0.9);
+}
+.polkit-dialog-user-combo {
+    background-color: rgba(28, 31, 38, 0);
+}
+.prompt-dialog-password-entry {
+    background-color: #101216;
+    border-radius: 12px;
+    padding: 12px;
+    border: 1px solid #1f76e1;
+    color: white;
+    min-width: 300px;
 }
