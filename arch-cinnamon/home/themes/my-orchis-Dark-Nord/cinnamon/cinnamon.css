@@ -2571,8 +2571,16 @@ StScrollBar StButton#hhandle:active {
     font-weight: bold;
     spacing: 12px;
     padding: 20px 28px;
-    background-color: rgb(57, 63, 78);
+    background-color: rgba(28, 31, 38, 0.9);
     border: 1px solid #333;
+}
+.media-keys-osd .level {
+    min-width: 160px;
+    -barlevel-height: 6px;
+    -barlevel-background-color: #333;
+    -barlevel-active-background-color: #1a73e8;
+    -barlevel-amplify-color: #f8e45c;
+    -barlevel-amplify-separator-width: 3px;
 }
 /* workspace indicator */
 .workspace-switch-osd {
