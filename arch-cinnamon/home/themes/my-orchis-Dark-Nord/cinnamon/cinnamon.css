@@ -324,21 +324,6 @@ StScrollBar StButton#hhandle:active {
     color: #abbdd3;
 }
 
-#Tooltip {
-    border-radius: 9999px;
-    padding: 6px 12px;
-    background-color: rgba(22, 24, 29, 0.9);
-    color: white;
-    margin: 6px;
-    box-shadow:
-            0 2px 2px -1px rgba(0, 0, 0, 0.2),
-            0 4px 4px 0 rgba(0, 0, 0, 0.14),
-            0 1px 6px 0 rgba(0, 0, 0, 0.12);
-    font-size: 1em;
-    font-weight: normal;
-    text-align: center;
-}
-
 .menu,
 .popup-menu,
 .popup-combo-menu {
@@ -2542,13 +2527,13 @@ StScrollBar StButton#hhandle:active {
     color: #ccc;
 }
 .workspace-button:outlined {
-    color: #1a73e8;
+    color: rgba(26, 115, 232, 1);
 }
 .grouped-window-list-item-box:active {
     border-color: #666;
 }
 .grouped-window-list-item-box:focus {
-    border-color: #1a73e8;
+    border-color: rgba(26, 115, 232, 1);
 }
 .grouped-window-list-item-box .progress {
     border-radius: 0px;
@@ -2572,13 +2557,13 @@ StScrollBar StButton#hhandle:active {
     spacing: 12px;
     padding: 20px 28px;
     background-color: rgba(28, 31, 38, 0.9);
-    border: 1px solid #1a73e8;
+    border: 2px solid rgba(26, 115, 232, 0.3);
 }
 .media-keys-osd .level {
     min-width: 160px;
     -barlevel-height: 6px;
     -barlevel-background-color: #333;
-    -barlevel-active-background-color: #1a73e8;
+    -barlevel-active-background-color: rgba(26, 115, 232, 1);
     -barlevel-amplify-color: #f8e45c;
     -barlevel-amplify-separator-width: 3px;
 }
@@ -2590,7 +2575,7 @@ StScrollBar StButton#hhandle:active {
     font-weight: bold;
     padding: 12px 36px 0 36px;
     background-color: rgba(28, 31, 38, 0.9);
-    border: 1px solid #1a73e8;
+    border: 2px solid rgba(26, 115, 232, 0.3);
 }
 /* polkit dialog */
 /* test: GTK_DEBUG=interactive pkexec echo test */
@@ -2598,7 +2583,7 @@ StScrollBar StButton#hhandle:active {
     background-color: rgba(28, 31, 38, 0.9);
     border-radius: 18px;
     padding: 32px;
-    border: 1px solid #1a73e8;;
+    border: 2px solid rgba(26, 115, 232, 0.3);
 }
 .dialog .dialog-button,
 .dialog .dialog-button:destructive-action,
@@ -2612,11 +2597,11 @@ StScrollBar StButton#hhandle:active {
 }
 .dialog .dialog-button:hover {
     color: white;
-    background-color: #1a73e8;
+    background-color: rgba(26, 115, 232, 1);
 }
 .dialog .dialog-button:active {
     color: white;
-    background-color: #1a73e8;
+    background-color: rgba(26, 115, 232, 1);
 }
 .dialog .dialog-button:insensitive {
     color: rgba(255, 255, 255, 0.5);
@@ -2624,19 +2609,19 @@ StScrollBar StButton#hhandle:active {
 }
 .dialog .dialog-button:default {
     color: white;
-    background-color: #1a73e8;
+    background-color: rgba(26, 115, 232, 1);
 }
 .dialog .dialog-button:hover:default {
     color: white;
-    background-color: #629fea;
+    background-color: rgba(26, 115, 232, 0.6);
 }
 .dialog .dialog-button:active:default {
     color: white;
-    background-color: #1a73e8;
+    background-color: rgba(26, 115, 232, 1);
 }
 .dialog .dialog-button:checked:default {
     color: white;
-    background-color: #1a73e8;
+    background-color: rgba(26, 115, 232, 1);
 }
 .dialog .dialog-button:insensitive:default {
     border-color: #101216;
@@ -2650,7 +2635,22 @@ StScrollBar StButton#hhandle:active {
     background-color: #101216;
     border-radius: 16px;
     padding: 12px;
-    border: 1px solid #1a73e8;
+    border: 1px solid rgba(26, 115, 232, 1);
     color: white;
     min-width: 300px;
+}
+/* tooltip */
+#Tooltip {
+    border-radius: 9999px;
+    padding: 6px 12px;
+    background-color: rgba(26, 115, 232, 0.9);
+    color: white;
+    margin: 6px;
+    box-shadow:
+            0 2px 2px -1px rgba(0, 0, 0, 0.2),
+            0 4px 4px 0 rgba(0, 0, 0, 0.14),
+            0 1px 6px 0 rgba(0, 0, 0, 0.12);
+    font-size: 1em;
+    font-weight: normal;
+    text-align: center;
 }
