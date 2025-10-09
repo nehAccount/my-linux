@@ -2639,6 +2639,22 @@ StScrollBar StButton#hhandle:active {
     color: white;
     min-width: 300px;
 }
+.user-icon {
+    background-size: contain;
+    border-radius: 99px;
+    color: white;
+    border-color: transparent;
+    background-color: rgba(28, 31, 38, 0.9);
+    margin-bottom: 8px;
+}
+.user-icon StIcon {
+    padding: 12px;
+}
+.user-icon.user-avatar {
+    /*border: 2px solid rgba(26, 115, 232, 0.3);*/
+    border-radius: 12px;
+}
+
 /* tooltip */
 #Tooltip {
     border-radius: 9999px;
