@@ -2495,7 +2495,7 @@ StScrollBar StButton#hhandle:active {
 .popup-combo-menu .popup-menu-content {
     color: white;
     padding: 6px;
-    background-color: rgba(28, 31, 38, 0.9);
+    background-color: rgb(105, 116, 143);
     border-radius: 18px;
     margin: 6px;
     box-shadow: 0 3px 8px rgba(0, 0, 0, 0.35);
@@ -2513,7 +2513,7 @@ StScrollBar StButton#hhandle:active {
 .media-keys-osd .level {
     min-width: 160px;
     -barlevel-height: 6px;
-    -barlevel-background-color: #333;
+    -barlevel-background-color: #111;
     -barlevel-active-background-color: rgba(26, 115, 232, 1);
     -barlevel-amplify-color: #f8e45c;
     -barlevel-amplify-separator-width: 3px;
