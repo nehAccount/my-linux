@@ -2495,20 +2495,23 @@ StScrollBar StButton#hhandle:active {
 .popup-combo-menu .popup-menu-content {
     color: white;
     padding: 6px;
-    background-color: rgb(105, 116, 143);
+    background-color: rgba(28, 31, 38, 0.9);
     border-radius: 18px;
     margin: 6px;
     box-shadow: 0 3px 8px rgba(0, 0, 0, 0.35);
 }
-/* volume bar */
-.media-keys-osd {
+/* workspace indicator, volume bar */
+.media-keys-osd, .workspace-switch-osd {
+    background-color: rgba(28, 31, 38, 0.9);
+    border: 2px solid #111;
     margin-bottom: 4em;
     border-radius: 24px;
-    font-weight: bold;
+    font-weight: normal;
+}
+/* volume bar */
+.media-keys-osd {
     spacing: 12px;
     padding: 20px 28px;
-    background-color: rgba(28, 31, 38, 0.9);
-    border: 2px solid rgba(26, 115, 232, 0.3);
 }
 .media-keys-osd .level {
     min-width: 160px;
@@ -2521,12 +2524,7 @@ StScrollBar StButton#hhandle:active {
 /* workspace indicator */
 .workspace-switch-osd {
     min-width: 140px;
-    margin-bottom: 4em;
-    border-radius: 24px;
-    font-weight: bold;
     padding: 12px 36px 0 36px;
-    background-color: rgba(28, 31, 38, 0.9);
-    border: 2px solid rgba(26, 115, 232, 0.3);
 }
 /* polkit dialog */
 /* test: GTK_DEBUG=interactive pkexec echo test */
@@ -2600,9 +2598,11 @@ StScrollBar StButton#hhandle:active {
 }
 .user-icon StIcon {
     padding: 12px;
+    border-color: transparent;
 }
 .user-icon.user-avatar {
     /*border: 2px solid rgba(26, 115, 232, 0.3);*/
+    border-color: transparent;
     border-radius: 12px;
 }
 
