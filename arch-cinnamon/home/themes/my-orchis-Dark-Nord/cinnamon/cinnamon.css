@@ -2507,6 +2507,7 @@ StScrollBar StButton#hhandle:active {
     margin-bottom: 4em;
     border-radius: 24px;
     font-weight: normal;
+    font-size: 18px;
 }
 /* volume bar */
 .media-keys-osd {
