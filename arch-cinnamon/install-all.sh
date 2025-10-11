@@ -71,6 +71,7 @@ fc-cache -f -v
 # icons
 # ------------------------------------------------------
 sudo tar -xvf "$builddir"/icons/Colloid.tar.xz -C /usr/share/icons
+sudo tar -xvf "$builddir"/icons/MacTahoe.tar.xz -C /usr/share/icons
 sudo cp -a "$builddir"/icons/distro.svg /usr/share/icons
 
 # ------------------------------------------------------
