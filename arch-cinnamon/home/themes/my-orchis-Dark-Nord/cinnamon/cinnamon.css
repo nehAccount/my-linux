@@ -2506,7 +2506,8 @@ StScrollBar StButton#hhandle:active {
     box-shadow: 0 3px 8px rgba(0, 0, 0, 0.35);
 }
 /* workspace indicator, volume bar */
-.media-keys-osd, .workspace-switch-osd {
+.media-keys-osd,
+.workspace-switch-osd {
     background-color: rgba(28, 31, 38, 0.9);
     border: 2px solid #111;
     margin-bottom: 4em;
@@ -2616,8 +2617,8 @@ StScrollBar StButton#hhandle:active {
 #Tooltip {
     border-radius: 9999px;
     padding: 6px 12px;
-    background-color: rgba(26, 115, 232, 0.9);
-    color: white;
+    background-color: rgba(1, 1, 1, 1);
+    color: rgba(200, 200, 200, 1);
     margin: 6px;
     box-shadow:
             0 2px 2px -1px rgba(0, 0, 0, 0.2),
