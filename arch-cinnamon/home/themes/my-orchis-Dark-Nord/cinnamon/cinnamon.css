@@ -2467,6 +2467,11 @@ StScrollBar StButton#hhandle:active {
 /* MY MOD */
 
 /* panel */
+#panel {
+    background-gradient-start: rgba(0, 0, 0, 1);
+    background-gradient-end: rgba(0, 0, 0, 1);
+    background-color: rgba(0, 0, 0, 1);
+}
 .applet-label {
     font-weight: 500;
 }
