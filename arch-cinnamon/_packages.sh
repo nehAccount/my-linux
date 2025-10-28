@@ -66,12 +66,25 @@ generalPackages=(
     gnome-themes-extra
     gtk-engine-murrine
     sassc
-    orchis-theme
     xdg-desktop-portal-gtk
     guvcview
     rofi
+    unrar-free
+    mesa
+    vulkan-radeon
+    lib32-mesa
+    lib32-vulkan-radeon
+    gamemode
+    lib32-gamemode
+    mangohud
+    lib32-mangohud
+    goverlay
+    wine
+    winetricks
+    wine-mono
+    wine-gecko
 );
-
+# removed:  mint-themes
 generalPackagesYay=(
     bibata-cursor-theme
     pacseek
@@ -79,23 +92,37 @@ generalPackagesYay=(
     zsh-git-prompt
     lightdm-settings
     nautilus-open-any-terminal
+    winegui
 );
 
 appPackages=(
+    chromium
     timeshift
+    zed
     nextcloud-client
     thunderbird
     systray-x-common
+    libreoffice-fresh
+    gimp
+    gnome-boxes
     docker
     docker-buildx
     docker-compose
     mission-center
+    steam
 );
 appPackagesYay=(
-
+    phpstorm
+    phpstorm-jre
+    losslesscut-bin
 );
 
 flatpakPackages=(
     com.viber.Viber
+    com.jgraph.drawio.desktop
+    com.github.unrud.VideoDownloader
+    com.getpostman.Postman
+    org.qbittorrent.qBittorrent
+    org.inkscape.Inkscape
 );
 

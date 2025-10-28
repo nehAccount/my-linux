@@ -84,8 +84,9 @@ generalPackages=(
     wine-mono
     wine-gecko
 );
-# removed: bibata-cursor-theme mint-themes
+# removed:  mint-themes
 generalPackagesYay=(
+    bibata-cursor-theme
     pacseek
     cinnamon-sounds
     zsh-git-prompt
@@ -108,6 +109,7 @@ appPackages=(
     docker-buildx
     docker-compose
     mission-center
+    steam
 );
 appPackagesYay=(
     phpstorm
