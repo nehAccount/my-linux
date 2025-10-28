@@ -1,0 +1,4 @@
+@import "~/.cache/wal/colors-rofi-pywal.rasi"
+@import "~/.config/rofi/share/globals.rasi"
+@import "~/.config/rofi/share/font.rasi"
+@import "~/.config/rofi/share/design.rasi"

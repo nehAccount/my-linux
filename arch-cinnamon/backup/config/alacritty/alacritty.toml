@@ -1,0 +1,33 @@
+[font]
+size = 14.0
+
+[font.normal]
+family = "JetBrainsMono NF"
+#family = "MesloLGS NF"
+style = "Regular"
+
+[font.bold]
+style = "Regular"
+
+[window]
+opacity = 0.9
+position = "None"
+#decorations = "None"
+#startup_mode = "Maximized"
+decorations_theme_variant = "Dark" # "Dark" | "Light" | "None"
+title = "Terminal | Alacritty"
+
+[window.padding]
+x = 20
+y = 20
+
+[cursor]
+blink_interval = 500
+
+[cursor.style]
+shape = "Underline"
+blinking = "Always"
+
+[window.dimensions]
+columns = 150
+lines = 33

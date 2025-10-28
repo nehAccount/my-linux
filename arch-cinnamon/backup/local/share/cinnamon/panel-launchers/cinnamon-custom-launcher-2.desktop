@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Mission Center
+Exec=missioncenter
+Comment=
+Terminal=false
+PrefersNonDefaultGPU=false
+Icon=/usr/share/icons/breeze/places/22/folder-rpm-symbolic.svg
+Type=Application

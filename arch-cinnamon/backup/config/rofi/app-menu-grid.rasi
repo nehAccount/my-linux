@@ -1,0 +1,20 @@
+@import "~/.config/rofi/app-menu-fullscreen.rasi"
+
+window {
+	fullscreen:       false;
+	width:            50%;
+    height:           75%;
+	padding:          3em;
+	spacing:          3em;
+	border-color:     @hover;
+	border:           4px;
+	border-radius:    1.5em;
+}
+listview {
+	columns:   5;
+	lines:     3;
+	spacing:   1.0em;
+}
+element-icon {
+	size:      4em;
+}

@@ -66,20 +66,32 @@ generalPackages=(
     gnome-themes-extra
     gtk-engine-murrine
     sassc
-    orchis-theme
     xdg-desktop-portal-gtk
     guvcview
     rofi
+    unrar-free
+    mesa
+    vulkan-radeon
+    lib32-mesa
+    lib32-vulkan-radeon
+    gamemode
+    lib32-gamemode
+    mangohud
+    lib32-mangohud
+    goverlay
+    wine
+    winetricks
+    wine-mono
+    wine-gecko
 );
-
+# removed: bibata-cursor-theme mint-themes
 generalPackagesYay=(
-    bibata-cursor-theme
     pacseek
-    mint-themes
     cinnamon-sounds
     zsh-git-prompt
     lightdm-settings
     nautilus-open-any-terminal
+    winegui
 );
 
 appPackages=(
@@ -109,5 +121,6 @@ flatpakPackages=(
     com.github.unrud.VideoDownloader
     com.getpostman.Postman
     org.qbittorrent.qBittorrent
+    org.inkscape.Inkscape
 );
 

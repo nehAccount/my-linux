@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xbel version="1.0"
+      xmlns:bookmark="http://www.freedesktop.org/standards/desktop-bookmarks"
+      xmlns:mime="http://www.freedesktop.org/standards/shared-mime-info"
+>
+  <bookmark href="sftp://bnpze@bnp-sftp/" added="2024-05-15T15:59:33.694622Z" modified="2024-05-15T15:59:33.694631Z" visited="2024-05-15T15:59:33.694624Z">
+    <title>/ on bnp-sftp</title>
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;org.gnome.Nautilus %u&apos;" modified="2024-05-15T15:59:33.694627Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="sftp://bnp-admin@bnp-zenica.com/" added="2024-05-15T16:00:50.969469Z" modified="2024-05-15T16:00:50.969478Z" visited="2024-05-15T16:00:50.969471Z">
+    <title>/ on bnp-zenica.com</title>
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;org.gnome.Nautilus %u&apos;" modified="2024-05-15T16:00:50.969474Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="sftp://my-cloud-nermin/" added="2024-05-15T16:02:18.087829Z" modified="2024-05-15T16:02:18.087838Z" visited="2024-05-15T16:02:18.087831Z">
+    <title>/ on my-cloud-nermin</title>
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;org.gnome.Nautilus %u&apos;" modified="2024-05-15T16:02:18.087833Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="sftp://neh@diveshop.ba/" added="2024-11-24T13:51:39.383259Z" modified="2024-11-24T13:51:39.383268Z" visited="2024-11-24T13:51:39.383261Z">
+    <title>/ on diveshop.ba</title>
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;org.gnome.Nautilus %u&apos;" modified="2024-11-24T13:51:39.383263Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+</xbel>
