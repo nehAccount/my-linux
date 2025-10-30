@@ -63,7 +63,6 @@ generalPackages=(
 	zsh-syntax-highlighting
 	zsh-autocomplete
 	gnome-themes-extra
-	gtk-engine-murrine
 	sassc
 	xdg-desktop-portal-gtk
 	guvcview
