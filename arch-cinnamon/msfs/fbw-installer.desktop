@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=FlyByWire Installer (Proton)
+Exec=protontricks -c "wine 'c:\\users\\steamuser\\AppData\\Local\\Programs\\fbw-installer\\FlyByWire Installer.exe'" 2537590
+Type=Application
+Icon=steam
+Terminal=false
+Categories=Game;

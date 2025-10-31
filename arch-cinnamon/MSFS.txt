@@ -1,0 +1,26 @@
+Game Properties
+
+- Launch Options: PROTON_USE_WINED3D=0 DXVK_ASYNC=1 RADV_PERFTEST=aco gamemoderun mangohud %command%
+- Compatibility: Proton-GE
+- copy saved graphics settings
+- create custom role cache folder
+- copy my content to Community folder
+
+### FSLTL
+- FlyByWirwInstaller
+install
+protontricks -c "wine /home/nermin/Downloads/setup.exe" 2537590
+// protontricks -c "wine /home/nermin/Downloads/VC_redist.x64.exe" 2537590
+
+run
+protontricks -c "wine 'c:\\users\\steamuser\\AppData\\Local\\Programs\\fbw-installer\\FlyByWire Installer.exe'" 2537590
+
+
+protontricks -c "wine 'c:\\users\\steamuser\\AppData\\Local\\Programs\\fbw-installer\\FlyByWire Installer.exe' --disable-gpu --disable-software-rasterizer --in-process-gpu --disable-gpu-compositing" 2537590
+
+
+protontricks -c "wine /home/nermin/.steam/steam/steamapps/compatdata/2537590/pfx/drive_c/users/steamuser/AppData/Local/Programs/fbw-installer/FlyByWire\\ Installer.exe" 2537590
+
+After install
+- copy FBWInstaller.desktop to ~/.local/share/applications
+

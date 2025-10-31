@@ -39,6 +39,7 @@ configFolders=(
   starship
   wal
   zed
+  MangoHud
 );
 
 configFiles=(
