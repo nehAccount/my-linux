@@ -24,3 +24,40 @@ protontricks -c "wine /home/nermin/.steam/steam/steamapps/compatdata/2537590/pfx
 After install
 - copy FBWInstaller.desktop to ~/.local/share/applications
 
+
+****************
+Steam: Settings ▸ Downloads ▸ Enable Shader Pre-Caching
+vulkan-mesa-layers
+amd-pstate
+################
+CPU i RAM optimizacija
+MSFS voli visoke taktove CPU-a i brz RAM.
+Ako koristiš Zen 3 (Ryzen 5600 / 5800X) — super.
+Obavezno koristi amd-pstate drajver i aktiviraj “performance” mod:
+
+sudo cpupower frequency-set -g performance
+
+RAM: 32 GB preporučeno.
+
+Swap: ako imaš 16 GB RAM-a, napravi brzi zram swap (Arch wiki ima uputstvo).
+
+
+
+3️⃣ MangoHud overlay za shader stat
+U MangoHud-u možeš uključiti frame timing i shader stats:
+Otvori ~/.config/MangoHud/MangoHud.conf
+Dodaj ili proveri liniju:
+frame_timing=1
+shader_compile=1
+
+shader_compile=1 prikazuje broj shadera koji se kompajliraju u realnom vremenu.
+Prvi put kada letiš nad novim regionom, vidićeš male brojke koje se smanjuju dok se shader keš popunjava.
+
+Ako je GPU frame time visok → problem je u grafičkoj karti ili shaderima.
+Ako je CPU frame time visok → problem je u simulaciji, addonima ili procesima u pozadini.
+
+4️⃣ Test
+Pokreni igru sa terminala da vidiš DXVK log.
+Leti kroz nekoliko novih regiona ili gradova.
+Ako se pojavljuju male “compiling shader” brojke, to je normalno prvi put.
+Sledeći put kada učitaš iste regiona, shader compile brojke nestaju → sve koristi keš.

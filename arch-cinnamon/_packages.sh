@@ -81,6 +81,7 @@ generalPackages=(
 	winetricks
 	wine-mono
 	wine-gecko
+  vulkan-mesa-layers
 	);
 
 # removed:  mint-themes

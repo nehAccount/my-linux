@@ -19,12 +19,19 @@ fi
 # ------------------------------------------------------
 # Install  packages
 # ------------------------------------------------------
-source ./_packages.sh
+# source ./_packages.sh
+packages=(
+  vulkan-mesa-layers
+);
+
+packagesYay=(
+
+);
 
 # pacman
-sudo pacman -S --needed "${generalPackages[@]}"
+sudo pacman -S --needed "${packages[@]}"
 # yay
-yay -S --needed "${generalPackagesYay[@]}"
+yay -S --needed "${packagesYay[@]}"
 
 
 
