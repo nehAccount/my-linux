@@ -114,6 +114,7 @@ appPackagesYay=(
 	phpstorm-jre
 	losslesscut-bin
 	proton-ge-custom
+	protontricks
 );
 flatpakPackages=(
   com.viber.Viber
