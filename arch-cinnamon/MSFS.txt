@@ -61,3 +61,14 @@ Pokreni igru sa terminala da vidiš DXVK log.
 Leti kroz nekoliko novih regiona ili gradova.
 Ako se pojavljuju male “compiling shader” brojke, to je normalno prvi put.
 Sledeći put kada učitaš iste regiona, shader compile brojke nestaju → sve koristi keš.
+
+
+Provjeri da SimConnect postoji
+
+SimConnect DLL bi trebao biti u:
+
+$PREFIX/drive_c/Windows/System32/SimConnect.dll
+
+
+Ako nije, možeš ga ručno kopirati iz SDK-a (ako ga imaš) ili iz Windows MSFS instalacije.
+Obično nije potrebno jer ga MSFS već instalira.
