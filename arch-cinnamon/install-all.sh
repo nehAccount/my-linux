@@ -161,6 +161,14 @@ gsettings set com.github.stunkymonkey.nautilus-open-any-terminal new-tab true
 gsettings set com.github.stunkymonkey.nautilus-open-any-terminal flatpak system
 
 # ------------------------------------------------------
+# lightdm
+# ------------------------------------------------------
+sudo mkdir -p /usr/share/backgrounds/login
+sudo cp -a "$builddir"/lightdm/login-bg.jpg /usr/share/backgrounds/login
+sudo cp -a "$builddir"/lightdm/lightdm.conf /etc/lightdm
+sudo cp -a "$builddir"/lightdm/slick-greeter.conf /etc/lightdm
+
+# ------------------------------------------------------
 # reboot system
 # ------------------------------------------------------
 sleep 15

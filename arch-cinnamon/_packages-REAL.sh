@@ -81,6 +81,8 @@ generalPackages=(
 	winetricks
 	wine-mono
 	wine-gecko
+	lightdm
+	lightdm-slick-greeter
 	);
 
 # removed:  mint-themes
