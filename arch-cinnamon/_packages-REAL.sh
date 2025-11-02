@@ -67,7 +67,9 @@ generalPackages=(
 	xdg-desktop-portal-gtk
 	guvcview
 	rofi
-	unrar-free
+	lightdm
+	lightdm-slick-greeter
+	orchis-theme
 	mesa
 	vulkan-radeon
 	lib32-mesa
@@ -81,8 +83,6 @@ generalPackages=(
 	winetricks
 	wine-mono
 	wine-gecko
-	lightdm
-	lightdm-slick-greeter
 	);
 
 # removed:  mint-themes
