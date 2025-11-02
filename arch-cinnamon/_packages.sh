@@ -67,7 +67,9 @@ generalPackages=(
 	xdg-desktop-portal-gtk
 	guvcview
 	rofi
-	unrar-free
+	lightdm
+	lightdm-slick-greeter
+	orchis-theme
 	mesa
 	vulkan-radeon
 	lib32-mesa
@@ -81,7 +83,6 @@ generalPackages=(
 	winetricks
 	wine-mono
 	wine-gecko
-  vulkan-mesa-layers
 	);
 
 # removed:  mint-themes
@@ -115,7 +116,6 @@ appPackagesYay=(
 	phpstorm-jre
 	losslesscut-bin
 	proton-ge-custom
-	protontricks
 );
 flatpakPackages=(
   com.viber.Viber
