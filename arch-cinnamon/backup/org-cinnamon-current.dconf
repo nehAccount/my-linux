@@ -49,7 +49,7 @@ exec-arg='--'
 
 [desktop/background]
 picture-options='zoom'
-picture-uri='file:///home/nermin/Pictures/wallpapers/new/photo-1686848429284-d108e021a74c.jpg'
+picture-uri='file:///home/nermin/Pictures/wallpapers/new/photo-1629831676333-8e33b2d7cdd9.jpg'
 
 [desktop/background/slideshow]
 delay=15
@@ -61,7 +61,7 @@ cursor-size=24
 cursor-theme='Bibata-Modern-Classic'
 font-name='Ubuntu 12'
 gtk-theme='my-orchis-Dark-Nord'
-icon-theme='Colloid-Dark'
+icon-theme='MacTahoe-dark'
 text-scaling-factor=1.0
 toolkit-accessibility=false
 

@@ -296,7 +296,7 @@
         "default": true,
         "description": "Enable minutely precipitation forecast",
         "tooltip": "If you'd like to use this make sure you use your exact coordinates/address as location to help its accuracy. See Feature map on website on support for your provider",
-        "value": true
+        "value": false
     },
     "showAlerts": {
         "type": "checkbox",
@@ -403,7 +403,7 @@
         "default": false,
         "description": "Always show Hourly Weather",
         "tooltip": "Hide/Show button will be hidden and Hourly weather will be permanently visible.",
-        "value": false
+        "value": true
     },
     "verticalOrientation": {
         "type": "checkbox",

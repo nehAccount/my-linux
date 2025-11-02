@@ -5,7 +5,7 @@ theme1_path="$HOME/.themes/my-orchis-Light"
 theme2_name="my-orchis-Dark-Nord"
 theme2_path="$HOME/.themes/my-orchis-Dark-Nord"
 
-icon_theme="Colloid"
+icon_theme="MacTahoe"
 
 # Prikazivanje opcija korisniku
 echo "::"
@@ -23,12 +23,12 @@ case $opcija in
     1)
         selected_theme=$theme1_name
         selected_theme_path=$theme1_path
-        icon_theme="Colloid-Light"
+        icon_theme="MacTahoe-light"
         ;;
     2)
         selected_theme=$theme2_name
         selected_theme_path=$theme2_path
-        icon_theme="Colloid-Dark"
+        icon_theme="MacTahoe-dark"
         ;;
     *)
         echo "Pogrešan unos."
@@ -57,3 +57,4 @@ gsettings set org.gnome.desktop.interface icon-theme "$icon_theme"
 
 # run script to get colors from wallpaper
 exec-wal
+
