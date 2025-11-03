@@ -1,6 +1,6 @@
 [Default Applications]
 application/json=dev.zed.Zed.desktop
-application/pdf=libreoffice-draw.desktop
+application/pdf=org.onlyoffice.desktopeditors.desktop
 application/x-terminal-emulator=Alacritty.desktop
 image/bmp=org.gnome.eog.desktop
 image/gif=org.gnome.eog.desktop
@@ -67,7 +67,7 @@ text/yaml=org.x.editor.desktop
 
 [Added Associations]
 application/json=dev.zed.Zed.desktop
-application/pdf=firefox.desktop;libreoffice-draw.desktop
+application/pdf=firefox.desktop;libreoffice-draw.desktop;org.onlyoffice.desktopeditors.desktop;
 text/html=dev.zed.Zed.desktop
 text/plain=org.x.editor.desktop;dev.zed.Zed.desktop;
 text/vnd.trolltech.linguist=dev.zed.Zed.desktop

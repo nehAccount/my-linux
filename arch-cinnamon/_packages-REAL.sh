@@ -102,7 +102,6 @@ appPackages=(
 	nextcloud-client
 	thunderbird
 	systray-x-common
-	libreoffice-fresh
 	gimp
 	gnome-boxes
 	docker
@@ -124,4 +123,5 @@ flatpakPackages=(
   com.getpostman.Postman
   org.qbittorrent.qBittorrent
   org.inkscape.Inkscape
+  flathub org.onlyoffice.desktopeditors
 );
