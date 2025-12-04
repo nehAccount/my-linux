@@ -98,7 +98,6 @@ generalPackagesYay=(
 appPackages=(
   chromium
 	timeshift
-	zed
 	nextcloud-client
 	thunderbird
 	systray-x-common
@@ -123,5 +122,6 @@ flatpakPackages=(
   com.getpostman.Postman
   org.qbittorrent.qBittorrent
   org.inkscape.Inkscape
-  flathub org.onlyoffice.desktopeditors
+  org.onlyoffice.desktopeditors
+  dev.zed.Zed
 );
