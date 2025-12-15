@@ -1,3 +1,6 @@
+# restart cinnamon with log
+cinnamon --replace &
+
 # hyprland
 - volume slider
 - brightness slider
