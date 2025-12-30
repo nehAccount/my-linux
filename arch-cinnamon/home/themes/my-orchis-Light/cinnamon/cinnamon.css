@@ -2579,7 +2579,7 @@ rgba(232, 240, 246, 1) = #E8F0EC
 .menu .popup-menu-content,
 .popup-menu .popup-menu-content,
 .popup-combo-menu .popup-menu-content {
-    background-color: rgba(232, 240, 246, 0.9);
+    background-color: rgba(232, 240, 246, 1);
 }
 
 /* volume bar */
@@ -2721,4 +2721,116 @@ rgba(232, 240, 246, 1) = #E8F0EC
 }
 #notification {
     background-color: rgba(232, 240, 246, 0.9);
+}
+
+/**********************************************/
+/* new menu */
+.appmenu-sidebar {
+    padding: 10px 0px;
+    background-color: rgba(211, 222, 235, 1);
+    border-radius: 10px 0 0 10px;
+    border-right-width: 0px;
+    border-color: rgba(54, 60, 73, 1);
+}
+/* buttons in sidebar */
+.appmenu-sidebar .appmenu-system-button,
+.appmenu-sidebar .appmenu-system-button-shutdown {
+    background-color: rgb(178, 197, 220);
+    border-color: rgb(150, 176, 207);
+}
+.appmenu-sidebar .appmenu-system-button-lock:hover,
+.appmenu-system-button-lock:hover,
+.appmenu-sidebar .appmenu-system-button-logout:hover,
+.appmenu-system-button-logout:hover {
+    background-color: #1a73e8;
+    color: white;
+}
+.appmenu-sidebar .appmenu-system-button-shutdown:hover,
+.appmenu-system-button-shutdown:hover {
+    background-color: #d61f2d;
+    color: white;
+}
+/* buttons after serach box */
+.appmenu-system-box {
+    spacing: 10px;
+}
+.appmenu-sidebar-button {
+    padding: 3px 6px 3px 6px;
+    margin: 0 10px 0 10px;
+}
+
+.appmenu-system-button {
+    padding: 8.4px;
+    border: 1px solid #333333;
+    border-radius: 9999px;
+}
+.appmenu-system-button,
+.appmenu-system-button-shutdown {
+    background-color: rgb(178, 197, 220);
+    border-color: rgb(150, 176, 207);
+}
+
+#menu-search-entry,
+#appmenu-search-entry {
+    background-color: rgba(211, 222, 235, 1);
+    color: black;
+    min-height: 22px;
+    border-radius: 8px;
+    padding: 6px 9px;
+    border: 1px solid #1a73e8;
+    caret-color: black;
+    selected-color: white;
+    selection-background-color: #3584e4;
+    caret-size: 1px;
+}
+.appmenu-category-button-greyed,
+.appmenu-category-button-selected,
+.appmenu-category-button,
+.appmenu-application-button-selected,
+.appmenu-application-button,
+.appmenu-sidebar-button {
+    padding: 6px;
+    spacing: 6px;
+    border-radius: 8px;
+}
+.appmenu-sidebar-button:hover {
+    background-color: rgb(178, 197, 220);
+}
+
+.appmenu-application-button-description {
+    color: #777777;
+    font-size: 0.85em;
+}
+
+.appmenu-application-button-selected:highlighted {
+    font-weight: bold;
+}
+.appmenu-category-button {
+    border-radius: 8px;
+}
+.appmenu-category-button:hover,
+.appmenu-category-button-selected,
+.appmenu-application-button-selected {
+    background-color: rgba(211, 222, 235, 1);
+}
+
+.appmenu-category-button-greyed {
+    color: #7c7c7c;
+    font-style: normal;
+}
+.appmenu-category-button-greyed StIcon {
+    opacity: 0.5;
+}
+
+/* applets */
+.applet-box:hover,
+.panel-launchers .launcher:hover {
+    color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(211, 222, 235, 1);
+}
+
+.applet-box:checked,
+.applet-box:checked:hover {
+    color: rgba(255, 255, 255, 0.7);
+    background-color: rgb(41, 64, 91);
 }
