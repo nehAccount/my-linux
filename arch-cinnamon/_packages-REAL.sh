@@ -83,6 +83,7 @@ generalPackages=(
 	winetricks
 	wine-mono
 	wine-gecko
+	arp-scan
 	);
 
 # removed:  mint-themes
