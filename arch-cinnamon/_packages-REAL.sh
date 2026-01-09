@@ -84,6 +84,7 @@ generalPackages=(
 	wine-mono
 	wine-gecko
 	arp-scan
+	zed
 	);
 
 # removed:  mint-themes
@@ -124,6 +125,5 @@ flatpakPackages=(
   org.qbittorrent.qBittorrent
   org.inkscape.Inkscape
   org.onlyoffice.desktopeditors
-  dev.zed.Zed
   org.nicotine_plus.Nicotine
 );
