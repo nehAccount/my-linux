@@ -125,4 +125,5 @@ flatpakPackages=(
   org.inkscape.Inkscape
   org.onlyoffice.desktopeditors
   dev.zed.Zed
+  org.nicotine_plus.Nicotine
 );
