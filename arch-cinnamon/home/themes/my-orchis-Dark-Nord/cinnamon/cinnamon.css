@@ -2655,15 +2655,15 @@ StScrollBar StButton#hhandle:active {
 #Tooltip {
     border-radius: 9999px;
     padding: 6px 12px;
-    background-color: rgba(1, 1, 1, 1);
-    color: rgba(200, 200, 200, 1);
+    background-color: rgba(1, 1, 1, 0.8);
+    color: rgba(255, 255, 255, 0.8);
     margin: 6px;
     box-shadow:
             0 2px 2px -1px rgba(0, 0, 0, 0.2),
             0 4px 4px 0 rgba(0, 0, 0, 0.14),
             0 1px 6px 0 rgba(0, 0, 0, 0.12);
-    font-size: 1em;
-    font-weight: normal;
+    font-size: 0.9em;
+    font-weight: 500;
     text-align: center;
 }
 /* desklet */
