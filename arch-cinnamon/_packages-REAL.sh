@@ -126,4 +126,6 @@ flatpakPackages=(
   org.inkscape.Inkscape
   org.onlyoffice.desktopeditors
   org.nicotine_plus.Nicotine
+  io.github.tapscodes.MuseAmp
+  org.gnome.EasyTAG
 );
