@@ -2650,6 +2650,12 @@ StScrollBar StButton#hhandle:active {
     border-color: transparent;
     border-radius: 12px;
 }
+.user-widget.vertical .user-widget-label {
+    font-weight: 600;
+    font-size: 1.182em;
+    color: white;
+    text-align: center;
+}
 
 /* tooltip */
 #Tooltip {
