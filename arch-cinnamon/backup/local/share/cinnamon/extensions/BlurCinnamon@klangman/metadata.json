@@ -1,12 +1,12 @@
 {
     "uuid": "BlurCinnamon@klangman",
     "name": "Blur Cinnamon",
-    "version": "1.5.2",
+    "version": "1.6.1",
     "description": "Allows you to blur, colorize, desaturate and adjust the dimming of several Cinnamon Desktop components",
     "url": "https://github.com/klangman/BlurCinnamon",
     "cinnamon-version": [
         "6.0"
     ],
     "author": "klangman",
-    "last-edited": 1760462775
+    "last-edited": 1767378551
 }

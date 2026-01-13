@@ -48,10 +48,10 @@ alias update-all='~/.local/share/cinnamon/my-scripts/update-all.sh'
 alias set-theme='~/.local/share/cinnamon/my-scripts/set-theme.sh'
 alias home='cd ~'
 alias hh='cd ~'
-alias lsa='ls -lah --color=auto'
-alias l='ls -lah --color=auto'
-alias ll='ls -lh --color=auto'
-alias la='ls -lAh --color=auto'
+alias lsa='ls -lah --color=auto --group-directories-first'
+alias l='ls -lah --color=auto --group-directories-first'
+alias ll='ls -lh --color=auto --group-directories-first'
+alias la='ls -lAh --color=auto --group-directories-first'
 
 # enable delete key
 bindkey "^[[3~" delete-char

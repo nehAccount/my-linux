@@ -17,6 +17,7 @@ generalPackages=(
 	nautilus
 	firefox
 	alacritty
+	kitty
 	power-profiles-daemon
 	bluez
 	bluez-utils

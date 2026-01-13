@@ -215,7 +215,7 @@
             "AccuWeather (key needed)": "AccuWeather",
             "Weather Underground (key needed)": "WeatherUnderground"
         },
-        "value": "OpenWeatherMap_Open"
+        "value": "MetNorway"
     },
     "apiKey": {
         "type": "entry",
@@ -278,7 +278,7 @@
         "step": 1,
         "description": "Forecast length",
         "tooltip": "Maximum number of days that can be displayed, available number of data, maximum rows and columns setting in the Presentation tab will affect the final number.",
-        "value": 3
+        "value": 4
     },
     "forecastHours": {
         "type": "spinbutton",
@@ -289,7 +289,7 @@
         "step": 1,
         "description": "Hourly Forecast length",
         "tooltip": "Maximum number of hours that can be displayed, available numbers of data will affect the final number.",
-        "value": 12
+        "value": 21.0
     },
     "immediatePrecip": {
         "type": "checkbox",
@@ -335,7 +335,7 @@
             "knots": "Knots",
             "Beaufort": "Beaufort"
         },
-        "value": "automatic"
+        "value": "kph"
     },
     "pressureUnit": {
         "type": "combobox",
@@ -375,14 +375,14 @@
         "default": false,
         "description": "Show the weather condition (e.g., \"Windy\", \"Clear\") in the panel",
         "tooltip": "Only works with horizontal panels",
-        "value": false
+        "value": true
     },
     "tempTextOverride": {
         "type": "entry",
         "default": "",
         "description": "Override label on panel",
         "tooltip": "Some of the available values are: {c} is condition, {t} is temperature and {u} is unit.\nCan be used if label does not fit on vertical panel, among other smart things.",
-        "value": " {t}°  {c}"
+        "value": "  {t}° {c}"
     },
     "tooltipTextOverride": {
         "type": "entry",
@@ -522,7 +522,7 @@
         "type": "checkbox",
         "default": false,
         "description": "Show temperature Russian style",
-        "value": true
+        "value": false
     },
     "locationLabelOverride": {
         "type": "entry",

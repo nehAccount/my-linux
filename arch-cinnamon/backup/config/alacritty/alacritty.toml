@@ -1,5 +1,5 @@
 [font]
-size = 14.0
+size = 12.0
 
 [font.normal]
 family = "JetBrainsMono NF"
@@ -14,7 +14,7 @@ opacity = 0.9
 position = "None"
 #decorations = "None"
 #startup_mode = "Maximized"
-decorations_theme_variant = "Dark" # "Dark" | "Light" | "None"
+decorations_theme_variant = "None" # "Dark" | "Light" | "None"
 title = "Terminal | Alacritty"
 
 [window.padding]

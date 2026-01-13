@@ -28,6 +28,7 @@ fi
 # folders to backup from /home/nermin/.config/
 configFolders=(
   alacritty
+  kitty
   cinnamon
   fastfetch
   "gtk-2.0"
