@@ -128,4 +128,5 @@ flatpakPackages=(
   org.nicotine_plus.Nicotine
   io.github.tapscodes.MuseAmp
   org.gnome.EasyTAG
+  garden.jamie.Morphosis
 );
