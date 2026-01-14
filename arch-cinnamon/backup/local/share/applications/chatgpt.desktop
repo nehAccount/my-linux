@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=ChatGPT
+Exec=chromium --app=https://chatgpt.com --start-maximized
+Icon=preferences-system-search
+Type=Application
+Categories=Network;
+StartupWMClass=chatgpt.com

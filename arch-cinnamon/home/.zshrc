@@ -52,6 +52,7 @@ alias lsa='ls -lah --color=auto --group-directories-first'
 alias l='ls -lah --color=auto --group-directories-first'
 alias ll='ls -lh --color=auto --group-directories-first'
 alias la='ls -lAh --color=auto --group-directories-first'
+alias conf='zeditor ~/.config'
 
 # enable delete key
 bindkey "^[[3~" delete-char

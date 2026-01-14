@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=BNP Cloud
+Comment=BNP QNAP NAS (Chromium)
+Exec=chromium --app=https://bnpz.myqnapcloud.com:11433 --start-maximized
+Icon=icloud
+Type=Application
+Categories=Network;
+StartupWMClass=bnpz.myqnapcloud.com
