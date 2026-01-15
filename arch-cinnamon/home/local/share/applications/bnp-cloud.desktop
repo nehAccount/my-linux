@@ -1,3 +1,4 @@
+# xprop | grep WM_CLASS - to get StartupWMClass
 [Desktop Entry]
 Name=BNP Cloud
 Comment=BNP QNAP NAS (Chromium)

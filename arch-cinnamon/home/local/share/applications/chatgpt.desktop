@@ -1,3 +1,4 @@
+# xprop | grep WM_CLASS - to get StartupWMClass
 [Desktop Entry]
 Name=ChatGPT
 Exec=chromium --app=https://chatgpt.com --start-maximized
