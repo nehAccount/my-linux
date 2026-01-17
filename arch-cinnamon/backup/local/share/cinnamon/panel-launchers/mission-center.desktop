@@ -4,5 +4,6 @@ Exec=missioncenter
 Comment=
 Terminal=false
 PrefersNonDefaultGPU=false
-Icon=utilities-system-monitor-symbolic.svg
+Icon=usage-app-symbolic.svg
 Type=Application
+Name[en_US]=mission-center.desktop

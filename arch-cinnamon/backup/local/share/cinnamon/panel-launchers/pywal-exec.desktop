@@ -4,5 +4,5 @@ Exec=exec-wal
 Comment=Extract colors from current wallpaper
 Terminal=false
 PrefersNonDefaultGPU=false
-Icon=/usr/share/icons/breeze/actions/22/color-fill-symbolic.svg
+Icon=appearance-symbolic.svg
 Type=Application

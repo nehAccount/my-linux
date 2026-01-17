@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=ChatGPT
+Comment=ChatGPT Web App (Chromium)
 Exec=chromium --app=https://chatgpt.com --start-maximized
 Icon=preferences-system-search
 Type=Application

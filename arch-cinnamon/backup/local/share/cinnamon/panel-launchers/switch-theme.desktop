@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Switch Theme
+Exec=sh /home/nermin/.local/share/cinnamon/my-scripts/switch-theme.sh
+Comment=
+Terminal=false
+PrefersNonDefaultGPU=false
+Icon=/usr/share/icons/breeze/places/22/folder-flatpak-symbolic.svg
+Type=Application
+Name[en_US]=switch-theme.desktop

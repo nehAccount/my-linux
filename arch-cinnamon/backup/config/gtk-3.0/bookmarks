@@ -14,3 +14,4 @@ sftp://nermin@nermingk.site:7987/home/nermin nermingk.site
 file:///home/nermin/.icons .icons
 file:///home/nermin/.themes/my-theme-dark my-theme-dark
 file:///home/nermin/Public/soulseek soulseek
+file:///home/nermin/.local/share/applications applications

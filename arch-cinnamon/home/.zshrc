@@ -46,6 +46,7 @@ ZSH_HIGHLIGHT_STYLES[path_prefix]=none
 alias cleanup='~/.local/share/cinnamon/my-scripts/cleanup.sh'
 alias update-all='~/.local/share/cinnamon/my-scripts/update-all.sh'
 alias set-theme='~/.local/share/cinnamon/my-scripts/set-theme.sh'
+alias switch-theme='~/.local/share/cinnamon/my-scripts/switch-theme.sh'
 alias home='cd ~'
 alias hh='cd ~'
 alias lsa='ls -lah --color=auto --group-directories-first'
@@ -59,3 +60,13 @@ bindkey "^[[3~" delete-char
 
 # load starship last
 eval "$(starship init zsh)"
+
+# NVM (Node Version Manager)
+# export NVM_DIR="$HOME/.nvm"
+# [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+# [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# Added by LM Studio CLI (lms)
+export PATH="$PATH:/home/nermin/.lmstudio/bin"
+# End of LM Studio CLI section
+
