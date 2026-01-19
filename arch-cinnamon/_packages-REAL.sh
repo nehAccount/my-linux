@@ -97,6 +97,7 @@ generalPackagesYay=(
   lightdm-settings
   nautilus-open-any-terminal
   winegui
+  witr # why is this running
 );
 appPackages=(
   chromium
