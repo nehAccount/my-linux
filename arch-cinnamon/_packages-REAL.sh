@@ -86,6 +86,7 @@ generalPackages=(
 	wine-gecko
 	arp-scan
 	zed
+	gvfs-nfs # network file system (for Qnap access)
 	);
 
 # removed:  mint-themes
