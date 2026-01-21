@@ -129,7 +129,7 @@
         "units": "px",
         "description": "Icon size",
         "dependency": "menu-custom",
-        "value": 16.0
+        "value": 20.0
     },
     "menu-label": {
         "type": "entry",
@@ -162,7 +162,7 @@
         "step": 1,
         "units": "px",
         "description": "Applications icon size",
-        "value": 32
+        "value": 48.0
     },
     "show-sidebar": {
         "type": "switch",
@@ -262,7 +262,7 @@
         "max": 600,
         "step": 1,
         "description": "Maximum sidebar width (px)",
-        "value": 180
+        "value": 200.0
     },
     "show-favorites": {
         "type": "switch",
@@ -341,7 +341,7 @@
     "popup-height": {
         "type": "generic",
         "default": 425,
-        "value": 680.0693969726562
+        "value": 702.35009765625
     },
     "reset-menu-size-button": {
         "type": "button",

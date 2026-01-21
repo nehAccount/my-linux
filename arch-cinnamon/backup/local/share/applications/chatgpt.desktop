@@ -2,7 +2,7 @@
 Name=ChatGPT
 Comment=ChatGPT Web App (Chromium)
 Exec=chromium --app=https://chatgpt.com --start-maximized
-Icon=preferences-system-search
+Icon=gpt
 Type=Application
 Categories=Network;
 StartupWMClass=chatgpt.com

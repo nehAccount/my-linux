@@ -4,5 +4,5 @@ Exec=exec-wal
 Comment=Extract colors from current wallpaper
 Terminal=false
 PrefersNonDefaultGPU=false
-Icon=appearance-symbolic.svg
+Icon=preferences-desktop-wallpaper-symbolic
 Type=Application

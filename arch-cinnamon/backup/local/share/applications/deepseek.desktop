@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=DeepSeek
+Comment=DeepSeek (Chromium)
+Exec=chromium --app=https://chat.deepseek.com/ --start-maximized
+Icon=preferences-system-search
+Type=Application
+Categories=Network;
+StartupWMClass=chat.deepseek.com
+Name[en_US]=DeepSeek

@@ -4,5 +4,5 @@ Exec=missioncenter
 Comment=
 Terminal=false
 PrefersNonDefaultGPU=false
-Icon=/usr/share/icons/breeze/places/22/folder-rpm-symbolic.svg
+Icon=process-working-symbolic
 Type=Application

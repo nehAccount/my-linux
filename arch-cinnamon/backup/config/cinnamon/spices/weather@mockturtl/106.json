@@ -215,7 +215,7 @@
             "AccuWeather (key needed)": "AccuWeather",
             "Weather Underground (key needed)": "WeatherUnderground"
         },
-        "value": "OpenWeatherMap_Open"
+        "value": "OpenMeteo"
     },
     "apiKey": {
         "type": "entry",
@@ -237,7 +237,7 @@
         "dependency": "manualLocation",
         "description": "Location",
         "tooltip": "You can enter coordinates 'Latitude,Longitude' (e.g. 51.5085,-0.1257) or use 'City,Country-code' (e.g. London,UK) or try to enter {House number} {Street} {City/Town} {Postcode} {Country}. The search algorithm is very flexible with the format. After 3 seconds without typing the address you entered is replaced automatically for validating your choice. Powered by nominatim.openstreetmap.org.",
-        "value": "44.187648,17.9175424"
+        "value": "44.2045,17.9087"
     },
     "locationDescription": {
         "type": "label",
