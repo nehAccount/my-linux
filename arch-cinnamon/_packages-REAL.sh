@@ -99,6 +99,8 @@ generalPackagesYay=(
   nautilus-open-any-terminal
   winegui
   witr # why is this running
+  mint-y-icons
+  mint-themes
 );
 appPackages=(
   chromium
