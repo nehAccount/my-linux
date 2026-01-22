@@ -59,11 +59,13 @@ apply_theme() {
     if [[ -n "${dark_themes[$theme]}" ]]; then
         is_dark="true"
     fi
-    
+
+    echo ""
     echo "Primjenjujem temu: $theme"
     echo "Primjenjujem ikone: $icons"
     echo "Tamna tema: $is_dark"
-    
+    echo ""
+
     # Postavka GTK teme za Cinnamon
     #gsettings set org.cinnamon.desktop.interface gtk-theme "$theme"
     
