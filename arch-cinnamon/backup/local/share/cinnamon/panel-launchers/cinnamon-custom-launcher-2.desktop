@@ -4,5 +4,5 @@ Exec=missioncenter
 Comment=
 Terminal=false
 PrefersNonDefaultGPU=false
-Icon=process-working-symbolic
+Icon=folder-rpm-symbolic
 Type=Application

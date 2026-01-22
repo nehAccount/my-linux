@@ -2,7 +2,7 @@
 Name=DeepSeek
 Comment=DeepSeek (Chromium)
 Exec=chromium --app=https://chat.deepseek.com/ --start-maximized
-Icon=preferences-system-search
+Icon=deepseek
 Type=Application
 Categories=Network;
 StartupWMClass=chat.deepseek.com

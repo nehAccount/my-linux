@@ -10,10 +10,10 @@
   "agent": {
     "default_model": {
       "provider": "copilot_chat",
-      "model": "gpt-5-mini"
+      "model": "gpt-5-mini",
     },
     "favorite_models": [],
-    "model_parameters": []
+    "model_parameters": [],
   },
   "buffer_font_family": ".ZedMono",
   "buffer_font_weight": 400.0,
@@ -23,8 +23,8 @@
   "ui_font_family": "SF Pro Rounded",
   "autosave": {
     "after_delay": {
-      "milliseconds": 1000
-    }
+      "milliseconds": 1000,
+    },
   },
   "icon_theme": {
     "mode": "system",

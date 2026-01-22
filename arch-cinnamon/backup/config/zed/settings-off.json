@@ -1,0 +1,49 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+{
+  "agent": {
+    "default_model": {
+      "provider": "copilot_chat",
+      "model": "gpt-5-mini"
+    },
+    "favorite_models": [],
+    "model_parameters": []
+  },
+  "buffer_font_family": ".ZedMono",
+  "buffer_font_weight": 400.0,
+  "ui_font_weight": 500.0,
+  "agent_buffer_font_size": 18.0,
+  "agent_ui_font_size": 19.0,
+  "ui_font_family": "SF Pro Rounded",
+  "autosave": {
+    "after_delay": {
+      "milliseconds": 1000
+    }
+  },
+  "icon_theme": {
+    "mode": "system",
+    "light": "Zed (Default)",
+    "dark": "Zed (Default)"
+  },
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false
+  },
+  "session": {
+    "trust_all_worktrees": true
+  },
+  "base_keymap": "JetBrains",
+  "ui_font_size": 19.0,
+  "buffer_font_size": 18.0,
+  "theme": {
+    "mode": "system",
+    "light": "JetBrains Light",
+    "dark": "JetBrains Dark"
+  }
+}

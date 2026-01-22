@@ -118,7 +118,7 @@
         "description": "Icon",
         "default_icon": "cinnamon-symbolic",
         "dependency": "menu-custom",
-        "value": "/usr/share/icons/distro.svg"
+        "value": "/usr/share/icons/distro-symbolic.svg"
     },
     "menu-icon-size": {
         "type": "spinbutton",

@@ -131,6 +131,9 @@ sudo chmod +x /usr/local/bin/send-notification
 sudo ln -s "$HOME"/.local/share/cinnamon/my-scripts/exec-wal /usr/local/bin/
 sudo chmod +x /usr/local/bin/exec-wal
 
+chmod +x "$HOME"/.local/share/cinnamon/my-scripts/set-theme.sh
+chmod +x "$HOME"/.local/share/cinnamon/my-scripts/mint-theme.sh
+
 # ------------------------------------------------------
 # copy wallpapers
 # ------------------------------------------------------
