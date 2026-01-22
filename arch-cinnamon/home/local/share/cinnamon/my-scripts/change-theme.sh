@@ -96,7 +96,7 @@ EOF
     gsettings set org.cinnamon.desktop.wm.preferences theme "$theme"
     
     # Takođe postavimo preferiranu tamnu temu za Cinnamon interfejs
-    gsettings set set org.gnome.desktop.interface color-scheme "prefer-$([ "$is_dark" = "true" ] && echo "dark" || echo "light")"
+    gsettings set org.gnome.desktop.interface color-scheme "prefer-$([ "$is_dark" = "true" ] && echo "dark" || echo "light")"
     
     echo "Tema uspješno primijenjena!"
     echo "Napomena: Za potpunu primjenu GTK 4 teme, restartujte GTK 4 aplikacije."
