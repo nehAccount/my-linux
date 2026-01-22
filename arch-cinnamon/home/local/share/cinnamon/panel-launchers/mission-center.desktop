@@ -1,9 +1,8 @@
 [Desktop Entry]
-Name=Mission Center
-Exec=missioncenter
+Name=Resources
+Exec=flatpak run io.missioncenter.MissionCenter
 Comment=
 Terminal=false
 PrefersNonDefaultGPU=false
-Icon=usage-app-symbolic.svg
+Icon=folder-rpm-symbolic
 Type=Application
-Name[en_US]=mission-center.desktop
