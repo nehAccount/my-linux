@@ -6,6 +6,7 @@ theme2_name="my-orchis-Dark-Nord"
 theme2_path="$HOME/.themes/my-orchis-Dark-Nord"
 
 icon_theme="MacTahoe"
+prefer_variant="default"
 
 # Prikazivanje opcija korisniku
 echo "::"
@@ -24,11 +25,13 @@ case $opcija in
         selected_theme=$theme1_name
         selected_theme_path=$theme1_path
         icon_theme="MacTahoe-light"
+        prefer_variant="prefer-light"
         ;;
     2)
         selected_theme=$theme2_name
         selected_theme_path=$theme2_path
         icon_theme="MacTahoe-dark"
+        prefer_variant="prefer-dark"
         ;;
     *)
         echo "Pogrešan unos."
@@ -49,7 +52,10 @@ cp $selected_theme_path/gtk-4.0/gtk-dark.css ~/.config/gtk-4.0/
 # set desktop theme
 gsettings set org.cinnamon.desktop.interface gtk-theme "$selected_theme"
 gsettings set org.cinnamon.theme name "$selected_theme"
+gsettings set org.cinnamon.desktop.wm.preferences theme "$selected_theme"
+
 gsettings set org.gnome.desktop.interface gtk-theme "$selected_theme"
+gsettings set org.gnome.desktop.interface color-scheme "$prefer_variant"
 
 # set icon theme
 gsettings set org.cinnamon.desktop.interface icon-theme "$icon_theme"

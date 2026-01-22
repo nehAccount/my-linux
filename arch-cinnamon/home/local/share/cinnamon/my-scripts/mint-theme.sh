@@ -1,4 +1,6 @@
 #!/bin/bash
+declare -A path
+path="/usr/share/themes"
 
 # Mapiranje tema na odgovarajuće ikone
 declare -A theme_to_icon
@@ -9,8 +11,8 @@ theme_to_icon=(
     ["Mint-Y-Dark-Aqua"]="Mint-Y-Aqua"
     ["Mint-Y-Blue"]="Mint-Y-Blue"
     ["Mint-Y-Dark-Blue"]="Mint-Y-Blue"
-    ["Mint-Y-Orange"]="Mint-Y-Orange"
-    ["Mint-Y-Dark-Orange"]="Mint-Y-Orange"
+    ["Mint-Y-Orange"]="Mint-Y-Yaru"
+    ["Mint-Y-Dark-Orange"]="Mint-Y-Yaru"
     ["Mint-Y-Teal"]="Mint-Y-Teal"
     ["Mint-Y-Dark-Teal"]="Mint-Y-Teal"
 )
@@ -41,11 +43,11 @@ available_themes=(
 
 # Funkcija za prikaz menija
 show_menu() {
-    echo "=== Dostupne teme ==="
+    echo "=== THEMES ==="
     for i in "${!available_themes[@]}"; do
         echo "$((i+1)). ${available_themes[$i]}"
     done
-    echo "0. Izlaz"
+    echo "0. Exit"
     echo "=================="
 }
 
@@ -61,61 +63,50 @@ apply_theme() {
     fi
 
     echo ""
-    echo "Primjenjujem temu: $theme"
-    echo "Primjenjujem ikone: $icons"
-    echo "Tamna tema: $is_dark"
+    echo "Theme: $theme"
+    echo "Theme path: $path/$theme"
+    echo "Icons: $icons"
+    echo "Dark theme: $is_dark"
     echo ""
 
-    # Postavka GTK teme za Cinnamon
-    #gsettings set org.cinnamon.desktop.interface gtk-theme "$theme"
-    
-    # Postavka Cinnamon teme (ovo je važno za desktop tema)
-    #gsettings set org.cinnamon.theme name "$theme"
-    
-    # Postavka GTK teme za GNOME kompatibilnost
-    #gsettings set org.gnome.desktop.interface gtk-theme "$theme"
-    
-    # Primjena GTK 4 teme preko settings.ini
-    #local gtk4_config_dir="$HOME/.config/gtk-4.0"
-    #local gtk4_config="$gtk4_config_dir/settings.ini"
-    
-    #mkdir -p "$gtk4_config_dir"
-    
-#    cat > "$gtk4_config" << EOF
-#[Settings]
-#gtk-theme-name=$theme
-#gtk-icon-theme-name=$icons
-#gtk-application-prefer-dark-theme=$is_dark
-#EOF
-    
-    # Postavka ikona za Cinnamon
-    #gsettings set org.cinnamon.desktop.interface icon-theme "$icons"
-    
-    # Postavka ikona za GNOME kompatibilnost
-    #gsettings set org.gnome.desktop.interface icon-theme "$icons"
-    
-    # Primjena teme za prozore (metacity)
-    #gsettings set org.cinnamon.desktop.wm.preferences theme "$theme"
-    
-    # Takođe postavimo preferiranu tamnu temu za Cinnamon interfejs
-    #gsettings set org.gnome.desktop.interface color-scheme "prefer-$([ "$is_dark" = "true" ] && echo "dark" || echo "light")"
-    
-    echo "Tema uspješno primijenjena!"
+    # delete current data from GTK-4.0
+    rm -rf ~/.config/gtk-4.0/assets
+    rm -f ~/.config/gtk-4.0/gtk.css
+    rm -f ~/.config/gtk-4.0/gtk-dark.css
+
+    # copy data from theme path to GTK-4.0
+    cp -r "$path/$theme/gtk-4.0/assets" ~/.config/gtk-4.0/
+    cp "$path/$theme/gtk-4.0/gtk.css" ~/.config/gtk-4.0/
+    cp "$path/$theme/gtk-4.0/gtk-dark.css" ~/.config/gtk-4.0/
+
+    # Set Theme
+    gsettings set org.cinnamon.desktop.interface gtk-theme "$theme"
+    gsettings set org.cinnamon.theme name "$theme"
+    gsettings set org.cinnamon.desktop.wm.preferences theme "$theme"
+
+    gsettings set org.gnome.desktop.interface gtk-theme "$theme"
+    gsettings set org.gnome.desktop.interface color-scheme "prefer-$([ "$is_dark" = "true" ] && echo "dark" || echo "light")"
+
+    # Set Icons
+    gsettings set org.cinnamon.desktop.interface icon-theme "$icons"
+    gsettings set org.gnome.desktop.interface icon-theme "$icons"
+
+    echo "Success!"
     echo "Napomena: Za potpunu primjenu GTK 4 teme, restartujte GTK 4 aplikacije."
 
     # run script to get colors from wallpaper
-    #exec-wal
+    exec-wal
 }
 
 # Glavni program
 main() {
     while true; do
         show_menu
-        read -p "Odaberite temu (0 za izlaz): " choice
+        read -p "Choose number: " choice
         
         case $choice in
             0)
-                echo "Izlazim..."
+                echo "Exit..."
                 exit 0
                 ;;
             [1-9]|10)
