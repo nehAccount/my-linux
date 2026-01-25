@@ -5,7 +5,7 @@ desktop-effects=true
 desktop-effects-close='traditional'
 desktop-effects-minimize='traditional'
 desktop-effects-on-dialogs=true
-enabled-applets=['panel1:left:0:menu@cinnamon.org:0', 'panel1:right:12:xapp-status@cinnamon.org:4', 'panel1:right:6:notifications@cinnamon.org:5', 'panel1:right:7:removable-drives@cinnamon.org:7', 'panel1:right:8:keyboard@cinnamon.org:8', 'panel1:right:9:network@cinnamon.org:10', 'panel1:right:10:sound@cinnamon.org:11', 'panel1:right:11:power@cinnamon.org:12', 'panel1:center:1:calendar@cinnamon.org:13', 'panel1:left:1:grouped-window-list@cinnamon.org:29', 'panel1:right:4:spacer@cinnamon.org:38', 'panel1:center:2:weather@mockturtl:106', 'panel1:right:5:panel-launchers@cinnamon.org:114', 'panel1:right:3:systray@cinnamon.org:116', 'panel1:right:13:system-controls@rcalixte:124', 'panel2:center:0:workspace-switcher@cinnamon.org:125', 'panel1:right:0:workspace-switcher@cinnamon.org:126']
+enabled-applets=['panel1:left:0:menu@cinnamon.org:0', 'panel1:right:10:xapp-status@cinnamon.org:4', 'panel1:right:4:notifications@cinnamon.org:5', 'panel1:right:5:removable-drives@cinnamon.org:7', 'panel1:right:6:keyboard@cinnamon.org:8', 'panel1:right:7:network@cinnamon.org:10', 'panel1:right:8:sound@cinnamon.org:11', 'panel1:right:9:power@cinnamon.org:12', 'panel1:center:1:calendar@cinnamon.org:13', 'panel1:left:1:grouped-window-list@cinnamon.org:29', 'panel1:right:2:spacer@cinnamon.org:38', 'panel1:center:2:weather@mockturtl:106', 'panel1:right:3:panel-launchers@cinnamon.org:114', 'panel1:right:1:systray@cinnamon.org:116', 'panel1:right:11:system-controls@rcalixte:124', 'panel1:right:0:workspace-switcher@cinnamon.org:126']
 enabled-desklets=['diskspace@schorschii:0:1750:875', 'diskspace@schorschii:1:1750:700']
 enabled-extensions=['OsdWithNumber@JosephMcc', 'BlurCinnamon@klangman']
 favorite-apps=['firefox.desktop', 'cinnamon-settings.desktop', 'chromium.desktop', 'org.gnome.Terminal.desktop', 'org.gnome.Screenshot.desktop', 'bnp-cloud.desktop', 'chatgpt.desktop']
@@ -15,7 +15,7 @@ next-desklet-id=4
 panel-edit-mode=false
 panel-launchers=['DEPRECATED']
 panel-zone-icon-sizes='[{"panelId":1,"left":32,"center":24,"right":22}]'
-panel-zone-symbolic-icon-sizes='[{"panelId":1,"left":22,"center":22,"right":18}]'
+panel-zone-symbolic-icon-sizes='[{"panelId": 1, "left": 22, "center": 22, "right": 16}]'
 panel-zone-text-sizes='[{"panelId":1,"left":0,"center":0,"right":0}]'
 panels-autohide=['1:false', '2:intel']
 panels-enabled=['1:0:top']
@@ -49,7 +49,7 @@ exec-arg='--'
 
 [desktop/background]
 picture-options='zoom'
-picture-uri='file:///home/nermin/Pictures/wallpapers/new/photo-1668894787737-58a109e73c9a.jpg'
+picture-uri='file:///home/nermin/Pictures/wallpapers/new/photo-1629831676333-8e33b2d7cdd9.jpg'
 
 [desktop/background/slideshow]
 delay=15
@@ -65,9 +65,9 @@ cursor-blink-time=1200
 cursor-size=24
 cursor-theme='Bibata-Modern-Classic'
 first-day-of-week=1
-font-name='Ubuntu 12'
-gtk-theme='Mint-Y-Dark-Blue'
-icon-theme='Mint-Y-Blue'
+font-name='Adwaita Sans 12'
+gtk-theme='my-orchis-Dark-Nord'
+icon-theme='MacTahoe-dark'
 text-scaling-factor=1.0
 toolkit-accessibility=false
 
@@ -142,8 +142,8 @@ button-layout=':minimize,maximize,close'
 focus-new-windows='smart'
 min-window-opacity=30
 num-workspaces=4
-theme='Mint-Y-Dark-Blue'
-titlebar-font='Ubuntu 12'
+theme='my-orchis-Dark-Nord'
+titlebar-font='Adwaita Sans 12'
 workspace-names=@as []
 
 [gestures]
@@ -222,4 +222,4 @@ unplug-enabled=true
 unplug-file='/usr/share/sounds/LinuxMint/stereo/unplug.oga'
 
 [theme]
-name='Mint-Y-Dark-Blue'
+name='my-orchis-Dark-Nord'
