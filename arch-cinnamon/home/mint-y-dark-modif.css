@@ -1,0 +1,23 @@
+.applet-label {
+    font-weight: 400;
+}
+.workspace-button {
+    font-weight: 400;
+    border: none;
+    width: 2em;
+    color: rgba(225, 225, 225, 0.45);
+    background-color: rgba(0, 0, 0, 0.25);
+    margin-left: 2px;
+}
+.workspace-button:outlined {
+    background-color: rgba(0, 0, 0, 0.25);
+    color: #e1e1e1;
+}
+.workspace-button:shaded {
+    background-color: rgba(0, 0, 0, 0);
+}
+.workspace-button:hover,
+.workspace-button:shaded:hover,
+.workspace-button:outlined:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+}
