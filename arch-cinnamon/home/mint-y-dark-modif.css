@@ -1,3 +1,4 @@
+/* MY MODIFICATIONS */
 .applet-label {
     font-weight: 400;
 }
@@ -6,15 +7,15 @@
     border: none;
     width: 2em;
     color: rgba(225, 225, 225, 0.45);
-    background-color: rgba(0, 0, 0, 0.25);
+    background-color: rgba(0, 0, 0, 0.3);
     margin-left: 2px;
 }
 .workspace-button:outlined {
-    background-color: rgba(0, 0, 0, 0.25);
+    background-color: rgba(0, 0, 0, 0.3);
     color: #e1e1e1;
 }
 .workspace-button:shaded {
-    background-color: rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.1);
 }
 .workspace-button:hover,
 .workspace-button:shaded:hover,
