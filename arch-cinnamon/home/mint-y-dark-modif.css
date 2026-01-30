@@ -7,20 +7,15 @@
     border: none;
     width: 2em;
     color: rgba(225, 225, 225, 0.45);
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: transparent;
     margin-left: 2px;
 }
 .workspace-button:outlined {
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: transparent;
     color: #e1e1e1;
 }
-.workspace-button,
-.workspace-button:outlined {
-    border-top: 2px solid rgba(225, 225, 225, 0.45);
-}
 .workspace-button:shaded {
-    background-color: rgba(0, 0, 0, 0.1);
-    border-top-color: rgba(225, 225, 225, 0.2);
+    background-color: transparent;
 }
 .workspace-button:hover,
 .workspace-button:shaded:hover,
