@@ -1,17 +1,17 @@
 /* MY MODIFICATIONS */
 .applet-label {
-    font-weight: 400;
+    font-weight: 500;
 }
 .workspace-button {
-    font-weight: 400;
+    font-weight: 500;
     border: none;
     width: 2em;
-    color: rgba(225, 225, 225, 0.45);
+    color: rgba(48, 48, 48, 0.55);
     background-color: transparent;
 }
 .workspace-button:outlined {
     background-color: transparent;
-    color: #e1e1e1;
+    color: #303030;
 }
 .workspace-button:shaded {
     background-color: transparent;
@@ -19,5 +19,5 @@
 .workspace-button:hover,
 .workspace-button:shaded:hover,
 .workspace-button:outlined:hover {
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: #d3d3d7;
 }
