@@ -86,6 +86,7 @@ generalPackages=(
 	wine-gecko
 	arp-scan
 	zed
+	openai-codex # codex in terminal
 	);
 
 # removed:  mint-themes

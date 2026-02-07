@@ -87,6 +87,7 @@ generalPackages=(
 	arp-scan
 	zed
 	gvfs-nfs # network file system (for Qnap access)
+	openai-codex # codex in terminal
 	);
 
 # removed:  mint-themes
