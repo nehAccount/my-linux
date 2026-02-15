@@ -88,6 +88,11 @@ generalPackages=(
 	zed
 	gvfs-nfs # network file system (for Qnap access)
 	openai-codex # codex in terminal
+	# connect Phone to File Manager
+	gvfs
+	gvfs-mtp
+	mtpfs
+	libmtp
 	);
 
 # removed:  mint-themes
