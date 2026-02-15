@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://github.com/linuxmint/cinnamon-spices-desklets/"
 "issues\n"
-"POT-Creation-Date: 2025-10-15 00:30+0200\n"
-"PO-Revision-Date: 2025-11-11 10:14+0100\n"
+"POT-Creation-Date: 2025-12-22 13:42+0100\n"
+"PO-Revision-Date: 2026-01-02 18:57+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: hu\n"
@@ -20,26 +20,39 @@ msgstr ""
 "X-Generator: Poedit 3.8\n"
 
 #. settings-schema.json->type->options
-#. desklet.js:304 desklet.js:390
+#. desklet.js:317 desklet.js:487
 msgid "RAM"
 msgstr "RAM"
 
 #. settings-schema.json->type->options
-#. desklet.js:306 desklet.js:392
+#. desklet.js:319 desklet.js:489
 msgid "Swap"
 msgstr "Cserehely"
 
 #. settings-schema.json->type->options
-#. desklet.js:308
+#. desklet.js:321
 msgid "Filesystem"
 msgstr "Fájlrendszer"
 
-#. desklet.js:335
+#. desklet.js:348
 msgid "Not Found"
 msgstr "Nem található"
 
+#. desklet.js:434
+msgid "Sorry, this font is not supported, please select a different one."
+msgstr ""
+"Sajnáljuk, ez a betűtípus nem támogatott, kérjük, válasszon egy másikat."
+
+#. desklet.js:435
+msgid " Font: `"
+msgstr "Betűtípus: `"
+
+#. desklet.js:435
+msgid "` Error: "
+msgstr "` Hiba: "
+
 #. metadata.json->name
-#. desklet.js:394
+#. desklet.js:491
 msgid "Disk Space"
 msgstr "Lemez terület"
 
@@ -108,6 +121,14 @@ msgstr "Tizedes"
 #. settings-schema.json->size-prefix->options
 msgid "Binary"
 msgstr "Bináris"
+
+#. settings-schema.json->size-fraction-digits->description
+msgid "Number of fractional digits"
+msgstr "Tört számjegyek száma"
+
+#. settings-schema.json->size-fraction-digits->tooltip
+msgid "Increase or decrease the number digits after the decimal point."
+msgstr "Növelje vagy csökkentse a tizedesvessző utáni számjegyek számát."
 
 #. settings-schema.json->reserved-blocks-as-used-space->description
 msgid "Show reserved blocks as used space"
@@ -204,6 +225,22 @@ msgstr "Kör szín"
 #. settings-schema.json->circle-color-free-space->description
 msgid "Circle color for free space"
 msgstr "Kör színe a szabad helyhez"
+
+#. settings-schema.json->font->description
+msgid "Text font"
+msgstr "Szöveg betűtípusa"
+
+#. settings-schema.json->font->tooltip
+msgid "Change text font family"
+msgstr "Szöveg betűtípuscsaládjának módosítása"
+
+#. settings-schema.json->font-sub->description
+msgid "Sub text font"
+msgstr "Alszöveg betűtípusa"
+
+#. settings-schema.json->font-sub->tooltip
+msgid "Change font family of the text below the percentage"
+msgstr "A százalékérték alatti szöveg betűtípuscsaládjának módosítása"
 
 #. settings-schema.json->text-color->description
 msgid "Text color"

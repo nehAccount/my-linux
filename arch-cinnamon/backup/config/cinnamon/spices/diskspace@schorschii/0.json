@@ -51,6 +51,16 @@
         },
         "value": "decimal"
     },
+    "size-fraction-digits": {
+        "type": "spinbutton",
+        "default": 1,
+        "min": 0,
+        "max": 3,
+        "step": 1,
+        "description": "Number of fractional digits",
+        "tooltip": "Increase or decrease the number digits after the decimal point.",
+        "value": 1
+    },
     "reserved-blocks-as-used-space": {
         "type": "checkbox",
         "description": "Show reserved blocks as used space",
@@ -134,6 +144,20 @@
         "dependency": "use-own-circle-color",
         "value": "rgba(255,255,255,0.2)"
     },
+    "font": {
+        "type": "fontchooser",
+        "description": "Text font",
+        "default": "Ubuntu Light 31",
+        "tooltip": "Change text font family",
+        "value": "Ubuntu Light 31"
+    },
+    "font-sub": {
+        "type": "fontchooser",
+        "description": "Sub text font",
+        "default": "DejaVu Sans Mono Book 15",
+        "tooltip": "Change font family of the text below the percentage",
+        "value": "DejaVu Sans Mono Book 15"
+    },
     "text-color": {
         "type": "colorchooser",
         "default": "rgba(255,255,255,1.0)",
@@ -191,5 +215,5 @@
         "default": 1,
         "value": 1
     },
-    "__md5__": "34f135b4773da1ad23ca9adf4f4923ef"
+    "__md5__": "c7c4875bdec41370b57f5070ad29b73b"
 }

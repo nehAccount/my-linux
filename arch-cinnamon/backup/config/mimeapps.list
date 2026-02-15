@@ -67,6 +67,7 @@ text/yaml=org.x.editor.desktop
 text/markdown=org.x.editor.desktop
 audio/flac=mpv.desktop
 audio/mpeg=mpv.desktop
+application/sql=dev.zed.Zed.desktop
 
 [Added Associations]
 application/json=dev.zed.Zed.desktop

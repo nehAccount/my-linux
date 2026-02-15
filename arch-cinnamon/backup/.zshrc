@@ -2,10 +2,10 @@
 (cat ~/.cache/wal/sequences &)
 
 # fastfetch template
-if [[ -o interactive ]]; then
+#if [[ -o interactive ]]; then
     # fastfetch --config examples/12
-    fastfetch
-fi
+    # fastfetch
+#fi
 #################################################################
 # PATH
 export PATH=$HOME/bin:/usr/local/bin:/snap/bin:/opt/bin:$PATH

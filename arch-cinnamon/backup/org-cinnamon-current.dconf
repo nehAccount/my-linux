@@ -7,8 +7,8 @@ desktop-effects-minimize='traditional'
 desktop-effects-on-dialogs=true
 enabled-applets=['panel1:left:0:menu@cinnamon.org:0', 'panel1:right:10:xapp-status@cinnamon.org:4', 'panel1:right:4:notifications@cinnamon.org:5', 'panel1:right:5:removable-drives@cinnamon.org:7', 'panel1:right:6:keyboard@cinnamon.org:8', 'panel1:right:7:network@cinnamon.org:10', 'panel1:right:8:sound@cinnamon.org:11', 'panel1:right:9:power@cinnamon.org:12', 'panel1:center:1:calendar@cinnamon.org:13', 'panel1:left:1:grouped-window-list@cinnamon.org:29', 'panel1:right:2:spacer@cinnamon.org:38', 'panel1:center:2:weather@mockturtl:106', 'panel1:right:3:panel-launchers@cinnamon.org:114', 'panel1:right:1:systray@cinnamon.org:116', 'panel1:right:11:system-controls@rcalixte:124', 'panel1:right:0:workspace-switcher@cinnamon.org:126']
 enabled-desklets=['diskspace@schorschii:0:1750:875', 'diskspace@schorschii:1:1750:700']
-enabled-extensions=['OsdWithNumber@JosephMcc', 'BlurCinnamon@klangman']
-favorite-apps=['firefox.desktop', 'cinnamon-settings.desktop', 'chromium.desktop', 'org.gnome.Terminal.desktop', 'org.gnome.Screenshot.desktop', 'bnp-cloud.desktop', 'chatgpt.desktop']
+enabled-extensions=['OsdWithNumber@JosephMcc', 'BlurCinnamon@klangman', 'transparent-panels@germanfr']
+favorite-apps=['firefox.desktop', 'kitty.desktop', 'cinnamon-settings.desktop', 'chromium.desktop', 'org.gnome.Screenshot.desktop', 'bnp-cloud.desktop', 'chatgpt.desktop']
 hotcorner-layout=['expo:true:0', 'scale:true:0', 'scale:false:0', 'desktop:true:0']
 next-applet-id=127
 next-desklet-id=4
@@ -49,7 +49,7 @@ exec-arg='--'
 
 [desktop/background]
 picture-options='zoom'
-picture-uri='file:///home/nermin/Pictures/wallpapers/new/photo-1629831676333-8e33b2d7cdd9.jpg'
+picture-uri='file:///home/nermin/Pictures/wallpapers/new/photo-1682251024316-fcd478b8ad15.jpg'
 
 [desktop/background/slideshow]
 delay=15
@@ -66,22 +66,22 @@ cursor-size=24
 cursor-theme='Bibata-Modern-Classic'
 first-day-of-week=1
 font-name='Adwaita Sans 12'
-gtk-theme='my-orchis-Dark-Nord'
-icon-theme='MacTahoe-dark'
+gtk-theme='Mint-Y-Dark-Orange'
+icon-theme='Mint-Y-Yaru'
 text-scaling-factor=1.0
 toolkit-accessibility=false
 
 [desktop/keybindings]
-custom-list=['custom0', 'custom1', '__dummy__']
+custom-list=['custom0', 'custom1']
 show-desklets=@as []
 
 [desktop/keybindings/custom-keybindings/custom0]
-binding=['Super_L']
+binding=['<Super>s']
 command='rofi -show drun -replace -i -config ~/.config/rofi/app-menu-grid-compact.rasi'
 name='rofi app menu compact'
 
 [desktop/keybindings/custom-keybindings/custom1]
-binding=['<Super>s']
+binding=['Super_L']
 command='rofi -show drun -replace -i -config ~/.config/rofi/app-menu-grid.rasi'
 name='rofi app menu'
 
@@ -142,7 +142,7 @@ button-layout=':minimize,maximize,close'
 focus-new-windows='smart'
 min-window-opacity=30
 num-workspaces=4
-theme='my-orchis-Dark-Nord'
+theme='Mint-Y-Dark-Orange'
 titlebar-font='Adwaita Sans 12'
 workspace-names=@as []
 
@@ -222,4 +222,4 @@ unplug-enabled=true
 unplug-file='/usr/share/sounds/LinuxMint/stereo/unplug.oga'
 
 [theme]
-name='my-orchis-Dark-Nord'
+name='Mint-Y-Dark-Orange'
