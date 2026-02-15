@@ -140,4 +140,6 @@ flatpakPackages=(
   io.github.tapscodes.MuseAmp
   org.gnome.EasyTAG
   garden.jamie.Morphosis
+  # music player
+  org.gnome.Rhythmbox3
 );

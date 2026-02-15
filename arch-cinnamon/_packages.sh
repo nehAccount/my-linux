@@ -86,7 +86,13 @@ generalPackages=(
 	wine-gecko
 	arp-scan
 	zed
+	gvfs-nfs # network file system (for Qnap access)
 	openai-codex # codex in terminal
+	# connect Phone to File Manager
+	gvfs
+	gvfs-mtp
+	mtpfs
+	libmtp
 	);
 
 # removed:  mint-themes
@@ -98,6 +104,9 @@ generalPackagesYay=(
   lightdm-settings
   nautilus-open-any-terminal
   winegui
+  witr # why is this running
+  mint-y-icons
+  mint-themes
 );
 appPackages=(
   chromium
@@ -131,4 +140,6 @@ flatpakPackages=(
   io.github.tapscodes.MuseAmp
   org.gnome.EasyTAG
   garden.jamie.Morphosis
+  # music player
+  org.gnome.Rhythmbox3
 );
