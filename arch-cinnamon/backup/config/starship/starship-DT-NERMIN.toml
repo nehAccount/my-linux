@@ -1,0 +1,60 @@
+format = """
+[ 󰣇 ](bg:bright-white fg:black)\
+[](bg:bright-cyan fg:bright-white)\
+$directory\
+[](fg:bright-cyan bg:bright-blue)\
+$git_branch\
+$git_status\
+[](fg:bright-blue bg:red)\
+$time\
+[ ](fg:red)\
+\n\n$character"""
+
+add_newline = true
+
+[directory]
+style = "fg:black bg:bright-cyan"
+format = "[ $path ]($style)"
+truncation_length = 3
+truncation_symbol = "…/"
+
+[directory.substitutions]
+"Documents" = "󰈙 "
+"Downloads" = " "
+"Music" = " "
+"Pictures" = " "
+
+[git_branch]
+symbol = ""
+style = "bg:bright-blue"
+format = '[[ $symbol $branch ](fg:black bg:bright-blue)]($style)'
+
+[git_status]
+style = "bg:bright-blue"
+format = '[[($all_status$ahead_behind )](fg:black bg:bright-blue)]($style)'
+
+[nodejs]
+symbol = ""
+style = "bg:green"
+format = '[[ $symbol ($version) ](fg:white bg:green)]($style)'
+
+[rust]
+symbol = ""
+style = "bg:green"
+format = '[[ $symbol ($version) ](fg:white bg:green)]($style)'
+
+[golang]
+symbol = ""
+style = "bg:green"
+format = '[[ $symbol ($version) ](fg:white bg:green)]($style)'
+
+[php]
+symbol = ""
+style = "bg:green"
+format = '[[ $symbol ($version) ](fg:white bg:green)]($style)'
+
+[time]
+disabled = false
+time_format = "%R"
+style = "bg:red"
+format = '[[  $time ](fg:bright-white bg:red)]($style)'
