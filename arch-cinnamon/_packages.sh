@@ -142,4 +142,6 @@ flatpakPackages=(
   garden.jamie.Morphosis
   # music player
   org.gnome.Rhythmbox3
+  # IPTV
+  dev.fredol.open-tv
 );
