@@ -1,0 +1,42 @@
+[Global plugin config]
+manageProfile=false
+
+[SSH Config][bnp-sftp]
+hostname=dedi5675.your-server.de
+identifier=bnp-sftp
+importedFromSshConfig=true
+port=
+profileName=Built-in
+sshkey=~/.ssh/id_bnpz
+useSshConfig=true
+username=
+
+[SSH Config][bnp-zenica.com]
+hostname=bnp-zenica.com
+identifier=bnp-zenica.com
+importedFromSshConfig=true
+port=7222
+profileName=Built-in
+sshkey=~/.ssh/id_bnpz
+useSshConfig=true
+username=bnp-admin
+
+[SSH Config][github-nehAccount]
+hostname=github.com
+identifier=github-nehAccount
+importedFromSshConfig=true
+port=
+profileName=Built-in
+sshkey=~/.ssh/id_neh
+useSshConfig=true
+username=
+
+[SSH Config][nermingk.site-nermin]
+hostname=nermingk.site
+identifier=nermingk.site-nermin
+importedFromSshConfig=true
+port=7987
+profileName=Built-in
+sshkey=~/.ssh/id_rsa
+useSshConfig=true
+username=nermin
