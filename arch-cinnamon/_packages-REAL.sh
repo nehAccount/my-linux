@@ -111,6 +111,7 @@ generalPackagesYay=(
 appPackages=(
   chromium
 	timeshift
+	libreoffice-fresh
 	nextcloud-client
 	thunderbird
 	systray-x-common
@@ -135,7 +136,6 @@ flatpakPackages=(
   com.getpostman.Postman
   org.qbittorrent.qBittorrent
   org.inkscape.Inkscape
-  org.onlyoffice.desktopeditors
   org.nicotine_plus.Nicotine
   io.github.tapscodes.MuseAmp
   org.gnome.EasyTAG
