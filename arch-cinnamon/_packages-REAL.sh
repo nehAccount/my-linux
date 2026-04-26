@@ -88,6 +88,7 @@ generalPackages=(
 	zed
 	gvfs-nfs # network file system (for Qnap access)
 	openai-codex # codex in terminal
+	jq # command-line json processor
 	# connect Phone to File Manager
 	gvfs
 	gvfs-mtp
