@@ -108,7 +108,6 @@ generalPackagesYay=(
   witr # why is this running
   mint-y-icons
   mint-themes
-  darkly-bin
 );
 appPackages=(
   chromium

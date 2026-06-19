@@ -31,6 +31,7 @@ kdePackages=(
     kdeconnect
 );
 kdePackagesYay=(
+  darkly-bin
 );
 
 # pacman
