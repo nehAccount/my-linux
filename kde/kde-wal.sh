@@ -21,7 +21,8 @@ if [ -n "$WALLPAPER" ] && [ -f "$WALLPAPER" ]; then
     # wal -i "$WALLPAPER"
     wal -q -i "$WALLPAPER"
     echo "$WALLPAPER"
-    # send-notification "Success" "Colors from wallpaper extracted (dark theme)"
+    # send-notification "Success" "Colors from $WALLPAPER extracted"
+    # kdialog --title "Success" --passivepopup "Colors from $WALLPAPER extracted" 5
 else
     echo "Nije pronađen wallpaper fajl"
     exit 1

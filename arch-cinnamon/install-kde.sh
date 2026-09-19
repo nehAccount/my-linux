@@ -29,6 +29,7 @@ kdePackages=(
     kde-gtk-config
     breeze-gtk
     kdeconnect
+    kdialog
 );
 kdePackagesYay=(
   darkly-bin
