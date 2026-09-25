@@ -1,9 +1,19 @@
 [Desktop Entry]
-Name=DeepSeek
-Comment=DeepSeek (Chromium)
-Exec=chromium --app=https://chat.deepseek.com/ --start-maximized
-Icon=preferences-system-search
-Type=Application
 Categories=Network;
-StartupWMClass=chat.deepseek.com
+Comment[en_US]=DeepSeek Chat WebApp
+Comment=DeepSeek Chat WebApp
+Exec=chromium --class=deepseek-app --app=https://chat.deepseek.com --start-maximized --user-data-dir=/home/nermin/.config/webapps/chromium-deepseek-app
+StartupWMClass=deepseek-app
+GenericName[en_US]=
+GenericName=
+Icon=/usr/share/icons/deepseek.svg
+MimeType=
 Name[en_US]=DeepSeek
+Name=DeepSeek
+Path=
+StartupNotify=true
+Terminal=false
+TerminalOptions=
+Type=Application
+X-KDE-SubstituteUID=false
+X-KDE-Username=
