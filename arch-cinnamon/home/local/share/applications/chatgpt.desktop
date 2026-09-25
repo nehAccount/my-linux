@@ -1,19 +1,11 @@
 [Desktop Entry]
-Categories=Network;
-Comment[en_US]=ChatGPT WebApp
-Comment=ChatGPT WebApp
-Exec=chromium --class=chatgpt-app --app=https://chatgpt.com --start-maximized --user-data-dir=/home/nermin/.config/webapps/chromium-chatgpt-app
-StartupWMClass=chatgpt-app
-GenericName[en_US]=
-GenericName=
-Icon=gpt
-MimeType=
-Name[en_US]=ChatGPT
+Version=1.0
+Type=Application
 Name=ChatGPT
-Path=
+Comment=ChatGPT WebApp
+Categories=Network;
+Exec=chromium --ozone-platform=wayland --class=chatgpt-app --app=https://chatgpt.com --start-maximized --user-data-dir=/home/nermin/.config/webapps/chromium-chatgpt-app
+Icon=gpt
+StartupWMClass=chatgpt-app
 StartupNotify=true
 Terminal=false
-TerminalOptions=
-Type=Application
-X-KDE-SubstituteUID=false
-X-KDE-Username=

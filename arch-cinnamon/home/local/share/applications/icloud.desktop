@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=iCloud
+Comment=iCloud WebApp
+Categories=Network;
+Exec=chromium --ozone-platform=wayland --class=icloud-app --app=https://www.icloud.com/ --start-maximized --user-data-dir=/home/nermin/.config/webapps/chromium-icloud-app
+Icon=icloud
+StartupWMClass=icloud-app
+StartupNotify=true
+Terminal=false

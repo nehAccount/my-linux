@@ -1,20 +1,11 @@
 [Desktop Entry]
-Categories=Network;Email;
-Comment[en_US]=iCloud Mail WebApp
-Comment=iCloud Mail WebApp
-Exec=chromium --class=icloudmail-app --app=https://icloud.com/mail/ --start-maximized --user-data-dir=/home/nermin/.config/webapps/chromium-icloudmail-app
-StartupWMClass=icloudmail-app
-GenericName[en_US]=
-GenericName=
-Icon=mail-client
-MimeType=
-Name[en_US]=iCloud Mail
+Version=1.0
+Type=Application
 Name=iCloud Mail
-Path=
+Comment=iCloud Mail WebApp
+Categories=Network;Email;
+Exec=chromium --ozone-platform=wayland --class=icloudmail-app --app=https://icloud.com/mail/ --start-maximized --user-data-dir=/home/nermin/.config/webapps/chromium-icloudmail-app
+Icon=mail-client
+StartupWMClass=icloudmail-app
 StartupNotify=true
 Terminal=false
-TerminalOptions=
-Type=Application
-Version=1.0
-X-KDE-SubstituteUID=false
-X-KDE-Username=
