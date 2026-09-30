@@ -30,6 +30,9 @@ kdePackages=(
     breeze-gtk
     kdeconnect
     kdialog
+    sddm
+    sddm-kcm
+    kio-admin
 );
 kdePackagesYay=(
   darkly-bin
