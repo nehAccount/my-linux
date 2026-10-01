@@ -1,6 +1,6 @@
 #!/bin/bash
 echo ":: Full system and applications update"
-echo ":::::::::::::::::::::::::::::::::::::::::::"
+echo "::::::::::::::::::::::::::::::::::::::::"
 
 # update packages
 yay
@@ -12,7 +12,8 @@ flatpak remove --unused
 # sleep 3
 
 # exit messages
-send-notification "Update completed" "All applications successfully updated"
-echo 
+# send-notification "Update completed" "All applications successfully updated"
+notify-send -i terminal -a "User command" "Update completed" "All applications successfully updated"
+echo
 echo ":: Update completed."
-#sleep 2
+# sleep 1
