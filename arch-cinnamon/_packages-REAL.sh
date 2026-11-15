@@ -108,6 +108,7 @@ generalPackagesYay=(
   witr # why is this running
   mint-y-icons
   mint-themes
+  whitesur-icon-theme
 );
 appPackages=(
   chromium
