@@ -178,6 +178,9 @@ sudo cp -a "$builddir"/lightdm/login-bg.jpg /usr/share/backgrounds/login
 sudo cp -a "$builddir"/lightdm/lightdm.conf /etc/lightdm
 sudo cp -a "$builddir"/lightdm/slick-greeter.conf /etc/lightdm
 
+#------------------------------------------------------
+# disable background autostart for EngPlayer
+flatpak permission-set background background io.github.falldaemon.engplayer no
 # ------------------------------------------------------
 # reboot system
 # ------------------------------------------------------

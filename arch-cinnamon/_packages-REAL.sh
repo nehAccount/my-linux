@@ -146,6 +146,5 @@ flatpakPackages=(
   # music player
   org.gnome.Rhythmbox3
   # IPTV
-  dev.fredol.open-tv
   io.github.falldaemon.engplayer
 );
