@@ -131,6 +131,7 @@ appPackagesYay=(
 	losslesscut-bin
 	proton-ge-custom
 	codewhale-bin
+	mailspring-bin
 );
 flatpakPackages=(
   com.viber.Viber
