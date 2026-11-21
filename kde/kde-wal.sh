@@ -20,9 +20,14 @@ fi
 if [ -n "$WALLPAPER" ] && [ -f "$WALLPAPER" ]; then
     # wal -i "$WALLPAPER"
     wal -q -i "$WALLPAPER"
-    echo "$WALLPAPER"
+    # echo "$WALLPAPER"
     # send-notification "Success" "Colors from $WALLPAPER extracted"
     # kdialog --title "Success" --passivepopup "Colors from $WALLPAPER extracted" 5
+
+    # Zed (copy to enable auto refresh)
+    mkdir -p ~/.config/zed/themes
+    cp ~/.cache/wal/zed-pywal.json ~/.config/zed/themes/pywal.json
+
 else
     echo "Nije pronađen wallpaper fajl"
     exit 1
